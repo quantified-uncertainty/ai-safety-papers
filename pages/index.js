@@ -2,7 +2,8 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import { getCauseCandidates } from "../lib/airtablegraph.js";
 import Layout from "./layout.js";
-
+let linkStyle =
+  "text-blue-500 hover:text-blue-700 visited:text-blue-700 hover:underline cursor-pointer";
 export async function getStaticProps() {
   const { causeCandidates } = await getCauseCandidates();
   return {
@@ -31,5 +32,34 @@ let causeCandidate = ({ id, name, totalKarmaDiscussing, causeArea }) => {
 };
 
 export default function Home({ items }) {
-  return <Layout key="index">{items.map((i) => causeCandidate(i))}</Layout>;
+  return (
+    <Layout key="index">
+      <div className="mb-8">
+        <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-2">
+          Big List of EA Cause Candidates
+        </h1>
+        <p className="tx-sm text-gray-600">
+          This is a list of potential Effective ALtruist cause candidates. We
+          have a corresponding blog post{" "}
+          <a
+            href="https://forum.effectivealtruism.org/posts/SCqRu6shoa8ySvRAa/big-list-of-cause-candidates"
+            className={linkStyle}
+          >
+            here.
+          </a>{" "}
+          The data is organized on a corresponding Airtable document, which has
+          more functionality,{" "}
+          <a
+            href="https://airtable.com/shrMSZ2chO7CEOqec"
+            className={linkStyle}
+          >
+            here
+          </a>
+          .
+        </p>
+      </div>
+      <hr className="border-gray-200 mb-4"></hr>
+      {items.map((i) => causeCandidate(i))}
+    </Layout>
+  );
 }
