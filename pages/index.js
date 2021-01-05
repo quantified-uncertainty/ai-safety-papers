@@ -1,19 +1,28 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import { getCauseCandidates } from "../lib/airtablegraph.js";
+import { getCauses } from "../lib/airtablegraph.js";
 import Layout from "./layout.js";
 let linkStyle =
   "text-blue-500 hover:text-blue-700 visited:text-blue-700 hover:underline cursor-pointer";
 export async function getStaticProps() {
-  const { causeCandidates } = await getCauseCandidates();
+  const { causeArea } = await getCauses();
   return {
     props: {
-      items: causeCandidates,
+      items: causeArea,
     },
   };
 }
 
-let causeCandidate = ({ id, name, totalKarmaDiscussing, causeArea }) => {
+let causeCandidate = ({
+  id,
+  name,
+  totalKarmaDiscussing,
+  articles,
+  depthOfCurrentResearch,
+  levelOfSpecificity,
+  promisingness,
+  readiness,
+}) => {
   return (
     <div key={id} className="pb-4">
       <Link href={`/posts/${id}`} passHref>
@@ -21,12 +30,21 @@ let causeCandidate = ({ id, name, totalKarmaDiscussing, causeArea }) => {
           {name}
         </span>
       </Link>
-      <span className="mt-1 sm:mt-0 sm:col-span-2 text-gray-700 bg-gray-200 hover:bg-gray-400 hover:text-gray-900 px-1 py-1 rounded-sm text-sm cursor-pointer">
-        {causeArea[0].name}
-      </span>
-      <div className="mt-1 text-sm text-gray-500 sm:mt-0 sm:col-span-2">
-        <ReactMarkdown>{totalKarmaDiscussing}</ReactMarkdown>
+      <div className="mt-1 text-sm text-gray-400 sm:mt-0 sm:col-span-2">
+        karma: {totalKarmaDiscussing}, posts:{" "}
+        {(articles && articles.length) || 0}, depth: {depthOfCurrentResearch},
+        specificity: {levelOfSpecificity}, promisingness: {promisingness},
+        readiness: {readiness}
       </div>
+    </div>
+  );
+};
+
+let cause = ({ id, name, causeCandidates }) => {
+  return (
+    <div key={id} className="pb-4">
+      <div className="text-xl mb-2">{name}</div>
+      {causeCandidates.map((c) => causeCandidate(c))}
     </div>
   );
 };
@@ -59,7 +77,7 @@ export default function Home({ items }) {
         </p>
       </div>
       <hr className="border-gray-200 mb-4"></hr>
-      {items.map((i) => causeCandidate(i))}
+      {items.map((i) => cause(i))}
     </Layout>
   );
 }
