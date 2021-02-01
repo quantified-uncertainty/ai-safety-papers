@@ -57,7 +57,7 @@ export default function Home({ items }) {
           Big List of EA Cause Candidates
         </h1>
         <p className="tx-sm text-gray-600">
-          This is a list of potential Effective ALtruist cause candidates. We
+          This is a list of potential Effective Altruist cause candidates. We
           have a corresponding blog post{" "}
           <a
             href="https://forum.effectivealtruism.org/posts/SCqRu6shoa8ySvRAa/big-list-of-cause-candidates"
