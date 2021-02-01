@@ -5,7 +5,7 @@ export default function Layout(props) {
   return (
     <div>
       <Head>
-        <title>Cause Explorer</title>
+        <title>AI Safety Papers</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
