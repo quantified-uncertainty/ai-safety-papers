@@ -3,7 +3,7 @@ import Layout from "./layout.js";
 import ReactMarkdown from "react-markdown";
 import Fuse from "fuse.js";
 import React, { useState } from "react";
-import Form from "./form.js";
+import Form from "../lib/form.js";
 
 let linkStyle =
   "text-blue-500 hover:text-blue-700 visited:text-blue-700 hover:underline cursor-pointer";
