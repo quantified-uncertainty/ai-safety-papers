@@ -27,13 +27,21 @@ let paper = ({
   abstractNote,
   itemType,
   score,
+  onChangeQuery,
   index,
   url,
 }) => {
   return (
     <div key={id} className="pb-6 pt-3">
       <div>
-        <span>{author},</span>
+        {author.split(";").map((item) => (
+          <span
+            className="mr-1 cursor-pointer"
+            onClick={() => onChangeQuery(item)}
+          >
+            {item}
+          </span>
+        ))}
         <span className="ml-2 mr-2">
           <a href={url} className="font-bold">
             {title}
@@ -43,7 +51,20 @@ let paper = ({
         <span className="text-gray-400">({publicationYear})</span>
       </div>
       <div className="text-sm text-gray-400">
-        {publicationTitle} {manualTags}{" "}
+        <span
+          className="underline mr-2 cursor-pointer"
+          onClick={() => onChangeQuery(publicationTitle)}
+        >
+          {publicationTitle}
+        </span>
+        {manualTags.split(";").map((item) => (
+          <span
+            className="underline mr-2 cursor-pointer"
+            onClick={() => onChangeQuery(item)}
+          >
+            {item}
+          </span>
+        ))}{" "}
       </div>
       <blockquote className="relative p-2 border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote mt-4 mb-2">
         <div className="prose sm:prose-sm max-w-none">
@@ -77,6 +98,12 @@ export default function Home({ items }) {
   const [results, setResults] = useState([]);
 
   let fuse = new Fuse(items, opts);
+  let onChangeQuery = (query) => {
+    console.log("Chanigng queyr", query);
+    setValues({ ...values, query });
+    const results = fuse.search(query);
+    setResults(results);
+  };
   return (
     <Layout key="index">
       <div className="mb-8">
@@ -96,7 +123,9 @@ export default function Home({ items }) {
       </label>
       {results
         .slice(0, 10)
-        .map((i) => paper({ ...i.item, score: i.score, index: i.refIndex }))}
+        .map((i) =>
+          paper({ ...i.item, onChangeQuery, score: i.score, index: i.refIndex })
+        )}
     </Layout>
   );
 }
