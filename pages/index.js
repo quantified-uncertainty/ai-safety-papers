@@ -58,6 +58,7 @@ let paperListView = ({
   );
 };
 
+let cleanMarkdown = (r) => r.replaceAll("\\", "");
 let paperPageView = ({
   id,
   title,
@@ -110,10 +111,12 @@ let paperPageView = ({
         </span>
       </div>
       <div className="prose p-2 bg-neutral-100 text-neutral-600 mt-4 mb-2 max-w-6xl bg-gray-50">
-        <ReactMarkdown>{abstractNote || ""}</ReactMarkdown>
+        <ReactMarkdown>
+          {(abstractNote && cleanMarkdown(abstractNote)) || ""}
+        </ReactMarkdown>
       </div>
       <div className="prose p-2 bg-neutral-100 text-neutral-600 mt-4 mb-2 max-w-6xl bg-green-50">
-        <ReactMarkdown>{shahBlurb}</ReactMarkdown>
+        <ReactMarkdown source={cleanMarkdown(shahBlurb)} />
         <div className="text-sm text-gray-400"> Alignment Newsletter</div>
       </div>
     </div>
