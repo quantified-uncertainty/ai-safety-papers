@@ -33,11 +33,7 @@ let paperListView = ({
   url,
 }) => {
   return (
-    <tr
-      key={id}
-      className="hover:bg-blue-200"
-      onMouseEnter={() => setSelected(id)}
-    >
+    <tr key={id} className="hover:bg-blue-200" onClick={() => setSelected(id)}>
       <td className="px-2 py-2">
         <div>
           <div className="">{title}</div>
