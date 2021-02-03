@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.almost-all-height1 {
+  height: calc(100vh - 180px)
+}
+
+.almost-all-height {
+  height: calc(100vh - 130px)
+}

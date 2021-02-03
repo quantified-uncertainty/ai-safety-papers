@@ -16,7 +16,7 @@ export async function getStaticProps() {
   };
 }
 
-let paper = ({
+let paperListView = ({
   id,
   title,
   author,
@@ -28,12 +28,59 @@ let paper = ({
   itemType,
   score,
   onChangeQuery,
+  setSelected,
   index,
   url,
 }) => {
   return (
-    <div key={id} className="pb-6 pt-3">
-      <div>
+    <tr
+      key={id}
+      className="hover:bg-blue-200"
+      onMouseEnter={() => setSelected(id)}
+    >
+      <td className="px-2 py-2">
+        <div>
+          <div className="">{title}</div>
+          <div className="text-green-500">
+            {author
+              .split(";")
+              .slice(0, 2)
+              .map((item) => (
+                <span
+                  className="mr-1 cursor-pointer"
+                  onClick={() => onChangeQuery(item)}
+                >
+                  {item}
+                </span>
+              ))}
+          </div>
+        </div>
+      </td>
+      <td className="px-2 text-gray-600">{publicationYear}</td>
+      <td className="px-2 text-gray-400">{score.toFixed(2)}</td>
+    </tr>
+  );
+};
+
+let paperPageView = ({
+  id,
+  title,
+  author,
+  shahBlurb,
+  publicationYear,
+  manualTags,
+  publicationTitle,
+  abstractNote,
+  itemType,
+  onChangeQuery,
+  url,
+}) => {
+  return (
+    <div key={id} className="container mx-auto pt-8">
+      <h2 className="text-xl text-blue-800 underline pb-4">
+        <a href={url}>{title}</a>
+      </h2>
+      <div className="pb-2 text-green-500">
         {author.split(";").map((item) => (
           <span
             className="mr-1 cursor-pointer"
@@ -42,36 +89,37 @@ let paper = ({
             {item}
           </span>
         ))}
-        <span className="ml-2 mr-2">
-          <a href={url} className="font-bold">
-            {title}
-          </a>
-          ,
-        </span>
         <span className="text-gray-400">({publicationYear})</span>
       </div>
-      <div className="text-sm text-gray-400">
+      <div className="text-sm text-gray-400 pb-10">
         <span
-          className="underline mr-2 cursor-pointer"
+          className="mr-2 cursor-pointer"
           onClick={() => onChangeQuery(publicationTitle)}
         >
           {publicationTitle}
         </span>
         {manualTags.split(";").map((item) => (
           <span
-            className="underline mr-2 cursor-pointer"
+            className="mr-2 cursor-pointer"
             onClick={() => onChangeQuery(item)}
           >
             {item}
           </span>
         ))}{" "}
+        <span
+          className="mr-2 cursor-pointer"
+          onClick={() => onChangeQuery(itemType)}
+        >
+          {itemType}
+        </span>
       </div>
-      <blockquote className="relative p-2 border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote mt-4 mb-2">
-        <div className="prose sm:prose-sm max-w-none">
-          <ReactMarkdown>{shahBlurb.slice(0, 1000)}</ReactMarkdown>
-        </div>
-        <div className="text-sm text-blue-400"> - Rohin Shah</div>
-      </blockquote>
+      <div className="prose p-2 bg-neutral-100 text-neutral-600 mt-4 mb-2 max-w-6xl bg-gray-50">
+        <ReactMarkdown>{abstractNote || ""}</ReactMarkdown>
+      </div>
+      <div className="prose p-2 bg-neutral-100 text-neutral-600 mt-4 mb-2 max-w-6xl bg-green-50">
+        <ReactMarkdown>{shahBlurb}</ReactMarkdown>
+        <div className="text-sm text-gray-400"> Alignment Newsletter</div>
+      </div>
     </div>
   );
 };
@@ -96,36 +144,57 @@ const initialValues = {
 export default function Home({ items }) {
   const [values, setValues] = useState(initialValues);
   const [results, setResults] = useState([]);
+  const [selected, setSelected] = useState(null);
+  const foundElement =
+    selected &&
+    items.find((e) => {
+      return e.id == selected;
+    });
 
   let fuse = new Fuse(items, opts);
   let onChangeQuery = (query) => {
-    console.log("Chanigng queyr", query);
     setValues({ ...values, query });
     const results = fuse.search(query);
     setResults(results);
   };
   return (
     <Layout key="index">
-      <div className="mb-8">
-        <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-2">
-          Big List of Papers
-        </h1>
+      <div className="grid grid-cols-3 gap-4">
+        <div className="">
+          <label className="block mb-4 pr-4">
+            <Form
+              values={values}
+              onChange={(result) => {
+                setValues(result);
+                const results = fuse.search(result.query);
+                setResults(results);
+              }}
+            />
+          </label>
+          <div className="almost-all-height1 overflow-auto pr-4">
+            <table>
+              <tbody>
+                {results.map((i) =>
+                  paperListView({
+                    ...i.item,
+                    onChangeQuery,
+                    score: i.score,
+                    index: i.refIndex,
+                    setSelected,
+                  })
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="col-span-2 almost-all-height overflow-auto pr-4 border-l-2 border-gray-200">
+          {foundElement &&
+            paperPageView({
+              ...foundElement,
+              onChangeQuery,
+            })}
+        </div>
       </div>
-      <label className="block mb-4">
-        <Form
-          values={values}
-          onChange={(result) => {
-            setValues(result);
-            const results = fuse.search(result.query);
-            setResults(results);
-          }}
-        />
-      </label>
-      {results
-        .slice(0, 10)
-        .map((i) =>
-          paper({ ...i.item, onChangeQuery, score: i.score, index: i.refIndex })
-        )}
     </Layout>
   );
 }

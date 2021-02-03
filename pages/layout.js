@@ -22,10 +22,19 @@ export default function Layout(props) {
                   />
                 </div>
                 <div className=" md:block">
-                  <div className="ml-10 flex items-baseline space-x-4">
+                  <div className="ml-2 flex items-baseline space-x-4">
                     <Link href={`/`} passHref>
                       <span className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                        Papers
+                        Search
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+                <div className=" md:block">
+                  <div className="ml-2 flex items-baseline space-x-4">
+                    <Link href={`/table`} passHref>
+                      <span className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
+                        Table
                       </span>
                     </Link>
                   </div>
@@ -35,8 +44,8 @@ export default function Layout(props) {
           </div>
         </nav>
         <main>
-          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="py-8">{props.children}</div>
+          <div className="">
+            <div className="pt-8 px-4">{props.children}</div>
           </div>
         </main>
       </div>
