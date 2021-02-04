@@ -6,7 +6,9 @@ import React, { useState } from "react";
 import Form from "../lib/form.js";
 
 let linkStyle =
-  "text-blue-500 hover:text-blue-700 visited:text-blue-700 hover:underline cursor-pointer";
+  "text-denim-600 hover:text-denim-800 visited:text-denim-800 hover:underline cursor-pointer";
+let personNameStyle =
+  "text-green-600 cursor-pointer hover:underline hover:text-green-700 mr-1";
 export async function getStaticProps() {
   const { papers } = await getPapers();
   return {
@@ -33,17 +35,21 @@ let paperListView = ({
   url,
 }) => {
   return (
-    <tr key={id} className="hover:bg-blue-200" onClick={() => setSelected(id)}>
+    <tr
+      key={id}
+      className="hover:bg-denim-100 cursor-pointer"
+      onClick={() => setSelected(id)}
+    >
       <td className="px-2 py-2">
         <div>
           <div className="">{title}</div>
-          <div className="text-green-500">
+          <div>
             {author
               .split(";")
               .slice(0, 2)
               .map((item) => (
                 <span
-                  className="mr-1 cursor-pointer"
+                  className={personNameStyle}
                   onClick={() => onChangeQuery(item)}
                 >
                   {item}
@@ -72,52 +78,61 @@ let paperPageView = ({
   onChangeQuery,
   url,
 }) => {
+  let tagCss = (title) =>
+    title && (
+      <span
+        className="mr-4 cursor-pointer hover:text-gray-800 hover:underline"
+        onClick={() => onChangeQuery(title)}
+      >
+        {title}
+      </span>
+    );
   return (
-    <div key={id} className="container mx-auto pt-8">
-      <h2 className="text-xl text-blue-800 underline pb-4">
+    <div key={id} className="container mx-auto pt-4">
+      <div className="text-sm text-gray-500 pb-4">
+        {tagCss(publicationTitle)}
+        {manualTags.split(";").map((item) => tagCss(item))}
+        {tagCss(itemType)}
+      </div>
+      <h2 className="text-xl text-denim-600 underline pb-1">
         <a href={url}>{title}</a>
       </h2>
-      <div className="pb-2 text-green-500">
+      <div className="pb-1">
         {author.split(";").map((item) => (
-          <span
-            className="mr-1 cursor-pointer"
-            onClick={() => onChangeQuery(item)}
-          >
+          <span className={personNameStyle} onClick={() => onChangeQuery(item)}>
             {item}
           </span>
         ))}
         <span className="text-gray-400">({publicationYear})</span>
       </div>
-      <div className="text-sm text-gray-400 pb-10">
-        <span
-          className="mr-2 cursor-pointer"
-          onClick={() => onChangeQuery(publicationTitle)}
-        >
-          {publicationTitle}
-        </span>
-        {manualTags.split(";").map((item) => (
-          <span
-            className="mr-2 cursor-pointer"
-            onClick={() => onChangeQuery(item)}
-          >
-            {item}
-          </span>
-        ))}{" "}
-        <span
-          className="mr-2 cursor-pointer"
-          onClick={() => onChangeQuery(itemType)}
-        >
-          {itemType}
-        </span>
+      <div className="text-gray-400 text-xs pb-2">
+        <a href={url}>{url}</a>
       </div>
-      <div className="prose p-2 bg-neutral-100 text-neutral-600 mt-4 mb-2 max-w-6xl bg-gray-50">
-        <ReactMarkdown>
-          {(abstractNote && cleanMarkdown(abstractNote)) || ""}
-        </ReactMarkdown>
+      {abstractNote && (
+        <div className="prose readable-text bg-neutral-100 text-neutral-600 mt-4 mb-5 max-w-6xl">
+          <ReactMarkdown>
+            {(abstractNote && cleanMarkdown(abstractNote)) || ""}
+          </ReactMarkdown>
+        </div>
+      )}
+
+      <div className="inline-flex bg-gray-100 px-2 py-1 rounded-sm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="flex w-5 mr-2 text-gray-300"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div className="flex text-sm text-gray-700"> Alignment Newsletter</div>
       </div>
-      <div className="prose p-2 bg-neutral-100 text-neutral-600 mt-4 mb-2 max-w-6xl bg-green-50">
+      <div className="prose readable-text p-2 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-6xl bg-green-100">
         <ReactMarkdown source={cleanMarkdown(shahBlurb)} />
-        <div className="text-sm text-gray-400"> Alignment Newsletter</div>
       </div>
     </div>
   );
@@ -159,8 +174,8 @@ export default function Home({ items }) {
   return (
     <Layout key="index">
       <div className="grid grid-cols-3 gap-4">
-        <div className="">
-          <label className="block mb-4 pr-4">
+        <div className="px-2 pt-2">
+          <label className="block mb-4">
             <Form
               values={values}
               onChange={(result) => {
@@ -171,7 +186,29 @@ export default function Home({ items }) {
             />
           </label>
           <div className="almost-all-height1 overflow-auto pr-4">
-            <table>
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="">
+                <tr>
+                  <th
+                    scope="col"
+                    class="px-2 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Title
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-2 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Date
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-2 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Distance
+                  </th>
+                </tr>
+              </thead>
               <tbody>
                 {results.map((i) =>
                   paperListView({
@@ -186,7 +223,7 @@ export default function Home({ items }) {
             </table>
           </div>
         </div>
-        <div className="col-span-2 almost-all-height overflow-auto pr-4 border-l-2 border-gray-200">
+        <div className="col-span-2 almost-all-height overflow-auto px-4 border-l-2 border-gray-200">
           {foundElement &&
             paperPageView({
               ...foundElement,

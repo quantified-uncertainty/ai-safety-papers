@@ -20,5 +20,9 @@ a {
 }
 
 .almost-all-height {
-  height: calc(100vh - 130px)
+  height: calc(100vh - 190px)
+}
+
+.readable-text {
+  font-family:warnock-pro,Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
 }
