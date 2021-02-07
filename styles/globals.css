@@ -15,13 +15,14 @@ a {
   box-sizing: border-box;
 }
 
-.almost-all-height1 {
-  height: calc(100vh - 180px)
+.search-left-section {
+  height: calc(100vh - 120px)
 }
 
-.almost-all-height {
-  height: calc(100vh - 190px)
+.search-right-section {
+  height: calc(100vh - 65px)
 }
 
-.readable-text {
+.airtable-embed-height {
+  height: calc(100vh - 200px)
 }
