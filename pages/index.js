@@ -5,14 +5,6 @@ import Fuse from "fuse.js";
 import React, { useState } from "react";
 import Form from "../lib/form.js";
 
-let linkStyle =
-  "text-denim-600 hover:text-denim-800 visited:text-denim-800 hover:underline cursor-pointer";
-let personNameStyle =
-  "text-green-600 cursor-pointer hover:underline hover:text-green-700 mr-1";
-let convertName = (name) => {
-  const name2 = name.split(",");
-  return name2.length === 2 ? `${name2[1]} ${name2[0]}` : name;
-};
 export async function getStaticProps() {
   const { papers } = await getPapers();
   return {
@@ -21,6 +13,21 @@ export async function getStaticProps() {
     },
   };
 }
+
+let authorsShow = (authors, onChangeQuery) => (
+  <>
+    {authors.map((item, index) => (
+      <span
+        className={
+          "text-green-600 cursor-pointer hover:underline hover:text-green-700 mr-1"
+        }
+        onClick={() => onChangeQuery(item)}
+      >
+        {index === authors.length - 1 ? item : item + ","}
+      </span>
+    ))}
+  </>
+);
 
 let paperListView = ({
   id,
@@ -48,14 +55,7 @@ let paperListView = ({
         <div>
           <div className="text-lg text-gray-800">{title}</div>
           <div className="text-sm">
-            {author.slice(0, 2).map((item) => (
-              <span
-                className={personNameStyle}
-                onClick={() => onChangeQuery(item)}
-              >
-                {item}
-              </span>
-            ))}
+            {authorsShow(author.slice(0, 2), onChangeQuery)}
           </div>
         </div>
       </td>
@@ -88,23 +88,13 @@ let paperPageView = ({
         {title}
       </div>
     );
-  console.log("YOYO", manualTags);
   return (
     <div key={id} className="container mx-auto pt-10 max-w-5xl">
       <h2 className="pb-2 text-gray-900 text-3xl">
         <a href={url}>{title}</a>
       </h2>
       <div className="pb-4">
-        {author.map((item) => {
-          return (
-            <span
-              className={personNameStyle}
-              onClick={() => onChangeQuery(item)}
-            >
-              {item}
-            </span>
-          );
-        })}
+        {authorsShow(author, onChangeQuery)}
         <span className="text-gray-400">({publicationYear})</span>
       </div>
       <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-3 pb-8">
