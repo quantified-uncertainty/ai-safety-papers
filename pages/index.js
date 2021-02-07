@@ -81,7 +81,7 @@ let paperPageView = ({
   let tagCss = (title) =>
     title && (
       <div
-        className="inline-block text-sm text-gray-500 cursor-pointer hover:text-gray-500 bg-gray-100 rounded-sm px-4 py-2 hover:bg-gray-300"
+        className="mt-2 flex items-center text-sm text-gray-500 cursor-pointer hover:text-gray-500 bg-gray-100 rounded-sm px-4 py-2 hover:bg-gray-300"
         onClick={() => onChangeQuery(title)}
       >
         {title}
@@ -100,7 +100,7 @@ let paperPageView = ({
         ))}
         <span className="text-gray-400">({publicationYear})</span>
       </div>
-      <div className="space-x-3 pb-8">
+      <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-3 pb-8">
         {tagCss(publicationTitle)}
         {manualTags.split(";").map((item) => tagCss(item))}
         {tagCss(itemType)}
@@ -109,30 +109,35 @@ let paperPageView = ({
         <a href={url}>{url}</a>
       </div>
       {abstractNote && (
-        <div className="prose readable-text text-gray-600 bg-neutral-100 text-neutral-600 mt-4 mb-5 max-w-5xl">
+        <div className="prose readable-text text-gray-700 bg-neutral-100 text-neutral-600 mt-4 mb-5 max-w-5xl">
           <ReactMarkdown>
             {(abstractNote && cleanMarkdown(abstractNote)) || ""}
           </ReactMarkdown>
         </div>
       )}
 
-      <div className="inline-flex bg-gray-100 px-2 py-1 rounded-sm">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="flex w-5 mr-2 text-gray-300"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7"
-            clip-rule="evenodd"
-          />
-        </svg>
-        <div className="flex text-sm text-gray-700"> Alignment Newsletter</div>
-      </div>
-      <div className="prose readable-text p-2 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-6xl bg-green-100">
-        <ReactMarkdown source={cleanMarkdown(shahBlurb)} />
+      <div className="bg-gray-50 border border-gray-200 rounded-md">
+        <div className="border-b border-gray-200 px-4 py-3 flex items-center text-gray-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="flex-shrink-0 w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <div className="flex-1 ml-2 w-0 text-sm font-bold">
+            {" "}
+            Alignment Newsletter
+          </div>
+        </div>
+        <div className="prose readable-text p-4 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
+          <ReactMarkdown source={cleanMarkdown(shahBlurb)} />
+        </div>
       </div>
     </div>
   );
@@ -191,19 +196,19 @@ export default function Home({ items }) {
                 <tr>
                   <th
                     scope="col"
-                    class="px-4 py-1 text-left text-regular font-light text-gray-400"
+                    className="px-4 py-1 text-left text-regular font-light text-gray-400"
                   >
                     Title
                   </th>
                   <th
                     scope="col"
-                    class="px-2 py-1 text-left text-regular font-light text-gray-400"
+                    className="px-2 py-1 text-left text-regular font-light text-gray-400"
                   >
                     Date
                   </th>
                   <th
                     scope="col"
-                    class="px-2 py-1 text-left text-regular font-light text-gray-400"
+                    className="px-2 py-1 text-left text-regular font-light text-gray-400"
                   >
                     Distance
                   </th>
