@@ -37,13 +37,13 @@ let paperListView = ({
   return (
     <tr
       key={id}
-      className="hover:bg-denim-100 cursor-pointer"
+      className="hover:bg-denim-100 cursor-pointer border-b border-gray-300"
       onClick={() => setSelected(id)}
     >
-      <td className="px-2 py-2">
+      <td className="px-4 py-4">
         <div>
-          <div className="">{title}</div>
-          <div>
+          <div className="text-lg text-gray-800">{title}</div>
+          <div className="text-sm">
             {author
               .split(";")
               .slice(0, 2)
@@ -58,7 +58,7 @@ let paperListView = ({
           </div>
         </div>
       </td>
-      <td className="px-2 text-gray-600">{publicationYear}</td>
+      <td className="px-2 text-gray-400">{publicationYear}</td>
       <td className="px-2 text-gray-400">{score.toFixed(2)}</td>
     </tr>
   );
@@ -80,24 +80,19 @@ let paperPageView = ({
 }) => {
   let tagCss = (title) =>
     title && (
-      <span
-        className="mr-4 cursor-pointer hover:text-gray-800 hover:underline"
+      <div
+        className="inline-block text-sm text-gray-500 cursor-pointer hover:text-gray-500 bg-gray-100 rounded-sm px-4 py-2 hover:bg-gray-300"
         onClick={() => onChangeQuery(title)}
       >
         {title}
-      </span>
+      </div>
     );
   return (
-    <div key={id} className="container mx-auto pt-4">
-      <div className="text-sm text-gray-500 pb-4">
-        {tagCss(publicationTitle)}
-        {manualTags.split(";").map((item) => tagCss(item))}
-        {tagCss(itemType)}
-      </div>
-      <h2 className="text-xl text-denim-600 underline pb-1">
+    <div key={id} className="container mx-auto pt-10 max-w-5xl">
+      <h2 className="pb-2 text-gray-900 text-3xl">
         <a href={url}>{title}</a>
       </h2>
-      <div className="pb-1">
+      <div className="pb-4">
         {author.split(";").map((item) => (
           <span className={personNameStyle} onClick={() => onChangeQuery(item)}>
             {item}
@@ -105,11 +100,16 @@ let paperPageView = ({
         ))}
         <span className="text-gray-400">({publicationYear})</span>
       </div>
-      <div className="text-gray-400 text-xs pb-2">
+      <div className="space-x-3 pb-8">
+        {tagCss(publicationTitle)}
+        {manualTags.split(";").map((item) => tagCss(item))}
+        {tagCss(itemType)}
+      </div>
+      <div className="text-gray-400 pb-2 italic">
         <a href={url}>{url}</a>
       </div>
       {abstractNote && (
-        <div className="prose readable-text bg-neutral-100 text-neutral-600 mt-4 mb-5 max-w-6xl">
+        <div className="prose readable-text text-gray-600 bg-neutral-100 text-neutral-600 mt-4 mb-5 max-w-5xl">
           <ReactMarkdown>
             {(abstractNote && cleanMarkdown(abstractNote)) || ""}
           </ReactMarkdown>
@@ -173,9 +173,9 @@ export default function Home({ items }) {
   };
   return (
     <Layout key="index">
-      <div className="grid grid-cols-3 gap-4">
-        <div className="px-2 pt-2">
-          <label className="block mb-4">
+      <div className="grid grid-cols-3">
+        <div className="pt-2 bg-gray-50">
+          <label className="block mb-4 px-2">
             <Form
               values={values}
               onChange={(result) => {
@@ -185,25 +185,25 @@ export default function Home({ items }) {
               }}
             />
           </label>
-          <div className="almost-all-height1 overflow-auto pr-4">
+          <div className="almost-all-height1 overflow-auto">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="">
                 <tr>
                   <th
                     scope="col"
-                    class="px-2 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-4 py-1 text-left text-regular font-light text-gray-400"
                   >
                     Title
                   </th>
                   <th
                     scope="col"
-                    class="px-2 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-2 py-1 text-left text-regular font-light text-gray-400"
                   >
                     Date
                   </th>
                   <th
                     scope="col"
-                    class="px-2 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-2 py-1 text-left text-regular font-light text-gray-400"
                   >
                     Distance
                   </th>
