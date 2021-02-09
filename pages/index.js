@@ -2,7 +2,8 @@ import { getPapers } from "../lib/airtablegraph.js";
 import Layout from "./layout.js";
 import ReactMarkdown from "react-markdown";
 import Fuse from "fuse.js";
-import React, { useState } from "react";
+import React, { useState, useEffect, useReducer } from "react";
+import { useHotkeys } from "react-hotkeys-hook";
 import Form from "../lib/form.js";
 
 export async function getStaticProps() {
@@ -12,6 +13,19 @@ export async function getStaticProps() {
       items: papers,
     },
   };
+}
+
+// Hook
+// https://www.caktusgroup.com/blog/2020/07/01/usekeypress-hook-react/
+
+function useKeypress(key, action) {
+  useEffect(() => {
+    function onKeyup(e) {
+      if (e.key === key) action();
+    }
+    window.addEventListener("keyup", onKeyup);
+    return () => window.removeEventListener("keyup", onKeyup);
+  }, []);
 }
 
 let authorsShow = (authors, onChangeQuery) => (
@@ -43,13 +57,18 @@ let paperListView = ({
   onChangeQuery,
   setSelected,
   index,
+  isSelected,
   url,
 }) => {
   return (
     <tr
       key={id}
-      className="hover:bg-denim-100 cursor-pointer border-b border-gray-300"
-      onClick={() => setSelected(id)}
+      className={`hover:bg-denim-100 cursor-pointer border-b border-gray-300 ${
+        isSelected ? "bg-denim-100" : ""
+      }`}
+      onClick={(e) => {
+        setSelected();
+      }}
     >
       <td className="px-4 py-4">
         <div>
@@ -145,7 +164,7 @@ const opts = {
   keys: ["title", "author", "abstractNote", "publicationTitle", "manualTags"],
 };
 
-const initialValues = {
+const initialQuery = {
   query: "",
   typeBlogPost: true,
   typeManuscript: true,
@@ -157,21 +176,97 @@ const initialValues = {
 // TODO: use this for search:
 // https://github.com/krisk/Fuse/search?q=%24and
 
-export default function Home({ items }) {
-  const [values, setValues] = useState(initialValues);
-  const [results, setResults] = useState([]);
-  const [selected, setSelected] = useState(null);
-  const foundElement =
-    selected &&
-    items.find((e) => {
-      return e.id == selected;
-    });
+const initialState = (items) => ({
+  query: "",
+  results: [],
+  selectedId: false,
+  selectedIndex: false,
+  selectedResult: false,
+  fuse: new Fuse(items, opts),
+});
 
-  let fuse = new Fuse(items, opts);
+let decrement = (selectedIndex) => {
+  switch (selectedIndex) {
+    case false:
+      return false;
+    case 0:
+      return false;
+    default:
+      return selectedIndex - 1;
+  }
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "down": {
+      const selectedIndex =
+        state.selectedIndex === false ? 0 : state.selectedIndex + 1;
+      return {
+        ...state,
+        selectedIndex,
+        selectedResult: state.results[selectedIndex].item,
+      };
+    }
+    case "setSelectedId":
+      return {
+        ...state,
+        selectedId: action.id,
+        selectedIndex: state.results.findIndex((e) => {
+          return e.item.id == action.id;
+        }),
+        selectedResult: state.results.find((e) => {
+          return e.item.id == action.id;
+        }).item,
+      };
+    case "selectFirstIndex": {
+      if (state.results.length > 0) {
+        return {
+          ...state,
+          selectedIndex: 0,
+          selectedResult: state.results[0].item,
+        };
+      } else {
+        return state;
+      }
+    }
+    case "up": {
+      const selectedIndex = decrement(state.selectedIndex);
+      state.selectedIndex === false || state.selectedIndex === -1
+        ? -1
+        : state.selectedIndex - 1;
+      return {
+        ...state,
+        selectedIndex,
+        selectedResult:
+          state.results[selectedIndex] && state.results[selectedIndex].item,
+      };
+    }
+    case "query":
+      const results = state.fuse.search(action.query);
+      return { ...state, query: action.query, results, selectedIndex: false };
+    default:
+      throw new Error();
+  }
+}
+
+export default function Home({ items }) {
+  const [state, dispatch] = useReducer(reducer, initialState(items));
+
+  useHotkeys("down", (e) => {
+    e.preventDefault();
+    dispatch({ type: "down" });
+  });
+  useHotkeys("up", (e) => {
+    e.preventDefault();
+    dispatch({ type: "up" });
+  });
+  useHotkeys("o", (e) => {
+    e.preventDefault();
+    const win = window.open(state.selectedResult.url, "_blank");
+  });
+
   let onChangeQuery = (query) => {
-    setValues({ ...values, query });
-    const results = fuse.search(query);
-    setResults(results);
+    dispatch({ type: "query", query });
   };
   let emptyDescription = (
     <div className="flex h-screen">
@@ -201,15 +296,14 @@ export default function Home({ items }) {
         <div className="pt-2 bg-gray-50">
           <label className="block px-2">
             <Form
-              values={values}
-              onChange={(result) => {
-                setValues(result);
-                const results = fuse.search(result.query);
-                setResults(results);
+              query={state.query}
+              onChange={(query) => {
+                onChangeQuery(query);
               }}
+              onArrowDown={() => dispatch({ type: "selectFirstIndex" })}
             />
           </label>
-          {results.length > 0 && (
+          {state.results.length > 0 && (
             <div className="search-left-section overflow-auto pt-4">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="">
@@ -235,13 +329,15 @@ export default function Home({ items }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {results.map((i) =>
+                  {state.results.map((i, index) =>
                     paperListView({
                       ...i.item,
                       onChangeQuery,
                       score: i.score,
                       index: i.refIndex,
-                      setSelected,
+                      setSelected: () =>
+                        dispatch({ type: "setSelectedId", id: i.item.id }),
+                      isSelected: state.selectedIndex === index,
                     })
                   )}
                 </tbody>
@@ -250,9 +346,9 @@ export default function Home({ items }) {
           )}
         </div>
         <div className="col-span-2 search-right-section overflow-auto px-4 border-l-2 border-gray-200">
-          {foundElement
+          {state.selectedResult
             ? paperPageView({
-                ...foundElement,
+                ...state.selectedResult,
                 onChangeQuery,
               })
             : emptyDescription}

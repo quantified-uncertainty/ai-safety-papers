@@ -3,11 +3,9 @@ import Layout from "./layout.js";
 export default function Table() {
   return (
     <Layout key="index" page="table">
-      <div className="mt-8 mb-4 container mx-auto max-w-3xl">
-        <h1 className="text-xl font-bold text-gray-800 tracking-tight mb-2">
-          Table View
-        </h1>
-        <p className="text-gray-800">
+      <div className="mt-4 mb-4 p-4">
+        <h1 className="text-xl font-bold text-gray-600">Table View</h1>
+        <p className="text-gray-600">
           This is the complete Airtable table. You can use this to copy the CSV
           if you like. Note that it can take a few seconds to load.
         </p>

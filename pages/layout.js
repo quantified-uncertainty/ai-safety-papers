@@ -3,8 +3,8 @@ import Head from "next/head";
 
 export default function Layout(props) {
   const classNameSelected = (isSelected) =>
-    `text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-sm text-sm font-medium cursor-pointer ${
-      isSelected ? "bg-gray-900 hover:bg-gray-900" : ""
+    `text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-sm text-md font-medium cursor-pointer ${
+      isSelected ? "bg-gray-700 hover:bg-gray-900" : ""
     }`;
   return (
     <div>
@@ -14,16 +14,15 @@ export default function Layout(props) {
       </Head>
 
       <div>
-        <nav className="bg-gray-800">
-          <div className="px-4 sm:px-6 lg:px-8">
+        <nav className="header">
+          <div className="px-2">
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <img
-                    className="h-8 w-8"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                    alt="Workflow"
-                  />
+                <div className="flex-shrink-0"></div>
+                <div className="md:block flex items-baseline text-gray-100 font-medium text-xl mr-8 pl-2">
+                  <Link href={`/`} passHref>
+                    AI Safety Papers
+                  </Link>
                 </div>
                 <div className="md:block">
                   <div className="ml-2 flex items-baseline space-x-4">
