@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import { GiPapers } from "react-icons/gi";
 
 export default function Layout(props) {
   const classNameSelected = (isSelected) =>
@@ -19,9 +20,14 @@ export default function Layout(props) {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0"></div>
-                <div className="md:block flex items-baseline text-gray-100 font-medium text-xl mr-8 pl-2">
+                <div className="md:block flex items-baseline text-gray-100 font-medium text-xl mr-10 pl-2">
                   <Link href={`/`} passHref>
-                    AI Safety Papers
+                    <span className="flex items-center">
+                      <span className="mr-2">
+                        <GiPapers />
+                      </span>
+                      AI Safety Papers
+                    </span>
                   </Link>
                 </div>
                 <div className="md:block">

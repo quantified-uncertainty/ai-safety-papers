@@ -5,8 +5,6 @@ import Fuse from "fuse.js";
 import React, { useState, useEffect, useReducer } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import Form from "../lib/form.js";
-import { BsFilePost } from "react-icons/bs";
-import { HiDocument } from "react-icons/hi";
 import { AiFillStar } from "react-icons/ai";
 import { FaUniversity } from "react-icons/fa";
 import { ImBook } from "react-icons/im";
@@ -405,7 +403,7 @@ export default function Home({ items }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {state.results.slice(0, 40).map((i, index) => (
+                  {state.results.slice(0, 100).map((i, index) => (
                     <PaperListView
                       item={i.item}
                       score={i.score}
