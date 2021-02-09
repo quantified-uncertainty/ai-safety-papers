@@ -5,6 +5,12 @@ import Fuse from "fuse.js";
 import React, { useState, useEffect, useReducer } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import Form from "../lib/form.js";
+import { BsFilePost } from "react-icons/bs";
+import { HiDocument } from "react-icons/hi";
+import { FaUniversity } from "react-icons/fa";
+import { ImBook } from "react-icons/im";
+import { IoIosBook } from "react-icons/io";
+import { MdBookmark } from "react-icons/md";
 
 export async function getStaticProps() {
   const { papers } = await getPapers();
@@ -30,9 +36,20 @@ let authorsShow = (authors, onChangeQuery) => (
   </>
 );
 
+function documentIcon(item) {
+  switch (item) {
+    case "Blog Post":
+      return <MdBookmark />;
+    case "Book":
+      return <ImBook />;
+    default:
+      return <IoIosBook />;
+  }
+}
+
 function PaperListView(props) {
   const { id, item, score, onChangeQuery, setSelected, isSelected } = props;
-  const { title, author, publicationYear, citations } = item;
+  const { itemType, title, author, publicationYear, citations } = item;
   return (
     <tr
       key={id}
@@ -46,18 +63,23 @@ function PaperListView(props) {
       <td className="px-4 py-4">
         <div>
           <div className="text-lg text-gray-800">{title}</div>
-          <div className="text-sm">
-            {authorsShow(author.slice(0, 2), onChangeQuery)}
+          <div className="inline-flex items-center">
+            <span className="text-gray-400 text-md mr-2">
+              {documentIcon(itemType)}
+            </span>
+            <span className="text-sm">
+              {authorsShow(author.slice(0, 2), onChangeQuery)}
+            </span>
           </div>
         </div>
       </td>
       <td className="px-2 text-gray-400">{publicationYear}</td>
-      <td className="px-2 text-gray-400">{score.toFixed(2)}</td>
       <td className="px-2 text-gray-400">
         {citations === "N/A" || citations === "N/F" || citations === "0"
           ? ""
           : citations}
       </td>
+      <td className="px-2 text-gray-400">{(score * 100).toFixed(0)}</td>
     </tr>
   );
 }
@@ -78,12 +100,13 @@ let paperPageView = ({
   onChangeQuery,
   url,
 }) => {
-  let tagCss = (title) =>
+  let tagCss = (icon, title) =>
     title && (
       <div
         className="mt-2 flex items-center text-sm text-gray-500 cursor-pointer hover:text-gray-500 bg-gray-100 rounded-sm px-4 py-2 hover:bg-gray-300"
         onClick={() => onChangeQuery(title)}
       >
+        {icon && <span className="inline-block text-md mr-2">{icon}</span>}
         {title}
       </div>
     );
@@ -97,10 +120,10 @@ let paperPageView = ({
         <span className="text-gray-400">({publicationYear})</span>
       </div>
       <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-3 pb-8">
-        {tagCss(publicationTitle)}
-        {orgs.map((item) => tagCss(item))}
-        {tagCss(itemType)}
-        {tagCss(safetyType)}
+        {tagCss(documentIcon(itemType), itemType)}
+        {orgs.map((item) => tagCss(<FaUniversity />, item))}
+        {tagCss(false, publicationTitle)}
+        {tagCss(false, safetyType)}
       </div>
       <div className="text-gray-400 pb-2 italic">
         <a href={url}>{url}</a>
@@ -342,13 +365,13 @@ export default function Home({ items }) {
                       scope="col"
                       className="px-2 py-1 text-left text-regular font-light text-gray-400"
                     >
-                      Distance
+                      Citations
                     </th>
                     <th
                       scope="col"
                       className="px-2 py-1 text-left text-regular font-light text-gray-400"
                     >
-                      Citations
+                      Distance
                     </th>
                   </tr>
                 </thead>
@@ -370,7 +393,7 @@ export default function Home({ items }) {
             </div>
           )}
         </div>
-        <div className="col-span-2 search-right-section overflow-auto px-4 border-l-2 border-gray-200">
+        <div className="col-span-2 search-right-section overflow-auto px-8 border-l-2 border-gray-200">
           {state.selectedResult
             ? paperPageView({
                 ...state.selectedResult,
