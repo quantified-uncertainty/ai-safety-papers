@@ -7,6 +7,7 @@ import { useHotkeys } from "react-hotkeys-hook";
 import Form from "../lib/form.js";
 import { BsFilePost } from "react-icons/bs";
 import { HiDocument } from "react-icons/hi";
+import { AiFillStar } from "react-icons/ai";
 import { FaUniversity } from "react-icons/fa";
 import { ImBook } from "react-icons/im";
 import { IoIosBook } from "react-icons/io";
@@ -49,7 +50,14 @@ function documentIcon(item) {
 
 function PaperListView(props) {
   const { id, item, score, onChangeQuery, setSelected, isSelected } = props;
-  const { itemType, title, author, publicationYear, citations } = item;
+  const {
+    itemType,
+    title,
+    author,
+    publicationYear,
+    citations,
+    anHighlightFlag,
+  } = item;
   return (
     <tr
       key={id}
@@ -64,10 +72,15 @@ function PaperListView(props) {
         <div>
           <div className="text-lg text-gray-800">{title}</div>
           <div className="inline-flex items-center">
-            <span className="text-gray-400 text-md mr-2">
+            {anHighlightFlag && (
+              <span className="text-yellow-400 text-md mr-1">
+                <AiFillStar />
+              </span>
+            )}
+            <span className="text-gray-400 text-md mr-1">
               {documentIcon(itemType)}
             </span>
-            <span className="text-sm">
+            <span className="text-sm ml-1">
               {authorsShow(author.slice(0, 2), onChangeQuery)}
             </span>
           </div>
@@ -90,6 +103,7 @@ let paperPageView = ({
   title,
   author,
   anBlurb,
+  anHighlightFlag,
   jeremyBlurb,
   publicationYear,
   orgs,
@@ -137,7 +151,7 @@ let paperPageView = ({
       )}
 
       {anBlurb && (
-        <div className="bg-gray-50 border border-gray-200 rounded-md">
+        <div className="bg-gray-50 border border-gray-200 rounded-md mb-6">
           <div className="border-b border-gray-200 px-4 py-3 flex items-center text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -156,6 +170,16 @@ let paperPageView = ({
               Alignment Newsletter
             </div>
           </div>
+          {anHighlightFlag && (
+            <div className="border-b border-gray-200 bg-yellow-50 px-4 pt-2 pb-1">
+              <span className="inline-flex items-center text-yellow-500">
+                <span className="text-yellow-500 text-md mr-2">
+                  <AiFillStar />
+                </span>
+                <span className="text-sm font-bold">Highlight</span>
+              </span>
+            </div>
+          )}
           <div className="prose p-4 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
             <ReactMarkdown source={cleanMarkdown(anBlurb)} />
           </div>
@@ -283,7 +307,9 @@ function reducer(state, action) {
       };
     }
     case "query":
-      const results = state.fuse.search(action.query).slice(0, 40);
+      const results = state.fuse
+        .search(action.query)
+        .filter((r) => r.score < 0.6);
       return { ...state, query: action.query, results, selectedIndex: false };
     default:
       throw new Error();
@@ -345,7 +371,10 @@ export default function Home({ items }) {
             />
           </label>
           {state.results.length > 0 && (
-            <div className="search-left-section overflow-auto pt-4">
+            <div className="search-left-section overflow-auto pt-2">
+              <div className="text-sm text-gray-500 px-2 pt-1">
+                {`${state.results.length} results`}
+              </div>
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="">
                   <tr>
@@ -376,7 +405,7 @@ export default function Home({ items }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {state.results.map((i, index) => (
+                  {state.results.slice(0, 40).map((i, index) => (
                     <PaperListView
                       item={i.item}
                       score={i.score}
