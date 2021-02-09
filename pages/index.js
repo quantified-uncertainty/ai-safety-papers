@@ -15,19 +15,6 @@ export async function getStaticProps() {
   };
 }
 
-// Hook
-// https://www.caktusgroup.com/blog/2020/07/01/usekeypress-hook-react/
-
-function useKeypress(key, action) {
-  useEffect(() => {
-    function onKeyup(e) {
-      if (e.key === key) action();
-    }
-    window.addEventListener("keyup", onKeyup);
-    return () => window.removeEventListener("keyup", onKeyup);
-  }, []);
-}
-
 let authorsShow = (authors, onChangeQuery) => (
   <>
     {authors.map((item, index) => (
@@ -43,23 +30,9 @@ let authorsShow = (authors, onChangeQuery) => (
   </>
 );
 
-let paperListView = ({
-  id,
-  title,
-  author,
-  shahBlurb,
-  publicationYear,
-  manualTags,
-  publicationTitle,
-  abstractNote,
-  itemType,
-  score,
-  onChangeQuery,
-  setSelected,
-  index,
-  isSelected,
-  url,
-}) => {
+function PaperListView(props) {
+  const { id, item, score, onChangeQuery, setSelected, isSelected } = props;
+  const { title, author, publicationYear, citations } = item;
   return (
     <tr
       key={id}
@@ -80,21 +53,28 @@ let paperListView = ({
       </td>
       <td className="px-2 text-gray-400">{publicationYear}</td>
       <td className="px-2 text-gray-400">{score.toFixed(2)}</td>
+      <td className="px-2 text-gray-400">
+        {citations === "N/A" || citations === "N/F" || citations === "0"
+          ? ""
+          : citations}
+      </td>
     </tr>
   );
-};
+}
 
 let cleanMarkdown = (r) => r.replaceAll("\\", "");
 let paperPageView = ({
   id,
   title,
   author,
-  shahBlurb,
+  anBlurb,
+  jeremyBlurb,
   publicationYear,
-  manualTags,
+  orgs,
   publicationTitle,
   abstractNote,
   itemType,
+  safetyType,
   onChangeQuery,
   url,
 }) => {
@@ -118,8 +98,9 @@ let paperPageView = ({
       </div>
       <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-3 pb-8">
         {tagCss(publicationTitle)}
-        {manualTags.map((item) => tagCss(item))}
+        {orgs.map((item) => tagCss(item))}
         {tagCss(itemType)}
+        {tagCss(safetyType)}
       </div>
       <div className="text-gray-400 pb-2 italic">
         <a href={url}>{url}</a>
@@ -132,36 +113,60 @@ let paperPageView = ({
         </div>
       )}
 
-      <div className="bg-gray-50 border border-gray-200 rounded-md">
-        <div className="border-b border-gray-200 px-4 py-3 flex items-center text-gray-700">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="flex-shrink-0 w-5 h-5"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <div className="flex-1 ml-2 w-0 text-sm font-bold">
-            {" "}
-            Alignment Newsletter
+      {anBlurb && (
+        <div className="bg-gray-50 border border-gray-200 rounded-md">
+          <div className="border-b border-gray-200 px-4 py-3 flex items-center text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="flex-shrink-0 w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <div className="flex-1 ml-2 w-0 text-sm font-bold">
+              {" "}
+              Alignment Newsletter
+            </div>
+          </div>
+          <div className="prose p-4 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
+            <ReactMarkdown source={cleanMarkdown(anBlurb)} />
           </div>
         </div>
-        <div className="prose p-4 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
-          <ReactMarkdown source={cleanMarkdown(shahBlurb)} />
+      )}
+      {jeremyBlurb && (
+        <div className="bg-gray-50 border border-gray-200 rounded-md">
+          <div className="border-b border-gray-200 px-4 py-3 flex items-center text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="flex-shrink-0 w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <div className="flex-1 ml-2 w-0 text-sm font-bold">Jeremy</div>
+          </div>
+          <div className="prose p-4 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
+            <ReactMarkdown source={cleanMarkdown(jeremyBlurb)} />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
 
 const opts = {
   includeScore: true,
-  keys: ["title", "author", "abstractNote", "publicationTitle", "manualTags"],
+  keys: ["title", "author", "abstractNote", "publicationTitle", "orgs"],
 };
 
 const initialQuery = {
@@ -196,11 +201,24 @@ let decrement = (selectedIndex) => {
   }
 };
 
+let increment = (selectedIndex, length) => {
+  switch (selectedIndex) {
+    case false:
+      return 0;
+    case length - 1:
+      return selectedIndex;
+    default:
+      return selectedIndex + 1;
+  }
+};
+
 function reducer(state, action) {
   switch (action.type) {
     case "down": {
-      const selectedIndex =
-        state.selectedIndex === false ? 0 : state.selectedIndex + 1;
+      const selectedIndex = increment(
+        state.selectedIndex,
+        state.results.length
+      );
       return {
         ...state,
         selectedIndex,
@@ -242,7 +260,7 @@ function reducer(state, action) {
       };
     }
     case "query":
-      const results = state.fuse.search(action.query);
+      const results = state.fuse.search(action.query).slice(0, 40);
       return { ...state, query: action.query, results, selectedIndex: false };
     default:
       throw new Error();
@@ -326,20 +344,27 @@ export default function Home({ items }) {
                     >
                       Distance
                     </th>
+                    <th
+                      scope="col"
+                      className="px-2 py-1 text-left text-regular font-light text-gray-400"
+                    >
+                      Citations
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  {state.results.map((i, index) =>
-                    paperListView({
-                      ...i.item,
-                      onChangeQuery,
-                      score: i.score,
-                      index: i.refIndex,
-                      setSelected: () =>
-                        dispatch({ type: "setSelectedId", id: i.item.id }),
-                      isSelected: state.selectedIndex === index,
-                    })
-                  )}
+                  {state.results.map((i, index) => (
+                    <PaperListView
+                      item={i.item}
+                      score={i.score}
+                      index={i.refIndex}
+                      onChangeQuery
+                      setSelected={() =>
+                        dispatch({ type: "setSelectedId", id: i.item.id })
+                      }
+                      isSelected={state.selectedIndex === index}
+                    />
+                  ))}
                 </tbody>
               </table>
             </div>
