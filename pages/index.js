@@ -326,10 +326,12 @@ function reducer(state, action) {
       };
     }
     case "query":
+      return { ...state, query: action.query, selectedIndex: false };
+    case "updateSearch":
       const results = state.fuse
-        .search(action.query)
+        .search(state.query)
         .filter((r) => r.score < 0.6);
-      return { ...state, query: action.query, results, selectedIndex: false };
+      return { ...state, results };
     default:
       throw new Error();
   }
@@ -355,7 +357,18 @@ export default function Home({ items }) {
     dispatch({ type: "query", query });
   };
 
-  const debouncedChangeQuery = useRef(debounce(onChangeQuery, 100)).current;
+  let onUpdateSearch = () => {
+    dispatch({ type: "updateSearch" });
+  };
+
+  const debouncedUpdateSearch = useRef(debounce(onUpdateSearch, 120)).current;
+  const debouncedUpdateSearchNow = useRef(debounce(onUpdateSearch, 1)).current;
+
+  let onChangeQueryAndSearch = (query) => {
+    dispatch({ type: "query", query });
+    debouncedUpdateSearchNow();
+  };
+
   let emptyDescription = (
     <div className="flex h-screen">
       <div className="mx-auto max-w-xs text-gray-500 text-center m-auto">
@@ -386,7 +399,8 @@ export default function Home({ items }) {
             <Form
               query={state.query}
               onChange={(query) => {
-                debouncedChangeQuery(query);
+                onChangeQuery(query);
+                debouncedUpdateSearch();
               }}
               onArrowDown={() => dispatch({ type: "selectFirstIndex" })}
             />
@@ -431,7 +445,7 @@ export default function Home({ items }) {
                       item={i.item}
                       score={i.score}
                       index={i.refIndex}
-                      onChangeQuery
+                      onChangeQuery={onChangeQueryAndSearch}
                       setSelected={() =>
                         dispatch({ type: "setSelectedId", id: i.item.id })
                       }
@@ -447,7 +461,7 @@ export default function Home({ items }) {
           {state.selectedResult
             ? paperPageView({
                 ...state.selectedResult,
-                onChangeQuery,
+                onChangeQuery: onChangeQueryAndSearch,
               })
             : emptyDescription}
         </div>
