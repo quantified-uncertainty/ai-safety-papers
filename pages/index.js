@@ -2,7 +2,7 @@ import { getPapers } from "../lib/airtablegraph.js";
 import Layout from "./layout.js";
 import ReactMarkdown from "react-markdown";
 import Fuse from "fuse.js";
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect, useReducer, useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import Form from "../lib/form.js";
 import { AiFillStar } from "react-icons/ai";
@@ -10,6 +10,7 @@ import { FaUniversity } from "react-icons/fa";
 import { ImBook } from "react-icons/im";
 import { IoIosBook } from "react-icons/io";
 import { MdBookmark } from "react-icons/md";
+import { debounce } from "lodash";
 
 export async function getStaticProps() {
   const { papers } = await getPapers();
@@ -353,6 +354,8 @@ export default function Home({ items }) {
   let onChangeQuery = (query) => {
     dispatch({ type: "query", query });
   };
+
+  const debouncedChangeQuery = useRef(debounce(onChangeQuery, 100)).current;
   let emptyDescription = (
     <div className="flex h-screen">
       <div className="mx-auto max-w-xs text-gray-500 text-center m-auto">
@@ -383,7 +386,7 @@ export default function Home({ items }) {
             <Form
               query={state.query}
               onChange={(query) => {
-                onChangeQuery(query);
+                debouncedChangeQuery(query);
               }}
               onArrowDown={() => dispatch({ type: "selectFirstIndex" })}
             />

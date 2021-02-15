@@ -17,6 +17,7 @@
     "fuse.js": "^6.4.6",
     "graphql": "^15.4.0",
     "graphql-request": "^3.4.0",
+    "lodash": "^4.17.20",
     "next": "10.0.4",
     "postcss": "^8.2.5",
     "postcss-flexbugs-fixes": "^5.0.2",
