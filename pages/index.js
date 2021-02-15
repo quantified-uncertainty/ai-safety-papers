@@ -198,7 +198,9 @@ let paperPageView = ({
                 clip-rule="evenodd"
               />
             </svg>
-            <div className="flex-1 ml-2 w-0 text-sm font-bold">Jeremy</div>
+            <div className="flex-1 ml-2 w-0 text-sm font-bold">
+              Jérémy Perret
+            </div>
           </div>
           <div className="prose p-4 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
             <ReactMarkdown source={cleanMarkdown(jeremyBlurb)} />
@@ -211,7 +213,16 @@ let paperPageView = ({
 
 const opts = {
   includeScore: true,
-  keys: ["title", "author", "abstractNote", "publicationTitle", "orgs"],
+  keys: [
+    "title",
+    "author",
+    "itemType",
+    "url",
+    "abstractNote",
+    "publicationTitle",
+    "orgs",
+    "anBlurb",
+  ],
 };
 
 const initialQuery = {
