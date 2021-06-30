@@ -10,6 +10,7 @@ import { ImBook } from "react-icons/im";
 import { IoIosBook } from "react-icons/io";
 import { MdBookmark } from "react-icons/md";
 import { debounce } from "lodash";
+import { markdownRenderer } from "../lib/markdownRenderer.js";
 import markdownIt from "markdown-it";
 import markdownItMathjax from "../lib/markdown-mathjax";
 import { markdownItSub } from "markdown-it-sub";
@@ -23,30 +24,6 @@ export async function getStaticProps() {
     },
   };
 }
-
-// Markdown renderer used by components
-// Markdown renderer
-const mdi = markdownIt({ linkify: true });
-mdi.use(markdownItMathjax());
-var defaultRender = mdi.renderer.rules.link_open || function(tokens, idx, options, env, self) {
-  return self.renderToken(tokens, idx, options);
-};
-
-mdi.renderer.rules.link_open = function (tokens, idx, options, env, self) {
-  // Taken from: https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md#renderer (https://github.com/markdown-it/markdown-it/issues/140)
-  // Makes links open in a new page.
-  // If you are sure other plugins can't add `target` - drop check below
-  var aIndex = tokens[idx].attrIndex('target');
-
-  if (aIndex < 0) {
-    tokens[idx].attrPush(['target', '_blank']); // add new attribute
-  } else {
-    tokens[idx].attrs[aIndex][1] = '_blank';    // replace value of existing attr
-  }
-
-  // pass token to default renderer.
-  return defaultRender(tokens, idx, options, env, self);
-};
 
 // Various React components
 
@@ -174,7 +151,7 @@ let blurb = ({ sourceName, sourceLink, isStarred, blurb }) => {
         </div>
       )}
       <div className="prose p-4 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
-        <div dangerouslySetInnerHTML={{ __html: mdi.render(blurb) }} />
+        <div dangerouslySetInnerHTML={{ __html: markdownRenderer(blurb) }} />
       </div>
     </div>
   );
@@ -229,7 +206,7 @@ let paperPageView = ({
         <div className="prose text-gray-700 bg-neutral-100 text-neutral-600 mt-4 mb-5 max-w-5xl">
           {abstractNote && (
             <div
-              dangerouslySetInnerHTML={{ __html: mdi.render(abstractNote) }}
+              dangerouslySetInnerHTML={{ __html: markdownRenderer(abstractNote) }}
             />
           )}
         </div>
