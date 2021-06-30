@@ -11,8 +11,7 @@ This is a search tool for AI safety papers which we hope will be useful to resea
 - Besides the search function, there is also a table view, which can be browsed directly or downloaded as a csv.
 
 ## Who is behind this?
-[person] and [person] did most of the database work. [Maybe say something about where the data comes from, presumably from Rohin's database plus other places?]. Ozzie Gooen was the programming lead, both for the backend (a Graphql database built on top of an Airtable), and the webpage itself, built using Next.js and Tailwind CSS."
-
+[person] and [person] did most of the database work. [Maybe say something about where the data comes from, presumably from Rohin's database plus other places?]. Ozzie Gooen was the programming lead, both for the backend (a Graphql database built on top of an Airtable), and the webpage itself, built using Next.js and Tailwind CSS.
 `;
 
 export default function About() {
