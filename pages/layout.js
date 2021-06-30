@@ -57,9 +57,21 @@ export default function Layout(props) {
                     <a
                       href="https://github.com/QURIresearch/ai-safety-papers/discussions"
                       className={classNameSelected(false)}
+                      target="_blank"
                     >
                       Feedback
                     </a>
+                  </div>
+                </div>
+                <div className="md:block">
+                  <div className="ml-2 flex items-baseline space-x-4">
+                    <Link href={`/about`} passHref>
+                      <span
+                        className={classNameSelected(props.page === "about")}
+                      >
+                        About
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
