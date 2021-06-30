@@ -11,7 +11,7 @@ export default function Layout(props) {
     <div>
       <Head>
         <title>AI Safety Papers</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/papers.png" />
       </Head>
 
       <div>
