@@ -14,9 +14,7 @@ import markdownIt from "markdown-it";
 import markdownItMathjax from "../lib/markdown-mathjax";
 import { markdownItSub } from "markdown-it-sub";
 
-const mdi = markdownIt({ linkify: true });
-mdi.use(markdownItMathjax());
-
+// Get Props
 export async function getStaticProps() {
   const { papers } = await getPapers();
   return {
@@ -25,6 +23,32 @@ export async function getStaticProps() {
     },
   };
 }
+
+// Markdown renderer used by components
+// Markdown renderer
+const mdi = markdownIt({ linkify: true });
+mdi.use(markdownItMathjax());
+var defaultRender = mdi.renderer.rules.link_open || function(tokens, idx, options, env, self) {
+  return self.renderToken(tokens, idx, options);
+};
+
+mdi.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+  // Taken from: https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md#renderer (https://github.com/markdown-it/markdown-it/issues/140)
+  // Makes links open in a new page.
+  // If you are sure other plugins can't add `target` - drop check below
+  var aIndex = tokens[idx].attrIndex('target');
+
+  if (aIndex < 0) {
+    tokens[idx].attrPush(['target', '_blank']); // add new attribute
+  } else {
+    tokens[idx].attrs[aIndex][1] = '_blank';    // replace value of existing attr
+  }
+
+  // pass token to default renderer.
+  return defaultRender(tokens, idx, options, env, self);
+};
+
+// Various React components
 
 let authorsShow = (authors, onChangeQuery) => (
   <>
@@ -230,6 +254,8 @@ let paperPageView = ({
   );
 };
 
+// Inner logic functions
+
 const opts = {
   includeScore: true,
   keys: [
@@ -336,6 +362,8 @@ function reducer(state, action) {
       throw new Error();
   }
 }
+
+// Main React component
 
 export default function Home({ items }) {
   const [state, dispatch] = useReducer(reducer, initialState(items));
