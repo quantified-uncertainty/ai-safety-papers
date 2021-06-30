@@ -11,7 +11,7 @@ import { IoIosBook } from "react-icons/io";
 import { MdBookmark } from "react-icons/md";
 import { debounce } from "lodash";
 import markdownIt from "markdown-it";
-import markdownItMathjax from "./lib/markdown-mathjax";
+import markdownItMathjax from "../lib/markdown-mathjax";
 import { markdownItSub } from "markdown-it-sub";
 
 const mdi = markdownIt({ linkify: true });
