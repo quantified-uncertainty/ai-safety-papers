@@ -13,8 +13,7 @@ export default function Table() {
       <iframe
         className="airtable-embed airtable-embed-height"
         src="https://airtable.com/embed/shreirSeEO5UxpwEO?backgroundColor=gray"
-        frameborder="0"
-        onmousewheel=""
+        frameBorder="0"
         width="100%"
         height="500px"
       ></iframe>
