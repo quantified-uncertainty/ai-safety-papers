@@ -20,7 +20,7 @@ export default function Layout(props) {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0"></div>
-                <div className="md:block flex items-baseline text-gray-100 font-medium text-xl mr-10 pl-2">
+                <div className="md:block flex items-baseline text-gray-100 hover:text-gray-300 font-medium text-xl mr-10 pl-2 cursor-pointer">
                   <Link href={`/`} passHref>
                     <span className="flex items-center">
                       <span className="mr-2">
