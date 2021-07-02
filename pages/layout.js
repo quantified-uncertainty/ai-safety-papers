@@ -43,6 +43,17 @@ export default function Layout(props) {
                 </div>
                 <div className="md:block">
                   <div className="ml-2 flex items-baseline space-x-4">
+                    <Link href={`/about`} passHref>
+                      <span
+                        className={classNameSelected(props.page === "about")}
+                      >
+                        About
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+                <div className="md:block">
+                  <div className="ml-2 flex items-baseline space-x-4">
                     <Link href={`/table`} passHref>
                       <span
                         className={classNameSelected(props.page === "table")}
@@ -61,17 +72,6 @@ export default function Layout(props) {
                     >
                       Feedback
                     </a>
-                  </div>
-                </div>
-                <div className="md:block">
-                  <div className="ml-2 flex items-baseline space-x-4">
-                    <Link href={`/about`} passHref>
-                      <span
-                        className={classNameSelected(props.page === "about")}
-                      >
-                        About
-                      </span>
-                    </Link>
                   </div>
                 </div>
               </div>
