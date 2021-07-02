@@ -11,9 +11,6 @@ import { IoIosBook } from "react-icons/io";
 import { MdBookmark } from "react-icons/md";
 import { debounce } from "lodash";
 import { markdownRenderer } from "../lib/markdownRenderer.js";
-import markdownIt from "markdown-it";
-import markdownItMathjax from "../lib/markdown-mathjax";
-import { markdownItSub } from "markdown-it-sub";
 
 // Get Props
 export async function getStaticProps() {
@@ -124,6 +121,7 @@ let blurb = ({ sourceName, sourceLink, isStarred, blurb }) => {
         <a
           href={sourceLink}
           className="justify-end flex items-center text-gray-400 hover:underline hover:text-gray-500"
+          target="_blank"
         >
           <div className="flex-1 mr-1 text-sm">Link</div>
           <svg
@@ -157,7 +155,6 @@ let blurb = ({ sourceName, sourceLink, isStarred, blurb }) => {
   );
 };
 
-let cleanMarkdown = (r) => r.replaceAll("\\", "");
 let paperPageView = ({
   id,
   title,
@@ -187,7 +184,7 @@ let paperPageView = ({
   return (
     <div key={id} className="container mx-auto pt-10 max-w-5xl">
       <h2 className="pb-2 text-gray-900 text-3xl">
-        <a href={url}>{title}</a>
+        <a href={url} target="_blank">{title}</a>
       </h2>
       <div className="pb-4">
         {authorsShow(author, onChangeQuery)}
@@ -200,7 +197,7 @@ let paperPageView = ({
         {tagCss(false, safetyType)}
       </div>
       <div className="text-gray-400 pb-2 italic">
-        <a href={url}>{url}</a>
+        <a href={url} target="_blank">{url}</a>
       </div>
       {abstractNote && (
         <div className="prose text-gray-700 bg-neutral-100 text-neutral-600 mt-4 mb-5 max-w-5xl">

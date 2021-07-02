@@ -11,7 +11,7 @@ export default function Layout(props) {
     <div>
       <Head>
         <title>AI Safety Papers</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/papers.png" />
       </Head>
 
       <div>
@@ -20,7 +20,7 @@ export default function Layout(props) {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0"></div>
-                <div className="md:block flex items-baseline text-gray-100 font-medium text-xl mr-10 pl-2">
+                <div className="md:block flex items-baseline text-gray-100 hover:text-gray-300 font-medium text-xl mr-10 pl-2 cursor-pointer">
                   <Link href={`/`} passHref>
                     <span className="flex items-center">
                       <span className="mr-2">
@@ -43,6 +43,17 @@ export default function Layout(props) {
                 </div>
                 <div className="md:block">
                   <div className="ml-2 flex items-baseline space-x-4">
+                    <Link href={`/about`} passHref>
+                      <span
+                        className={classNameSelected(props.page === "about")}
+                      >
+                        About
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+                <div className="md:block">
+                  <div className="ml-2 flex items-baseline space-x-4">
                     <Link href={`/table`} passHref>
                       <span
                         className={classNameSelected(props.page === "table")}
@@ -57,6 +68,7 @@ export default function Layout(props) {
                     <a
                       href="https://github.com/QURIresearch/ai-safety-papers/discussions"
                       className={classNameSelected(false)}
+                      target="_blank"
                     >
                       Feedback
                     </a>
