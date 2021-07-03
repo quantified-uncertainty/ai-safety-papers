@@ -7,12 +7,12 @@ export default function Table() {
         <h1 className="text-xl font-bold text-gray-600">Table View</h1>
         <p className="text-gray-600">
           This is the complete Airtable table. You can use this to copy the CSV
-          if you like. Note that it can take a few seconds to load.
+          if you like. Note that it can take a few seconds to load. Also note that in Database Browser Bare this section displays nothing / an error
         </p>
       </div>
       <iframe
         className="airtable-embed airtable-embed-height"
-        src="https://airtable.com/embed/shreirSeEO5UxpwEO?backgroundColor=gray"
+        src="https://airtable.com/embed/shr<slug>?backgroundColor=gray"
         frameBorder="0"
         onmousewheel=""
         width="100%"

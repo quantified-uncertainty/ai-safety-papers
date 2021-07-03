@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Head from "next/head";
-import { GiPapers } from "react-icons/gi";
+import { GiPaperClip } from "react-icons/gi";
 
-const appName = "AI Safety Papers"
-const iconLocation = "/papers.png"
-const Icon = GiPapers
+
+const appName = "Database Browsers Bare"
+const iconLocation = "/paperclip.png"
+const Icon = GiPaperClip
 const feedbackPage = "https://github.com/QURIresearch/ai-safety-papers/discussions"
 
 export default function Layout(props) {

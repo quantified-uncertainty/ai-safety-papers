@@ -3,24 +3,24 @@ import { markdownRenderer } from "../lib/markdownRenderer.js";
 import Layout from "./layout.js";
 
 let aboutMarkdownText = `## About
-AI Safety Papers is a website search tool for academic papers and blog posts relevant to AI Safety. It shows the number of citations for papers, and blurbs by select authors for select posts. It's created around a [corresponding database](https://www.lesswrong.com/posts/4DegbDJJiMX2b3EKm/tai-safety-bibliographic-database). We plan to update the database every few months. The Github repository for the website is at https://github.com/QURIresearch/ai-safety-papers.
+[...] is a website search tool for [...] and [...] relevant to [...]. It shows [...]. It's created around a [corresponding database](...). We plan to update the database every [...]. The Github repository for the website is at [...](...).
+
+Database Browser Bare is a template web search tool, created with the purpose. It was created by simplifying [QURIresearch/ai-safety-papers](https://github.com/QURIresearch/ai-safety-papers). Its github repository can be found [here]().
 
 ## Team
-The database is maintained by Jess Riedel and Angelica Deibel. You can read more about this on the corresponding blog post [here](https://www.lesswrong.com/posts/4DegbDJJiMX2b3EKm/tai-safety-bibliographic-database).
-This website is maintained by Ozzie Gooen and Nuño Sempere via [The Quantified Uncertainty Research Institute](https://quantifieduncertainty.org/).
+The database is maintained by [...] and [...]. You can read more about this on the corresponding blog post [here](...).
+This project is maintained by [...] and [...] via [The Quantified Uncertainty Research Institute](https://quantifieduncertainty.org/). 
 
 ## Tips
-- Most of the fields are clickable. Click on an author to see other papers with the same author, or on a tag to see other papers which also have it. 
 - To quickly go through query results, use the up and down arrows after entering a search.
-- Besides the search function, there is also an (Airtable) table view, which can be browsed directly or downloaded as a CSV.
 
 ## Questions
 
 ### How can I give feedback?
-Please submit feedback through [this website](https://github.com/QURIresearch/ai-safety-papers/discussions) or contact us directly at hello@quantifieduncertainty.org.
+Please submit feedback through [...](...) or contact us directly at hello@quantifieduncertainty.org.
 
 ### How is it decided which documents to include for the database?
-The database covers a mix of conference papers, manuscripts, reports, books, journal articles, magazine articles, and blog posts. Most of the blog posts come from [The Alignment Forum](https://www.alignmentforum.org/) and [LessWrong](https://www.lesswrong.com/). Posts relevant to Artificial Intelligence Alignment were selected. Please see [the post](https://www.lesswrong.com/posts/4DegbDJJiMX2b3EKm/tai-safety-bibliographic-database) on the database for some information here.
+[...]
 
 ### What does "distance" mean?
 We use a simple search tool for string similarity. Distance refers to the difference of the search term and terms in the corresponding results. 
@@ -31,6 +31,7 @@ There are already several existing tools for search and statistics of Academic a
 - Blog posts as well as academic works
 - Easy batch downloading (you can download the full CSV for analysis or other use)
 `;
+
 
 export default function About() {
   return (
