@@ -13,7 +13,7 @@ import ItemPageView from "../lib/display/itemPageView.js";
 
 // Get Props
 export async function getStaticProps() {
-  const { items } = await getData();
+  const items = await getData();
   return {
     props: {
       items,
