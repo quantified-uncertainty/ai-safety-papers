@@ -34,7 +34,9 @@ const opts = {
 
 const initialState = (items) => ({
   query: "",
-  results: [],
+  results: items.map((item, i) => ({item, score: 0.01, refIndex: i})),/// [],//
+  emptyQueryResults: items.map((item, i) => ({item, score: 0.01, refIndex: i})),
+    // Yes, this is sadly necessary: https://github.com/krisk/Fuse/issues/229
   selectedId: false,
   selectedIndex: false,
   selectedResult: false,
@@ -115,7 +117,7 @@ function reducer(state, action) {
     case "query":
       return { ...state, query: action.query, selectedIndex: false };
     case "updateSearch":
-      const results = state.fuse
+      const results = state.query =="" ? state.emptyQueryResults: state.fuse
         .search(state.query)
         .filter((r) => r.score < 0.6);
       return { ...state, results };
