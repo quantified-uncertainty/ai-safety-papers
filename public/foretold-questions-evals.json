@@ -1,0 +1,657 @@
+[
+  {
+    "title": "What fraction of 80,000 hours' impact is not related to career plan changes?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c3ba1c83-fd04-47af-b8c1-7b493b0519e6",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
+  },
+  {
+    "title": "What proportion of donations to FHI go to Oxford University?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c6587fcf-5113-4603-9d90-c9763a099476",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "How much influence would CSET have in a 2024 Republican US administration, relative to its influence in a 2024 US Democratic administration? ",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/fee03eb4-c956-4f61-81e6-76e2f76616c3",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Has CSET done more harm than good so far in its policy interventions?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/623499ee-19dd-4d2a-b100-614a3a0b032a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.25,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.75,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Will CLR's work on their \"Cooperation, conflict, and transformative artificial intelligence\"/\"bargaining in artificial learners\" agenda be favorably reviewed in Lark's 2021 yearly AI alignment review??",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cf4e48f1-3781-45b4-830a-d315435dc472",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.65,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Is there a better option than CLR for suffering-focused donors?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/a2250763-8700-4768-96ba-215fd9d7739a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.6,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.4,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "What fraction of CLR's research is only useful from a suffering-focused standpoint?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/e65ceadf-f35d-42ff-adb0-f30ec57a25d4",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Will Rethink Priorities employ 5 FTEs producing high-quality longtermist research by 2025?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6a8a92c1-2740-4e21-98a6-6c4311bc8461",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.65,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Will Rethink Rethink Priorities be able to productively expand into the longtermist sphere?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/76d54743-3136-448d-adc6-de57d4eada9e",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.8,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.19999999999999996,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Will Rethink Priorities be able to produce research in the long-termist space similar in quality to the research they have produced on invertebrate welfare?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b0083e46-4dee-4281-a324-605657773834",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.425,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.575,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
+  },
+  {
+    "title": "How many FTE-years worth of high-quality research does LessWrong produce each year per FTE-year employed at LessWrong?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/1a6642cc-a4e3-427f-be75-39f05023ca7f",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "How many FTE-years worth of high-quality research does LessWrong produce per year?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/fbfde3f4-ed4c-44a1-8beb-4aa4389e3787",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Is Projekt Framttid dead?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/5700fd38-7ac3-4380-baaa-b00351ba3e9c",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.9,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.09999999999999998,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Conditional on its continued existence, by 2025, will MacAskill still be the CEO of the Forethought Foundation?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/5260868a-c5cc-4f6f-acf5-b2293f718487",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.75,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.25,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Will the Forethought Foundation continue to exist by 2025?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/e919e049-40cc-4155-9bda-9e2a47b0ea50",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.7,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.30000000000000004,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "How many FTEs does FLI currently employ (as of 2021)?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/59ad32cb-17f3-4242-a440-5a4d44ffcfd7",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Will further work on a theory of malevolence be fruitful by 2030?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f689875d-fe82-43ee-88a6-0c414791f4d9",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.2,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.8,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "What percentage of CSER's research staff is doing high value work?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/d2aa8a4c-77e4-4a4a-8f1c-a4b85932922c",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Will the APPFG continue to exist by 2025?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b54917c1-f67c-4003-aff7-de188cc47879",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.5,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.5,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Conditional on its continued existence, will the APPG help pass legislation in the UK related to its mission by 2025?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6b379bd0-4659-45e4-b3d7-b769aed7c020",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.6,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.4,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "By, 2025, will the APPGFG help pass legislation in the UK related to its mission?",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/301c0ffe-7697-4b7a-9908-4bee72642236",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.3,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.7,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "$100M to alternate foods is more cost-effective than to AI risk mitigation",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/704c1052-8e0b-4582-8feb-604a8c452ac3",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.15,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.85,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "$100M to alternate foods is more cost-effective than to AI risk mitigation (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/62c003c4-2525-4830-84ed-93686dc8cae1",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.6,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.4,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b1a21ed8-7819-467c-8a63-98b0c85993ef",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.5,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.5,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/50d7c7a8-f46d-4427-af5f-12cbd898c40b",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.95,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.050000000000000044,
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/451d4013-d302-43c5-b2c3-bacc7d82ed59",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f7616759-f00b-4fd1-a10e-0a281541efc6",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/1a16fcf9-e155-4157-b02b-f9d2d546368c",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/ff6231c6-3def-4663-82b7-d2d605bf37db",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6084ec83-df7b-4af7-8c58-612b491e6946",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/36fdd2c9-7829-4fae-9222-ab0d1795d5b5",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c24a076b-d045-43d2-b3d4-b555227fae30",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/07b1924e-0581-410f-a34c-3e87cfcd278a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated mitigation of far future impact of war due to ALLFED so far",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cd78ff36-da47-4411-ab67-d20eb0811333",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated mitigation of far future impact of war due to ALLFED so far (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/805f614e-e170-4a72-9bd2-daadd4d62789",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Cost of planning, R&DF for alternate foods",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f9203a65-d4ff-4aaf-95dc-39a577e2318a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Cost of planning, R&DF for alternate foods (ALLFED's estimate)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/106715d2-2484-47ac-ad1f-dcfb63ed55f8",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated probability of full scale nuclear war per year",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cca72358-624a-40e5-a87a-5b14a50fdea6",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  },
+  {
+    "title": "Untruncated probability of full scale nuclear war per year (ALLFED's estimates)",
+    "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/e147be3b-3280-43aa-a27e-a1a561c66b18",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "timestamp": "2021-07-03T13:07:25.076Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
+  }
+]

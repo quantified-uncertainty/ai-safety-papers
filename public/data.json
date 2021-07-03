@@ -1,14 +1,340 @@
 [
     {
         "id": 1,
-        "title": "Somewhere Over the Rainbow",
-        "url": "https://genius.com/Israel-kamakawiwoole-somewhere-over-the-rainbow-lyrics",
-        "genericMarkdownContent": "[Intro]\nOoh-oh-oh, oh-oh-oh-oh, oh-oh-oh\nOoh-oh-oh-oh\nOoh-oh-oh\nOoh-oh-oh\n\n[Verse 1]\nSomewhere over the rainbow\nWay up high\nAnd the dreams that you dreamed of\nOnce in a lullaby\nOh, somewhere over the rainbow\nBluebirds fly\nAnd the dreams that you dreamed of\nDreams really do come true ooh-oh-oh, oh-oh-oh\n\n[Verse 2]\nSomeday I'll wish upon a star\nWake up where the clouds are far behind me ee-ee-ee\nWhere trouble melts like lemon drops\nHigh above the chimney tops, that's where you'll find me, oh\nSomewhere over the rainbow bluebirds fly\nAnd the dream that you dare to, oh why, oh why can't I, I?\n\n[Verse 3]\nOh, someday I'll wish upon a star\nWake up where the clouds are far behind me\nWhere trouble melts like lemon drops\nHigh above the chimney top that's where you'll find me\nOh, somewhere over the rainbow way up high\nAnd the dream that you dare to, why, oh why can't I, I?\n[Outro]\nOoh-oh-oh, oh-oh-oh-oh, oh-oh\nOoh-oh-oh-oh\nOoh-ah-ah-ah-ah-ah, ah-ah-ah\nLe-ha!"
-    },
-    {
-        "id": 2,
-        "title": "Zombie",
-        "url": "https://genius.com/The-cranberries-zombie-lyrics",
-        "genericMarkdownContent": "[Verse 1]\nAnother head hangs lowly\nChild is slowly taken\nAnd the violence caused such silence\nWho are we mistaken?\n\n[Pre-Chorus]\nBut you see, it's not me, it's not my family\nIn your head, in your head, they are fightin'\nWith their tanks and their bombs and their bombs and their guns\nIn your head, in your head, they are cryin'\n\n[Chorus]\nIn your head, in your head\nZombie, zombie, zombie-ie-ie\nWhat's in your head, in your head?\nZombie, zombie, zombie-ie-ie-ie, oh\n\n[Post-Chorus]\nDu, du, du, du\nDu, du, du, du\nDu, du, du, du\nDu, du, du, du\n\n[Verse 2]\nAnother mother's breakin'\nHeart is takin' over\nWhen the violence causes silence\nWe must be mistaken\n[Pre-Chorus]\nIt's the same old theme, since 1916\nIn your head, in your head, they're still fightin'\nWith their tanks and their bombs and their bombs and their guns\nIn your head, in your head, they are dyin'\n\n[Chorus]\nIn your head, in your head\nZombie, zombie, zombie-ie-ie\nWhat's in your head, in your head?\nZombie, zombie, zombie-ie-ie-ie, oh-oh-oh-oh-oh-oh-oh, eh-eh-oh, ra-ra\n\n[Instrumental Outro]"
+        "title": "Alliance to Feed the Earth in Disasters",
+        "url": "https://allfed.info",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/allfed",
+        "missionStatement": "Feeding everyone no matter what.",
+        "yearlyBudget": "unknown",
+        "teamPage": "https://allfed.info/team-members/",
+        "teamMembers": [
+            "David Denkenberger",
+            "Ray Taylor",
+            "Joshua Pearce",
+            "Sonia Cassidy",
+            "Al Hundley",
+            "Ariel Conn",
+            "Gareth Jones",
+            "Sahil Shah",
+            "Tim Fist",
+            "James Throup",
+            "Aron Mill",
+            "Juan García Martínez",
+            "Ross Tieman",
+            "Amanda Cassidy",
+            "Maciej Pilachowski",
+            "Kyle Alvarado",
+            "Megan Jamer",
+            "Daisy Newbold-Harrop",
+            "Finan Adamson"
+        ],
+        "keyQuestions": [
+            "What is the probability of a (non-AI) catastrophe which makes ALLFED's work relevant (i.e., which kills 10% or more of humanity, but not all of humanity) over the next 50 to 100 years?",
+            "How much does the value of the future diminish in a catastrophe which makes ALLFED's work relevant?",
+            "How does the cause area feeding the Earth in disasters compare to other cause areas?",
+            "Is ALLFED making progress in its \"feeding everyone no matter what\" agenda?",
+            "Is ALLFED's progress on the lobbying front, or on the research front?",
+            "Is ALLFED producing high-quality research? On a Likert scale of 1-5, how strong are their papers and public writing?",
+            "Given that ALLFED has a large team, is it a positive influence on its team members? How would we expect employees and volunteers to rate their experience with the organization?"
+        ],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Alliance_to_Feed_the_Earth_in_Disasters",
+                "author": "Nuño Sempere",
+                "summary": "Although the case for ALLFED's cause are is relatively robust, the quality of ALLFED's work is uncertain",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            },
+            {
+                "title": "ALLFED 2020 Highlights",
+                "url": "https://forum.effectivealtruism.org/posts/29mfRszEcpn6uLZAb/allfed-2020-highlights",
+                "author": "David Denkenberger",
+                "summary": "Summary of ALLFED's work in 2020.",
+                "timestamp": "2020-11-19",
+                "stars": "2"
+
+            },
+            {
+                "title": "ALLFED 2019 Annual Report and Fundraising Appeal",
+                "url": "https://forum.effectivealtruism.org/posts/7LJM9RTWYddNJebfi/allfed-2019-annual-report-and-fundraising-appeal",
+                "author": "David Denkenberger",
+                "summary": "Summary of ALLFED's work in 2019",
+                "timestamp": "2019-11-23",
+                "stars": "2"
+
+            },
+            {
+                "title": "2017 Donor Lottery Report",
+                "url": "https://forum.effectivealtruism.org/posts/SYeJnv9vYzq9oQMbQ/2017-donor-lottery-report",
+                "author": "AdamGleave",
+                "summary": "Initial investigation of ALLFED warrants initial investment.",
+                "timestamp": "2018-11-12",
+                "stars": "2"
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "$100M to alternate foods is more cost-effective than to AI risk mitigation",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/704c1052-8e0b-4582-8feb-604a8c452ac3",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                  {
+                    "name": "Yes",
+                    "probability": 0.15,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.85,
+                    "type": "PROBABILITY"
+                  }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "$100M to alternate foods is more cost-effective than to AI risk mitigation (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/62c003c4-2525-4830-84ed-93686dc8cae1",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                  {
+                    "name": "Yes",
+                    "probability": 0.6,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.4,
+                    "type": "PROBABILITY"
+                  }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b1a21ed8-7819-467c-8a63-98b0c85993ef",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                  {
+                    "name": "Yes",
+                    "probability": 0.5,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.5,
+                    "type": "PROBABILITY"
+                  }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/50d7c7a8-f46d-4427-af5f-12cbd898c40b",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                  {
+                    "name": "Yes",
+                    "probability": 0.95,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.050000000000000044,
+                    "type": "PROBABILITY"
+                  }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/451d4013-d302-43c5-b2c3-bacc7d82ed59",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f7616759-f00b-4fd1-a10e-0a281541efc6",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/1a16fcf9-e155-4157-b02b-f9d2d546368c",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/ff6231c6-3def-4663-82b7-d2d605bf37db",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6084ec83-df7b-4af7-8c58-612b491e6946",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/36fdd2c9-7829-4fae-9222-ab0d1795d5b5",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c24a076b-d045-43d2-b3d4-b555227fae30",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/07b1924e-0581-410f-a34c-3e87cfcd278a",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated mitigation of far future impact of war due to ALLFED so far",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cd78ff36-da47-4411-ab67-d20eb0811333",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated mitigation of far future impact of war due to ALLFED so far (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/805f614e-e170-4a72-9bd2-daadd4d62789",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Cost of planning, R&DF for alternate foods",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f9203a65-d4ff-4aaf-95dc-39a577e2318a",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Cost of planning, R&DF for alternate foods (ALLFED's estimate)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/106715d2-2484-47ac-ad1f-dcfb63ed55f8",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated probability of full scale nuclear war per year",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cca72358-624a-40e5-a87a-5b14a50fdea6",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              },
+              {
+                "title": "Untruncated probability of full scale nuclear war per year (ALLFED's estimates)",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/e147be3b-3280-43aa-a27e-a1a561c66b18",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                  "numforecasts": 1,
+                  "stars": 2
+                }
+              }
+        ],
+        "genericMarkdownContent": ""
     }
 ]

@@ -1,5 +1,5 @@
 import React from "react";
-import { markdownRenderer } from "../lib/markdownRenderer.js";
+import { markdownRenderer } from "../lib/display/markdownRenderer.js";
 import Layout from "./layout.js";
 
 let aboutMarkdownText = `## About

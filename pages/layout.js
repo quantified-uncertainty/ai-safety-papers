@@ -3,7 +3,7 @@ import Head from "next/head";
 import { GiPaperClip } from "react-icons/gi";
 
 
-const appName = "Database Browsers Bare"
+const appName = "EA Evaluations"
 const iconLocation = "/paperclip.png"
 const Icon = GiPaperClip
 const feedbackPage = "https://github.com/QURIresearch/ai-safety-papers/discussions"
@@ -58,7 +58,7 @@ export default function Layout(props) {
                     </Link>
                   </div>
                 </div>
-                <div className="md:block">
+                {/*<div className="md:block">
                   <div className="ml-2 flex items-baseline space-x-4">
                     <Link href={`/table`} passHref>
                       <span
@@ -68,7 +68,7 @@ export default function Layout(props) {
                       </span>
                     </Link>
                   </div>
-                </div>
+                </div>*/}
                 <div className="md:block">
                   <div className="ml-2 flex items-baseline space-x-4">
                     <a

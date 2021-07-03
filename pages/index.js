@@ -22,7 +22,7 @@ export async function getStaticProps() {
 }
 
 // Search
-const searchMessage = "Search to view academic papers, blog posts, and book chapters."
+const searchMessage = "Search to view evaluations."
 const opts = {
   includeScore: true,
   keys: [
