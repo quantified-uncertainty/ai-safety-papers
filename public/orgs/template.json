@@ -1,0 +1,60 @@
+{
+    "title": "A Template Organization",
+    "shorthand": "ATO", 
+    "url": "https://template.com",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/template",
+    "teamPage": "https://template.com/team/",
+    "publicationsPage": "https://template.com/publications",
+    "missionStatement": "Be a template organization",
+    "yearlyBudget": "$1,000,000",
+    "teamMembers": [
+        "Fulano Fulanez",
+        "Mengano Menganez",
+        "Zutano Zutanez"
+    ],
+    "keyQuestions": [
+      "Is this template enough as a specification?",
+      "Given that ATO has a large team, is it a positive influence on its team members? How would we expect employees and volunteers to rate their experience with the organization?"
+    ],
+    "publications": [
+        {
+            "title":"A Template Organization for A Database Of EA Organizations",
+            "authors": "F. Fulanez, M. Menganez",
+            "url": "https://www.template.com/template",
+            "location": "Nature"
+        }
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Future_of_Life_Institute__FLI_",
+            "author": "Nuño Sempere",
+            "summary": "The template organization has no impact",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+            "title": "2020 AI Alignment Literature Review and Charity Comparison",
+            "url": "https://forum.effectivealtruism.org/posts/K7Z87me338BQT3Mcv/2020-ai-alignment-literature-review-and-charity-comparison#FLI__The_Future_of_Life_Institute",
+            "author": "Larks",
+            "summary": "",
+            "timestamp": "2020-12-21",
+            "stars": "1"
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "How many FTEs does FLI currently employ (as of 2021)?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/59ad32cb-17f3-4242-a440-5a4d44ffcfd7",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+        }
+    ],
+    "genericMarkdownContent": ""
+}

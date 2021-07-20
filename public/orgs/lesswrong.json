@@ -1,0 +1,65 @@
+{
+    "title": "LessWrong",
+    "shorthand": "LW", 
+    "url": "https://lesswrong.com",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/lesswrong",
+    "teamPage": "https://www.lesswrong.com/posts/aG74jJkiPccqdkK3c/the-lesswrong-team",
+    "publicationsPage": "",
+    "missionStatement": "We are a community dedicated to improving our reasoning and decision-making. We seek to hold true beliefs and to be effective at accomplishing our goals. More generally, we work to develop and practice the art of human rationality.",
+    "yearlyBudget": "unknown",
+    "teamMembers": [
+        "Oliver Habryka",
+        "Benito Pace",
+        "Raymond Arnold",
+        "Ruben Bloom",
+        "Jacob Lagerros",
+        "Kaj Sotala",
+        "Elizabeth V",
+        "Mathew Graves"
+    ],
+    "keyQuestions": [
+        "Is LessWrong catalyzing useful research?",
+        "Is LessWrong successfully cultivating a community of people capable of grappling with important real world problems?",
+        "How does LessWrong's research output compare to that of other research institutions",
+        "How many FTEs worth of research is LessWrong responsible for?"
+    ],
+    "publications": [
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#LessWrong",
+            "author": "Nuño Sempere",
+            "summary": "LW seems to catalyze or facilitate a relatively large amount of research, and that it does so relatively efficiently, with around 6 FTEs (per the team page). Concretely, LessWrong appears to produce substantially more than one FTE worth of research per FTE. One key question is whether many of the LessWrong posts would have just been written elsewhere.",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "How many FTE-years worth of high-quality research does LessWrong produce per year?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/fbfde3f4-ed4c-44a1-8beb-4aa4389e3787",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+                "numforecasts": 1,
+                "stars": 2
+            }
+        },
+        {
+            "title": "How many FTE-years worth of high-quality research does LessWrong produce each year per FTE-year employed at LessWrong?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/1a6642cc-a4e3-427f-be75-39f05023ca7f",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+                "numforecasts": 1,
+                "stars": 2
+            }
+        }
+    ],
+    "genericMarkdownContent": ""
+}

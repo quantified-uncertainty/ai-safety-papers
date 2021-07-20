@@ -1,0 +1,72 @@
+{
+    "title": "80,000 hours",
+    "shorthand": "ATO", 
+    "url": "https://80000hours.org/",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/80-000-hours",
+    "teamPage": "https://template.com/team/",
+    "publicationsPage": "https://80000hours.org/about/meet-the-team/",
+    "missionStatement": "Be a template organization",
+    "yearlyBudget": "$1,000,000",
+    "teamMembers": [
+        "Benjamin Todd",
+        "Arden Koehler",
+        "Brenton Mayer",
+        "Habiba Islam",
+        "Howie Lempel",
+        "Jenna Peters",
+        "María Gutiérrez Rojas",
+        "Michelle Hutchinson",
+        "Niel Bowerman",
+        "Peter Hartree",
+        "Peter McIntyre",
+        "Robert Wiblin",
+        "Roman Duda",
+        "Sashika Coxhead",
+        "Keiran Harris",
+        "Sofia Davis-Fogel"
+    ],
+    "keyQuestions": [
+        "Can I generally defer to Benjamin Todd's judgment?",
+        "Will 80,000 hours continue to keep similar levels of cost-effectiveness as it scales?",
+        "Will 80,000 hours manage to keep its culture and ethos as it scales?",
+        "How does 80,000 hours compare to other, more speculative donation targets and career paths?",
+        "What percentage of 80,000 hours' impact is not related to career plan changes?",
+        "Will the percentage of 80,000 hours' impact not related to career plan changes remain constant as 80,000 hours scales? (so that thinking of 80,000 hours' impact as a multiple of the impact of its career changes ''makes sense'')?",
+        "What is a good way to think about 80,000 hours' aggregate impact?"
+    ],
+    "publications": [
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#80_000_hours",
+            "author": "Nuño Sempere",
+            "summary": "The template organization has no impact",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+            "title": "80,000 Hours annual review Nov 2020",
+            "url": "https://docs.google.com/document/d/1rWfQ3Lja2kYoUm_t9uNqBgEn5nz6KL8fmNP5db8cZRU/edit#",
+            "author": "Benjamin Todd",
+            "summary": "",
+            "timestamp": "2020-11-15",
+            "stars": "1"
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "What percentage of 80,000 hours' impact is not related to career plan changes?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c3ba1c83-fd04-47af-b8c1-7b493b0519e6",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+        }
+    ],
+    "genericMarkdownContent": ""
+}

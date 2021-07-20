@@ -1,0 +1,77 @@
+{
+    "title": "Centre for the Study of Existential Risk",
+    "shorthand": "CSER", 
+    "url": "https://www.cser.ac.uk/",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/centre-for-the-study-of-existential-risk",
+    "teamPage": "https://www.cser.ac.uk/team/",
+    "publicationsPage": "https://www.cser.ac.uk/research/",
+    "missionStatement": "We are dedicated to the study and mitigation of risks that could lead to human extinction or civilisational collapse",
+    "yearlyBudget": "unknown",
+    "teamMembers": [
+      "Seán Ó hÉigeartaigh",
+      "S. J. Beard",
+      "Haydn Belfield",
+      "Clare Arnstein",
+      "Laura Elmer",
+      "Esme Booth",
+      "Marisela Moreno-Ramirez",
+      "Shahar Avin",
+      "Lalitha Sundaram",
+      "Lauren Holt",
+      "Luke Kemp",
+      "Ellen Quigley",
+      "Sabin Roman",
+      "Natalie Jones",
+      "Alexa Hagerty",
+      "Lara Mani",
+      "Catherine Richards",
+      "Clarissa Rios Rojas",
+      "Jess Whittlestone",
+      "John Burden",
+      "Tom Hobson",
+      "Freya Jephcott",
+      "Alex McLaughlin",
+      "Matthijs Maas",
+      "Akaraseth Puranasamriddhi",
+      "Mia Sannapureddy",
+      "Jochem Rietveld"
+    ],
+    "keyQuestions": [
+      "How much of CSER's work is of high value from a long-termist perspective?"
+    ],
+    "publications": [
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#CSER",
+            "author": "Nuño Sempere",
+            "summary": "Although I feel like there is a small group of strong researchers working at CSER, the proportion of researchers working on stuff I don't particularly care about or which I don't expect to be particularly valuable according to my values is too high. Commenters pointed out that this assessment is 'almost unfairly subjective.''",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+            "title": "Centre for the Study of Existential Risk Four Month Report June - September 2020",
+            "url": "https://forum.effectivealtruism.org/posts/EArLfuDz34zJHJZJx/centre-for-the-study-of-existential-risk-four-month-report-1",
+            "author": "Haydn Belfield",
+            "summary": "",
+            "timestamp": "2020-12-02",
+            "stars": 2
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "What fraction of CSER's research staff is doing high value work?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/d2aa8a4c-77e4-4a4a-8f1c-a4b85932922c",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 3
+            }
+          }
+    ],
+    "genericMarkdownContent": ""
+}

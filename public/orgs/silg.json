@@ -1,0 +1,34 @@
+{
+    "title": "Simon Institute for Long-Term Governance",
+    "shorthand": "ATO", 
+    "url": "https://www.simoninstitute.ch/",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/simon-institute-for-longterm-governance",
+    "teamPage": "https://www.simoninstitute.ch/about/#our-team",
+    "publicationsPage": "https://www.simoninstitute.ch/projects/category/research/",
+    "missionStatement": "SI's mission is to increase the capacity of policy networks to mitigate global catastrophic risks and build resilience for civilization to flourish.",
+    "yearlyBudget": "unknown",
+    "teamMembers": [
+        "Maxime Stauffer",
+        "Konrad Seifert"
+    ],
+    "keyQuestions": [    
+        "What does the prior distribution of success for new longermist organizations look like?",
+        "When will we have a better estimate of the Simon Institute for Long-Term Governance's input?",
+        "Is funding SILG better than OpenPhilanthropy's last longtermist dollar?"
+    ],
+    "publications": [
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Simon_Institute_for_Long_Term_Governance__SILG_",
+            "author": "Nuño Sempere",
+            "summary": "",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        }
+    ],
+    "forecasts": [
+    ],
+    "genericMarkdownContent": ""
+}

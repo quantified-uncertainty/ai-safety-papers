@@ -1,7 +1,80 @@
 [
     {
+        "id": 0,
+        "title": "80,000 hours",
+        "shorthand": "ATO",
+        "url": "https://80000hours.org/",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/80-000-hours",
+        "teamPage": "https://template.com/team/",
+        "publicationsPage": "https://80000hours.org/about/meet-the-team/",
+        "missionStatement": "Be a template organization",
+        "yearlyBudget": "$1,000,000",
+        "teamMembers": [
+            "Benjamin Todd",
+            "Arden Koehler",
+            "Brenton Mayer",
+            "Habiba Islam",
+            "Howie Lempel",
+            "Jenna Peters",
+            "María Gutiérrez Rojas",
+            "Michelle Hutchinson",
+            "Niel Bowerman",
+            "Peter Hartree",
+            "Peter McIntyre",
+            "Robert Wiblin",
+            "Roman Duda",
+            "Sashika Coxhead",
+            "Keiran Harris",
+            "Sofia Davis-Fogel"
+        ],
+        "keyQuestions": [
+            "Can I generally defer to Benjamin Todd's judgment?",
+            "Will 80,000 hours continue to keep similar levels of cost-effectiveness as it scales?",
+            "Will 80,000 hours manage to keep its culture and ethos as it scales?",
+            "How does 80,000 hours compare to other, more speculative donation targets and career paths?",
+            "What percentage of 80,000 hours' impact is not related to career plan changes?",
+            "Will the percentage of 80,000 hours' impact not related to career plan changes remain constant as 80,000 hours scales? (so that thinking of 80,000 hours' impact as a multiple of the impact of its career changes ''makes sense'')?",
+            "What is a good way to think about 80,000 hours' aggregate impact?"
+        ],
+        "publications": [],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#80_000_hours",
+                "author": "Nuño Sempere",
+                "summary": "The template organization has no impact",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            },
+            {
+                "title": "80,000 Hours annual review Nov 2020",
+                "url": "https://docs.google.com/document/d/1rWfQ3Lja2kYoUm_t9uNqBgEn5nz6KL8fmNP5db8cZRU/edit#",
+                "author": "Benjamin Todd",
+                "summary": "",
+                "timestamp": "2020-11-15",
+                "stars": "1"
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "What percentage of 80,000 hours' impact is not related to career plan changes?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c3ba1c83-fd04-47af-b8c1-7b493b0519e6",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            }
+        ],
+        "genericMarkdownContent": ""
+    },
+    {
         "id": 1,
         "title": "Alliance to Feed the Earth in Disasters",
+        "shorthand": "ALLFED",
         "url": "https://allfed.info",
         "EAforumTag": "https://forum.effectivealtruism.org/tag/allfed",
         "teamPage": "https://allfed.info/team-members/",
@@ -40,133 +113,133 @@
         ],
         "publications": [
             {
-                "title":"Potential of microbial electrosynthesis for contributing to food production using CO2 during global agriculture-inhibiting disasters",
+                "title": "Potential of microbial electrosynthesis for contributing to food production using CO2 during global agriculture-inhibiting disasters",
                 "authors": "J.B. García Martínez, M. M. Brown, X. Christodoulou, K.A. Alvarado, D.C. Denkenberger",
                 "url": "https://www.sciencedirect.com/science/article/pii/S2666790821000999",
                 "location": "Cleaner Engineering and Technology, Vol 4, Article 100139, 2021"
             },
             {
-                "title":"Food in space from hydrogen oxidizing bacteria",
+                "title": "Food in space from hydrogen oxidizing bacteria",
                 "authors": "K.A. Alvarado, J.B. García Martínez, S. Matassa, J. Egbejimba, D.C. Denkenberger",
                 "url": "https://allfed.info/wp-content/uploads/2020/12/Food_in_space_from_hydrogen_oxidizing_ba.pdf",
                 "location": "Acta Astronautica, Vol 180, pp. 260-265, 2021"
             },
             {
-                "title":"Potential of microbial protein from hydrogen for preventing mass starvation in catastrophic scenarios",
+                "title": "Potential of microbial protein from hydrogen for preventing mass starvation in catastrophic scenarios",
                 "authors": "J.B. García Martínez, J. Egbejimba, J. Throup, S. Matassa, J.M. Pearce, D.C. Denkenberger",
                 "url": "https://allfed.info/wp-content/uploads/2020/08/Potential-of-microbial-protein-from-hydrogen-for-preventing-mass-starvation-in-catastrophic-scenarios.pdf",
                 "location": "Sustainable Production and Consumption, Vol 25, 234-247, 2021"
             },
             {
-                "title":"Scaling of Greenhouse Crop Production in Low Sunlight Scenarios",
+                "title": "Scaling of Greenhouse Crop Production in Low Sunlight Scenarios",
                 "authors": "K. Alvarado, A. Mill, J. Pearce, A. Vocaet, D. Denkenberger",
                 "url": "https://allfed.info/wp-content/uploads/2020/04/Scaling_of_Greenhouse_Crop_Production_in_Low_Sunlight_Scenarios.pdf",
                 "location": "Science of the Total Environment, Vol 707, 2020"
             },
             {
-                "title":"Preliminary Automated Determination of Edibility of Alternative Foods: Non-Targeted Screening for Toxins in Red Maple Leaf Concentrate",
+                "title": "Preliminary Automated Determination of Edibility of Alternative Foods: Non-Targeted Screening for Toxins in Red Maple Leaf Concentrate",
                 "authors": "D. Denkenberger, J.M. Pearce and Maryam Khaksari",
                 "url": "https://allfed.info/wp-content/uploads/2019/05/plants-08-00110.pdf",
                 "location": "Plants, Vol 8, No 5, 110, 2019"
             },
             {
-                "title":"Cost-Effectiveness of Interventions for Alternate Food in the United States to Address Agricultural Catastrophes Catastrophes",
+                "title": "Cost-Effectiveness of Interventions for Alternate Food in the United States to Address Agricultural Catastrophes Catastrophes",
                 "authors": "D.Denkenberger and J.M. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2018/11/Cost-effectiveness-of-interventions-for-alternate-food-in-the-United-States-to-address-agricultural-catastrophes.pdf",
                 "location": "International Journal of Disaster Risk Reduction, Vol 27, 278–289, 2018"
             },
             {
-                "title":"Feeding Everyone if the Sun is Obscured and Industry is Disabled",
+                "title": "Feeding Everyone if the Sun is Obscured and Industry is Disabled",
                 "authors": "D. Denkenberger, D. Cole, M. Abdelkhaliq, M. Griswold, A. Hundley, J. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2019/08/Feeding-everyone-if-the-sun-is-obscured-and-industry-is-disabled.pdf",
                 "location": "International Journal of Disaster Risk Reduction, Vol 21, 284-290, 2017"
             },
             {
-                "title":"Food without sun: price and life-saving potential",
+                "title": "Food without sun: price and life-saving potential",
                 "authors": "Denkenberger, D., Pearce, J., Taylor, A. R., Black, R",
                 "url": "https://allfed.info/wp-content/uploads/2018/11/Alternate-foods-price-and-life-saving-Foresight-preprint.pdf",
                 "location": "Foresight, 2018"
             },
             {
-                "title":"Cost-Effectiveness of Interventions for Alternate Food to Address Agricultural Catastrophes Globally",
+                "title": "Cost-Effectiveness of Interventions for Alternate Food to Address Agricultural Catastrophes Globally",
                 "authors": "D. Denkenberger and J. Pearce",
                 "url": "https://link.springer.com/content/pdf/10.1007%2Fs13753-016-0097-2.pdf",
                 "location": "International Journal of Disaster Risk Science, vol. 7, no. 3, 205-215, 2016"
             },
             {
-                "title":"Alternative Foods as a Solution to Global Food Supply Catastrophes",
+                "title": "Alternative Foods as a Solution to Global Food Supply Catastrophes",
                 "authors": "S. Baum, D. Denkenberger, J. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2018/11/BaumEtal_AltFoodSolutions_2016-07-08.pdf",
                 "location": "Solutions, vol. 7, no. 4, 2016, pp. 31-35"
             },
             {
-                "title":"Resilience to Global Food Supply Catastrophes",
+                "title": "Resilience to Global Food Supply Catastrophes",
                 "authors": "S. Baum, D. Denkenberger, J. Pearce, A. Robock, R. Winkler",
                 "url": "https://sethbaum.com/ac/2015_Food.pdf",
                 "location": "Environment, Systems and Decisions, Vol 35, No 2, 301-313, 2015"
             },
             {
-                "title":"Feeding Everyone: Solving the Food Crisis in the Event of Global Catastrophes that Kill Crops or Obscure the Sun",
+                "title": "Feeding Everyone: Solving the Food Crisis in the Event of Global Catastrophes that Kill Crops or Obscure the Sun",
                 "authors": "D. Denkenberger and J. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2017/08/Feeding-Everyone-Futures-preprint.pdf",
                 "location": "Futures, Vol 72, 57-68, 2015"
             },
             {
-                "title":"Micronutrient Availability in Alternative Foods During Agricultural Catastrophes",
+                "title": "Micronutrient Availability in Alternative Foods During Agricultural Catastrophes",
                 "authors": "D. Denkenberger and J. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2019/10/agriculture-353686-vitamins-update.pdf",
                 "location": "Agriculture Vol 8, No 11, 169, 2018"
             },
             {
-                "title":"Global Catastrophic and Existential Risks Communication Scale",
+                "title": "Global Catastrophic and Existential Risks Communication Scale",
                 "authors": "A. Turchin, D. Denkenberger",
                 "url": "https://www.academia.edu/35656493/Global_Catastrophic_and_Existential_Risks_Communication_Scale",
                 "location": "Futures, Vol 102, 27–38, 2018"
             },
             {
-                "title":"A National Pragmatic Safety Limit for Nuclear Weapon Quantities",
+                "title": "A National Pragmatic Safety Limit for Nuclear Weapon Quantities",
                 "authors": "J. Pearce and D. Denkenberger",
                 "url": "https://allfed.info/wp-content/uploads/2018/11/A_National_Pragmatic_Safety_Limit_for_Nuclear_Weapns-Safety-2018.pdf",
                 "location": "Safety Vol 4, No 2, 25, 2018"
             },
             {
-                "title":"Isolated Refuges for Surviving Global Catastrophes",
+                "title": "Isolated Refuges for Surviving Global Catastrophes",
                 "authors": "S. Baum, D. Denkenberger, J. Haqq-Misra",
                 "url": "https://sethbaum.com/ac/2015_Refuges.pdf",
                 "location": "Futures, 72, 45-56, 2015"
             },
             {
-                "title":"Classification of global catastrophic risks connected with artificial intelligence",
+                "title": "Classification of global catastrophic risks connected with artificial intelligence",
                 "authors": "A. Turchin, D. Denkenberger",
                 "url": "https://philpapers.org/archive/TURCOG.pdf",
                 "location": "AI & Society 2018"
             },
             {
-                "title":"Feeding Everyone No Matter What: Managing Food Security After Global Catastrophe",
+                "title": "Feeding Everyone No Matter What: Managing Food Security After Global Catastrophe",
                 "authors": "D.C. Denkenberger and J. M. Pearce",
                 "url": "https://www.amazon.com/Feeding-Everyone-Matter-What-Catastrophe/dp/0128021500/ref=sr_1_1?ie=UTF8&qid=1458029876&sr=8-1&keywords=feeding+everyone+no+matter+what",
                 "location": "Elsevier, New York, New York, 2014, D.C. ISBN: 978-0-12-804447-6"
             },
             {
-                "title":"Non Food Needs if Industry is Disabled",
+                "title": "Non Food Needs if Industry is Disabled",
                 "authors": "M. Abdelkhaliq, D. Denkenberger, D.D. Cole, M. Griswold, J. Pearce",
                 "url": "https://www.academia.edu/28508179/Providing_Non-food_Needs_if_Industry_is_Disabled",
                 "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
             },
             {
-                "title":"Feeding Everyone if Industry is Disabled",
+                "title": "Feeding Everyone if Industry is Disabled",
                 "authors": "D.D. Cole, D. Denkenberger, M. Griswold, M. Abdelkhaliq, J. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2017/08/Feeding_Everyone_if_Industry_is_Disabled.pdf",
                 "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
             },
             {
-                "title":"Vitamins in Agricultural Catastrophes",
+                "title": "Vitamins in Agricultural Catastrophes",
                 "authors": "M. Griswold, D. Denkenberger, D.D. Cole, M. Abdelkhaliq, J. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2018/11/Vitamins-in-Agricultural-Catastrophes-final.pdf",
                 "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
             },
             {
-                "title":"Integrative Risk Management for Catastrophe Destroying 10-20% of Global Food Supply",
+                "title": "Integrative Risk Management for Catastrophe Destroying 10-20% of Global Food Supply",
                 "authors": "A.R. Taylor, D. Denkenberger, J. Pearce",
                 "url": "https://allfed.info/wp-content/uploads/2018/11/Davos-10-percent-submit.pdf",
                 "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
@@ -188,7 +261,6 @@
                 "summary": "Summary of ALLFED's work in 2020",
                 "timestamp": "2020-11-19",
                 "stars": "2"
-
             },
             {
                 "title": "ALLFED 2019 Annual Report and Fundraising Appeal",
@@ -197,7 +269,6 @@
                 "summary": "Summary of ALLFED's work in 2019",
                 "timestamp": "2019-11-23",
                 "stars": "2"
-
             },
             {
                 "title": "2017 Donor Lottery Report",
@@ -215,93 +286,93 @@
                 "platform": "Foretold",
                 "description": "",
                 "options": [
-                  {
-                    "name": "Yes",
-                    "probability": 0.15,
-                    "type": "PROBABILITY"
-                  },
-                  {
-                    "name": "No",
-                    "probability": 0.85,
-                    "type": "PROBABILITY"
-                  }
+                    {
+                        "name": "Yes",
+                        "probability": 0.15,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.85,
+                        "type": "PROBABILITY"
+                    }
                 ],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "$100M to alternate foods is more cost-effective than to AI risk mitigation (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/62c003c4-2525-4830-84ed-93686dc8cae1",
                 "platform": "Foretold",
                 "description": "",
                 "options": [
-                  {
-                    "name": "Yes",
-                    "probability": 0.6,
-                    "type": "PROBABILITY"
-                  },
-                  {
-                    "name": "No",
-                    "probability": 0.4,
-                    "type": "PROBABILITY"
-                  }
+                    {
+                        "name": "Yes",
+                        "probability": 0.6,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.4,
+                        "type": "PROBABILITY"
+                    }
                 ],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b1a21ed8-7819-467c-8a63-98b0c85993ef",
                 "platform": "Foretold",
                 "description": "",
                 "options": [
-                  {
-                    "name": "Yes",
-                    "probability": 0.5,
-                    "type": "PROBABILITY"
-                  },
-                  {
-                    "name": "No",
-                    "probability": 0.5,
-                    "type": "PROBABILITY"
-                  }
+                    {
+                        "name": "Yes",
+                        "probability": 0.5,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.5,
+                        "type": "PROBABILITY"
+                    }
                 ],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/50d7c7a8-f46d-4427-af5f-12cbd898c40b",
                 "platform": "Foretold",
                 "description": "",
                 "options": [
-                  {
-                    "name": "Yes",
-                    "probability": 0.95,
-                    "type": "PROBABILITY"
-                  },
-                  {
-                    "name": "No",
-                    "probability": 0.050000000000000044,
-                    "type": "PROBABILITY"
-                  }
+                    {
+                        "name": "Yes",
+                        "probability": 0.95,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.050000000000000044,
+                        "type": "PROBABILITY"
+                    }
                 ],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/451d4013-d302-43c5-b2c3-bacc7d82ed59",
                 "platform": "Foretold",
@@ -309,11 +380,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f7616759-f00b-4fd1-a10e-0a281541efc6",
                 "platform": "Foretold",
@@ -321,11 +392,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/1a16fcf9-e155-4157-b02b-f9d2d546368c",
                 "platform": "Foretold",
@@ -333,11 +404,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/ff6231c6-3def-4663-82b7-d2d605bf37db",
                 "platform": "Foretold",
@@ -345,11 +416,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6084ec83-df7b-4af7-8c58-612b491e6946",
                 "platform": "Foretold",
@@ -357,11 +428,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/36fdd2c9-7829-4fae-9222-ab0d1795d5b5",
                 "platform": "Foretold",
@@ -369,11 +440,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c24a076b-d045-43d2-b3d4-b555227fae30",
                 "platform": "Foretold",
@@ -381,11 +452,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/07b1924e-0581-410f-a34c-3e87cfcd278a",
                 "platform": "Foretold",
@@ -393,11 +464,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated mitigation of far future impact of war due to ALLFED so far",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cd78ff36-da47-4411-ab67-d20eb0811333",
                 "platform": "Foretold",
@@ -405,11 +476,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated mitigation of far future impact of war due to ALLFED so far (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/805f614e-e170-4a72-9bd2-daadd4d62789",
                 "platform": "Foretold",
@@ -417,11 +488,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Cost of planning, R&DF for alternate foods",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f9203a65-d4ff-4aaf-95dc-39a577e2318a",
                 "platform": "Foretold",
@@ -429,11 +500,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Cost of planning, R&DF for alternate foods (ALLFED's estimate)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/106715d2-2484-47ac-ad1f-dcfb63ed55f8",
                 "platform": "Foretold",
@@ -441,11 +512,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated probability of full scale nuclear war per year",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cca72358-624a-40e5-a87a-5b14a50fdea6",
                 "platform": "Foretold",
@@ -453,11 +524,11 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              },
-              {
+            },
+            {
                 "title": "Untruncated probability of full scale nuclear war per year (ALLFED's estimates)",
                 "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/e147be3b-3280-43aa-a27e-a1a561c66b18",
                 "platform": "Foretold",
@@ -465,11 +536,729 @@
                 "options": [],
                 "timestamp": "2021-07-03T13:07:25.076Z",
                 "qualityindicators": {
-                  "numforecasts": 1,
-                  "stars": 2
+                    "numforecasts": 1,
+                    "stars": 2
                 }
-              }
+            }
         ],
+        "genericMarkdownContent": ""
+    },
+    {
+        "id": 2,
+        "title": "All-Party Parliamentary Group for Future Generations",
+        "shorthand": "APPGFG",
+        "url": "https://www.appgfuturegenerations.com/",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/appg-on-future-generations",
+        "teamPage": "https://www.appgfuturegenerations.com/secretariat",
+        "publicationsPage": "https://www.appgfuturegenerations.com/research",
+        "missionStatement": "We raise awareness of long-term issues, explore ways to internalise longer-term considerations into decision-making processes, and create space for cross-party dialogue on combating short-termism in policy-making.",
+        "yearlyBudget": "£38,000",
+        "teamMembers": [
+            "Sam Hilton",
+            "Caroline Baylon"
+        ],
+        "keyQuestions": [
+            "Is the APPGFG successfully bringing about substantial change?",
+            "Is the APPGFG successfully building capacity to bring about actual change?",
+            "Does the APPGFG have enough proposals or actionable advice for ministers to act on?",
+            "What are the possible downsides of the APPGFG?",
+            "To what extent is the APPGFG constrained by insufficient funding?",
+            "How strong is the APPGFG's network of advisors?",
+            "Is the APPGFG being cost-effective?",
+            "Does the APPGFG have room for growth?"
+        ],
+        "publications": [
+            {
+                "title": "Why are food shortages not listed as a risk in the National Risk Register?",
+                "authors": "Sam Hilton, Sahil Shah",
+                "url": "https://docs.google.com/document/d/1xr3ei6PmcrFq5pkaIln7XsUhPcclA_Y9SmSbnpaRrBM/edit#",
+                "location": ""
+            },
+            {
+                "title": "Risk Management in the UK: What Can We Learn from COVID-19 and are we Prepared for the Next Disaster?",
+                "authors": "Sam Hilton, Caroline Babylon",
+                "url": "https://01883769-75b2-47bc-819a-ec021b2d38d0.filesusr.com/ugd/06aa4b_7dedd03fcd274f949af5aebc29300322.pdf",
+                "location": ""
+            },
+            {
+                "title": "Policy making for the long-term: Literature and stakeholders",
+                "authors": "",
+                "url": "https://docs.google.com/document/d/1qf2bMs_Bcz6mBUFOLqu-Elc3_QAYatMO/edit",
+                "location": ""
+            },
+            {
+                "title": "Lessons for a UK Future Generations Bill",
+                "authors": "",
+                "url": "https://drive.google.com/file/d/1-bv5LbcL3k5RsqtGMYgxNm_xl0oeA2g0/edit",
+                "location": ""
+            },
+            {
+                "title": "Rights and Representation of Future Generations in United Kingdom Policy-Making",
+                "authors": "Natalie Jones",
+                "url": "https://www.researchgate.net/publication/322878298_Representation_of_Future_Generations_in_United_Kingdom_Policy-Making",
+                "location": ""
+            },
+            {
+                "title": "Policy Bodies for the Future: Where Are They Now?",
+                "authors": "",
+                "url": "https://docs.google.com/document/d/10nkgwafKKcU6JaJ4Io9AGRfG5ydl8SH6Qtc2VR0Zksg/edit",
+                "location": ""
+            }
+        ],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Alliance_to_Feed_the_Earth_in_Disasters",
+                "author": "Nuño Sempere",
+                "summary": "Their logic model is solid, and the APPGFG's capacity-building work is promising.",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            },
+            {
+                "title": "Long-Term Future Fund: November 2019 short grant writeups",
+                "url": "https://forum.effectivealtruism.org/posts/6BXrSZGayibJjR9uc/long-term-future-fund-november-2019-short-grant-writeups#Sam_Hilton___62_000_",
+                "author": "Oliver Habryka",
+                "summary": "Sam Hilton runs the All-Party Parliamentary Group (APPG) for Future Generations in the British Parliament, and seems to have found significant traction with this project; many members of Parliament have engaged with the APPG and found their inputs valuable. This funding will support staff and other costs of the APPG’s secretariat, enabling the group to work more effectively.",
+                "timestamp": "2020-01-05",
+                "stars": "1"
+            },
+            {
+                "title": "APPG on Future Generations impact report – Raising the profile of future generation in the UK Parliament",
+                "url": "https://forum.effectivealtruism.org/posts/AWKk9zjA3BXGmFdQG/appg-on-future-generations-impact-report-raising-the-profile-1",
+                "author": "Sam Hilton",
+                "summary": "The APPG for Future Generations has had significant traction at the early steps of the theory of change.",
+                "timestamp": "2020-08-12",
+                "stars": "3"
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "Conditional on its continued existence, will the APPG help pass legislation in the UK related to its mission by 2025?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6b379bd0-4659-45e4-b3d7-b769aed7c020",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.6,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.4,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            },
+            {
+                "title": "By 2025, will the APPGFG help pass legislation in the UK related to its mission?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/301c0ffe-7697-4b7a-9908-4bee72642236",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.3,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.7,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            },
+            {
+                "title": "Will the APPFG continue to exist by 2025?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b54917c1-f67c-4003-aff7-de188cc47879",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.5,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.5,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            }
+        ],
+        "genericMarkdownContent": ""
+    },
+    {
+        "id": 3,
+        "title": "Centre for the Study of Existential Risk",
+        "shorthand": "CSER",
+        "url": "https://www.cser.ac.uk/",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/centre-for-the-study-of-existential-risk",
+        "teamPage": "https://www.cser.ac.uk/team/",
+        "publicationsPage": "https://www.cser.ac.uk/research/",
+        "missionStatement": "We are dedicated to the study and mitigation of risks that could lead to human extinction or civilisational collapse",
+        "yearlyBudget": "unknown",
+        "teamMembers": [
+            "Seán Ó hÉigeartaigh",
+            "S. J. Beard",
+            "Haydn Belfield",
+            "Clare Arnstein",
+            "Laura Elmer",
+            "Esme Booth",
+            "Marisela Moreno-Ramirez",
+            "Shahar Avin",
+            "Lalitha Sundaram",
+            "Lauren Holt",
+            "Luke Kemp",
+            "Ellen Quigley",
+            "Sabin Roman",
+            "Natalie Jones",
+            "Alexa Hagerty",
+            "Lara Mani",
+            "Catherine Richards",
+            "Clarissa Rios Rojas",
+            "Jess Whittlestone",
+            "John Burden",
+            "Tom Hobson",
+            "Freya Jephcott",
+            "Alex McLaughlin",
+            "Matthijs Maas",
+            "Akaraseth Puranasamriddhi",
+            "Mia Sannapureddy",
+            "Jochem Rietveld"
+        ],
+        "keyQuestions": [
+            "How much of CSER's work is of high value from a long-termist perspective?"
+        ],
+        "publications": [],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#CSER",
+                "author": "Nuño Sempere",
+                "summary": "Although I feel like there is a small group of strong researchers working at CSER, the proportion of researchers working on stuff I don't particularly care about or which I don't expect to be particularly valuable according to my values is too high. Commenters pointed out that this assessment is 'almost unfairly subjective.''",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            },
+            {
+                "title": "Centre for the Study of Existential Risk Four Month Report June - September 2020",
+                "url": "https://forum.effectivealtruism.org/posts/EArLfuDz34zJHJZJx/centre-for-the-study-of-existential-risk-four-month-report-1",
+                "author": "Haydn Belfield",
+                "summary": "",
+                "timestamp": "2020-12-02",
+                "stars": 2
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "What fraction of CSER's research staff is doing high value work?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/d2aa8a4c-77e4-4a4a-8f1c-a4b85932922c",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 3
+                }
+            }
+        ],
+        "genericMarkdownContent": ""
+    },
+    {
+        "id": 4,
+        "title": "Center for Security and Emerging Technology",
+        "shorthand": "CSET",
+        "url": "https://cset.georgetown.edu/",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/center-for-security-and-emerging-technology",
+        "teamPage": "https://cset.georgetown.edu/team/",
+        "publicationsPage": "https://cset.georgetown.edu/publications/",
+        "missionStatement": "Connecting policymakers to high-quality analysis of emerging technologies and their security implications",
+        "yearlyBudget": "unknown",
+        "teamMembers": [
+            "Adrienne Thompson",
+            "Alex Friedland",
+            "Ali Crawford",
+            "Andrew Imbrie",
+            "Andrew Lohn",
+            "Anna Puglisi",
+            "Ashwin Acharya",
+            "Autumn Toney",
+            "Avonelle Davis",
+            "Ben Chang",
+            "Ben Murphy",
+            "Catherine Aiken",
+            "Chris Rohlf",
+            "Claire Perkins",
+            "Dahlia Peterson",
+            "Dakota Cary",
+            "Daniel Chou",
+            "Daniel Hague",
+            "Dewey Murdick",
+            "Diana Gehlhaus",
+            "Emily Weinstein",
+            "Heeu Millie Kim",
+            "Helen Toner",
+            "Huey-Meei Chang",
+            "Husanjot Chahal",
+            "Igor Mikolic-Torreira",
+            "Ilya Rahkovsky",
+            "Jack Clark",
+            "Jack Corrigan",
+            "James Dunham",
+            "Jamie Baker",
+            "Jennifer Melot",
+            "John Bansemer",
+            "Katerina Sedova",
+            "Kayla Goode",
+            "Lorand Laskai",
+            "Luke Koslosky",
+            "Lynne Weil",
+            "Margarita Konaev",
+            "Matthew Daniels",
+            "Melissa Flagg",
+            "Micah Musser",
+            "Michael Page",
+            "Ngor Luong",
+            "Olivia Albrighton-Vanway",
+            "Rebecca Gelles",
+            "Reginald Brothers",
+            "Remco Zwetsloot",
+            "Roxanne Heston",
+            "Ryan Fedasiuk",
+            "Saif M. Khan",
+            "Sara Abdulla",
+            "Shelton Fitch",
+            "Tantum Collins",
+            "Tessa Baker",
+            "Thuy Nguyen",
+            "Tim G. J. Rudner",
+            "Tim Hwang",
+            "Will Hunt",
+            "William Hannas",
+            "Wyatt Hoffman",
+            "Zachary Arnold"
+        ],
+        "keyQuestions": [
+            "What is a good way to think about CSET's impact?",
+            "How net-positive can we expect CSET's work to be? How likely is CSET to do harm? In particular, how much will CSET's work draw attention to good aspects of AI Safety and fight arms races, as opposed to drawing attention in ways that might amplify arms races or dangerous AI development?",
+            "Is CSET acquiring influence within the US policy community and/or the current administration?",
+            "How does Jason Matheny leaving for the Biden administration affect CSET's impact? How much power and influence does Matheny have in the new Biden administration?",
+            "How much influence would CSET have in a future Republican administration? Might CSET become partisan?",
+            "Does CSET 's influence translate into actual policy?",
+            "Are CSET's researchers well-positioned to join a future US administration?",
+            "How valuable is CSET-foretell? I.e., are the predictions eventually used to make real-world decisions?",
+            "What is the influence of longtermism at CSET? Can we expect this to grow or shrink in the future?",
+            "To what extent should one defer to OpenPhilanthropy's evaluation of CSET? This might be more than normal, as there may be a fair amount of private knowledge, and as models around policy change (and the reasons for believing in those models) might be particularly hard to communicate."
+        ],
+        "publications": [],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Center_for_Security_and_Emerging_Technology__CSET_",
+                "author": "Nuño Sempere",
+                "summary": "CSET's work seems within what I would expect a competent think tank would produce. Given that OpenPhilanthropy is still funding them, I expect them to still be valuable. In particular, its think-tank model seems particularly scalable.",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            },
+            {
+                "title": "Open Philanthropy — Georgetown University — Center for Security and Emerging Technology ",
+                "url": "https://www.openphilanthropy.org/giving/grants/georgetown-university-center-security-and-emerging-technology",
+                "author": "Luke Muehlhauser",
+                "summary": "Overall, we feel that ensuring high-quality and well-informed advice to policymakers over the long run is one of the most promising ways to increase the benefits and reduce the risks from advanced AI, and that the team put together by CSET is uniquely well-positioned to provide such advice",
+                "timestamp": "2021-07-24",
+                "stars": 4
+            },
+            {
+                "title": "Center for Security and Emerging Technology — General Support",
+                "url": "https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/center-security-and-emerging-technology-general-support",
+                "author": "Luke Muehlhauser",
+                "summary": "",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "Has CSET done more harm than good so far in its policy interventions?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/623499ee-19dd-4d2a-b100-614a3a0b032a",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.25,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.75,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            },
+            {
+                "title": "How much influence would CSET have in a 2024 Republican US administration, relative to its influence in a 2024 US Democratic administration?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/fee03eb4-c956-4f61-81e6-76e2f76616c3",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            }
+        ],
+        "genericMarkdownContent": ""
+    },
+    {
+        "id": 5,
+        "title": "Future of Life Institute",
+        "shorthand": "FLI",
+        "url": "https://futureoflife.org/team/",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/future-of-life-institute",
+        "teamPage": "https://futureoflife.org/team/",
+        "publicationsPage": "",
+        "missionStatement": "The Future of Life Institute works on reducing global catastrophic and existential risk from powerful technologies.",
+        "yearlyBudget": "unknown",
+        "teamMembers": [
+            "Jared Brown",
+            "Mark Brakel",
+            "Jessica Newman",
+            "Emilia Javorsky",
+            "Richard Mallah",
+            "David E. Nicholson",
+            "Lucas Perry",
+            "Anna Yelizarova",
+            "Georgiana Gilgalon",
+            "Risto UK"
+        ],
+        "keyQuestions": [
+            "What is a good breakdown of FLI's current and future activities?",
+            "How well can FLI ensure quality with part-time employees covering sensitive topics?",
+            "How net-positive has FLI's previous work been? Has anything been particularly negative, or have they incurred significant PR risks or similar?"
+        ],
+        "publications": [],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Future_of_Life_Institute__FLI_",
+                "author": "Nuño Sempere",
+                "summary": "I'm uncertain about how valuable policy work is, about how valuable the specific policy work which FLI has done is, and about whether FLI intends to continue doing policy work. Colleagues have mentioned that FLI isn't so much an organization as ''a hat which sometimes people wear,'' which seems plausible.",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            },
+            {
+                "title": "Template 2015 Highlights",
+                "url": "https://forum.effectivealtruism.org/posts/abcdef/template-2015-highlights",
+                "author": "Fulano Fulanez",
+                "summary": "Summary of ATO's work in 2015",
+                "timestamp": "2016-01-15",
+                "stars": "2"
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "$100M to templates is more cost-effective than to AI risk mitigation",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/704c1052-8e0b-4582-8feb-604a8c452ac3",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 1,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 5
+                }
+            }
+        ],
+        "genericMarkdownContent": ""
+    },
+    {
+        "id": 6,
+        "title": "LessWrong",
+        "shorthand": "LW",
+        "url": "https://lesswrong.com",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/lesswrong",
+        "teamPage": "https://www.lesswrong.com/posts/aG74jJkiPccqdkK3c/the-lesswrong-team",
+        "publicationsPage": "",
+        "missionStatement": "We are a community dedicated to improving our reasoning and decision-making. We seek to hold true beliefs and to be effective at accomplishing our goals. More generally, we work to develop and practice the art of human rationality.",
+        "yearlyBudget": "unknown",
+        "teamMembers": [
+            "Oliver Habryka",
+            "Benito Pace",
+            "Raymond Arnold",
+            "Ruben Bloom",
+            "Jacob Lagerros",
+            "Kaj Sotala",
+            "Elizabeth V",
+            "Mathew Graves"
+        ],
+        "keyQuestions": [
+            "Is LessWrong catalyzing useful research?",
+            "Is LessWrong successfully cultivating a community of people capable of grappling with important real world problems?",
+            "How does LessWrong's research output compare to that of other research institutions",
+            "How many FTEs worth of research is LessWrong responsible for?"
+        ],
+        "publications": [],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#LessWrong",
+                "author": "Nuño Sempere",
+                "summary": "LW seems to catalyze or facilitate a relatively large amount of research, and that it does so relatively efficiently, with around 6 FTEs (per the team page). Concretely, LessWrong appears to produce substantially more than one FTE worth of research per FTE. One key question is whether many of the LessWrong posts would have just been written elsewhere.",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "How many FTE-years worth of high-quality research does LessWrong produce per year?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/fbfde3f4-ed4c-44a1-8beb-4aa4389e3787",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            },
+            {
+                "title": "How many FTE-years worth of high-quality research does LessWrong produce each year per FTE-year employed at LessWrong?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/1a6642cc-a4e3-427f-be75-39f05023ca7f",
+                "platform": "Foretold",
+                "description": "",
+                "options": [],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            }
+        ],
+        "genericMarkdownContent": ""
+    },
+    {
+        "id": 7,
+        "title": "Rethink Priorities",
+        "shorthand": "RP",
+        "url": "https://www.rethinkpriorities.org",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/rethink-priorities",
+        "teamPage": "https://www.rethinkpriorities.org/our-team",
+        "publicationsPage": "https://www.rethinkpriorities.org/publications",
+        "missionStatement": "Rethink Priorities is a think tank dedicated to figuring out the best ways to make the world a better place.",
+        "yearlyBudget": "unknown",
+        "teamMembers": [
+            "Marcus A. Davis",
+            "Peter Wildeford",
+            "David Moss",
+            "Kim Cuddington",
+            "David Reinstein",
+            "Jason Schukraft",
+            "Daniela R. Waldhorn",
+            "Neil Dullaghan - Senior Staff Researcher",
+            "Saulius Šimčikas",
+            "Michael Aird",
+            "Meghan Barrett",
+            "Holly Elmore",
+            "Linchuan Zhang",
+            "Abraham Rowe",
+            "Janique Behman",
+            "Dominika Krupocin"
+        ],
+        "keyQuestions": [
+            "How many FTEs are currently working using a longtermist perspective at Rethink Priorities?",
+            "Will Rethink Priorities be able to produce research in the long-termist space similar in quality to the research they have produced on invertebrate welfare?",
+            "Will Rethink Rethink Priorities be able to productively expand into the longtermist sphere? How will it do so?",
+            "How many FTEs producing high-quality longtermist research will RP employ by 2025?"
+        ],
+        "publications": [],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Rethink_Priorities__RP_",
+                "author": "Nuño Sempere",
+                "summary": "",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            },
+            {
+                "title": "Rethink Priorities 2020 Impact and 2021 Strategy",
+                "url": "https://forum.effectivealtruism.org/posts/33AnPajNYmNrdXQbj/rethink-priorities-2020-impact-and-2021-strategy",
+                "author": "Markus A Davis",
+                "summary": "",
+                "timestamp": "2021-11-25",
+                "stars": 4
+            },
+            {
+                "title": "Rethink Priorities 2019 Impact and Strategy",
+                "url": "https://forum.effectivealtruism.org/posts/yq8M5aorCLSq8JjvC/rethink-priorities-2019-impact-and-strategy",
+                "author": "Peter Wildeford",
+                "summary": "",
+                "timestamp": "2019-12-02",
+                "stars": 4
+            }
+        ],
+        "forecasts": [
+            {
+                "title": "Will Rethink Priorities be able to produce research in the long-termist space similar in quality to the research they have produced on invertebrate welfare?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b0083e46-4dee-4281-a324-605657773834",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.425,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.575,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            },
+            {
+                "title": "Will Rethink Priorities be able to produce research in the long-termist space similar in quality to the research they have produced on invertebrate welfare?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b0083e46-4dee-4281-a324-605657773834",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.425,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.575,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            },
+            {
+                "title": "Will Rethink Rethink Priorities be able to productively expand into the longtermist sphere?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/76d54743-3136-448d-adc6-de57d4eada9e",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.8,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.2,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            },
+            {
+                "title": "Will RP employ 5 FTEs producing high-quality longtermist research by 2025?",
+                "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6a8a92c1-2740-4e21-98a6-6c4311bc8461",
+                "platform": "Foretold",
+                "description": "",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "probability": 0.65,
+                        "type": "PROBABILITY"
+                    },
+                    {
+                        "name": "No",
+                        "probability": 0.35,
+                        "type": "PROBABILITY"
+                    }
+                ],
+                "timestamp": "2021-07-03T13:07:25.076Z",
+                "qualityindicators": {
+                    "numforecasts": 1,
+                    "stars": 2
+                }
+            }
+        ],
+        "genericMarkdownContent": ""
+    },
+    {
+        "id": 8,
+        "title": "Simon Institute for Long-Term Governance",
+        "shorthand": "ATO",
+        "url": "https://www.simoninstitute.ch/",
+        "EAforumTag": "https://forum.effectivealtruism.org/tag/simon-institute-for-longterm-governance",
+        "teamPage": "https://www.simoninstitute.ch/about/#our-team",
+        "publicationsPage": "https://www.simoninstitute.ch/projects/category/research/",
+        "missionStatement": "SI's mission is to increase the capacity of policy networks to mitigate global catastrophic risks and build resilience for civilization to flourish.",
+        "yearlyBudget": "unknown",
+        "teamMembers": [
+            "Maxime Stauffer",
+            "Konrad Seifert"
+        ],
+        "keyQuestions": [
+            "What does the prior distribution of success for new longermist organizations look like?",
+            "When will we have a better estimate of the Simon Institute for Long-Term Governance's input?",
+            "Is funding SILG better than OpenPhilanthropy's last longtermist dollar?"
+        ],
+        "publications": [],
+        "evaluations": [
+            {
+                "title": "Shallow evaluations of longtermist organizations",
+                "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Simon_Institute_for_Long_Term_Governance__SILG_",
+                "author": "Nuño Sempere",
+                "summary": "",
+                "timestamp": "2021-07-24",
+                "stars": 2
+            }
+        ],
+        "forecasts": [],
         "genericMarkdownContent": ""
     }
 ]

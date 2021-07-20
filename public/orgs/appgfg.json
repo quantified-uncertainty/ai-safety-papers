@@ -1,0 +1,160 @@
+{
+    "title": "All-Party Parliamentary Group for Future Generations",
+    "shorthand": "APPGFG", 
+    "url": "https://www.appgfuturegenerations.com/",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/appg-on-future-generations",
+    "teamPage": "https://www.appgfuturegenerations.com/secretariat",
+    "publicationsPage": "https://www.appgfuturegenerations.com/research",
+    "missionStatement": "We raise awareness of long-term issues, explore ways to internalise longer-term considerations into decision-making processes, and create space for cross-party dialogue on combating short-termism in policy-making.",
+    "yearlyBudget": "£38,000",
+    "teamMembers": [
+        "Sam Hilton",
+        "Caroline Baylon"
+    ],
+    "keyQuestions": [
+      "Is the APPGFG successfully bringing about substantial change?",
+      "Is the APPGFG successfully building capacity to bring about actual change?",
+      "Does the APPGFG have enough proposals or actionable advice for ministers to act on?",
+      "What are the possible downsides of the APPGFG?",
+      "To what extent is the APPGFG constrained by insufficient funding?",
+      "How strong is the APPGFG's network of advisors?",
+      "Is the APPGFG being cost-effective?",
+      "Does the APPGFG have room for growth?"
+    ],
+    "publications": [
+        {
+            "title":"Why are food shortages not listed as a risk in the National Risk Register?",
+            "authors": "Sam Hilton, Sahil Shah",
+            "url": "https://docs.google.com/document/d/1xr3ei6PmcrFq5pkaIln7XsUhPcclA_Y9SmSbnpaRrBM/edit#",
+            "location": ""
+        },
+        {
+          "title":"Risk Management in the UK: What Can We Learn from COVID-19 and are we Prepared for the Next Disaster?",
+          "authors": "Sam Hilton, Caroline Babylon",
+          "url": "https://01883769-75b2-47bc-819a-ec021b2d38d0.filesusr.com/ugd/06aa4b_7dedd03fcd274f949af5aebc29300322.pdf",
+          "location": ""
+        },
+        {
+          "title":"Policy making for the long-term: Literature and stakeholders",
+          "authors": "",
+          "url": "https://docs.google.com/document/d/1qf2bMs_Bcz6mBUFOLqu-Elc3_QAYatMO/edit",
+          "location": ""
+        },
+        {
+          "title":"Lessons for a UK Future Generations Bill",
+          "authors": "",
+          "url": "https://drive.google.com/file/d/1-bv5LbcL3k5RsqtGMYgxNm_xl0oeA2g0/edit",
+          "location": ""
+        },
+        {
+          "title":"Rights and Representation of Future Generations in United Kingdom Policy-Making",
+          "authors": "Natalie Jones",
+          "url": "https://www.researchgate.net/publication/322878298_Representation_of_Future_Generations_in_United_Kingdom_Policy-Making",
+          "location": ""
+        },
+        {
+          "title":"Policy Bodies for the Future: Where Are They Now?",
+          "authors": "",
+          "url": "https://docs.google.com/document/d/10nkgwafKKcU6JaJ4Io9AGRfG5ydl8SH6Qtc2VR0Zksg/edit",
+          "location": ""
+        }
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Alliance_to_Feed_the_Earth_in_Disasters",
+            "author": "Nuño Sempere",
+            "summary": "Their logic model is solid, and the APPGFG's capacity-building work is promising.",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+          "title": "Long-Term Future Fund: November 2019 short grant writeups",
+          "url": "https://forum.effectivealtruism.org/posts/6BXrSZGayibJjR9uc/long-term-future-fund-november-2019-short-grant-writeups#Sam_Hilton___62_000_",
+          "author": "Oliver Habryka",
+          "summary": "Sam Hilton runs the All-Party Parliamentary Group (APPG) for Future Generations in the British Parliament, and seems to have found significant traction with this project; many members of Parliament have engaged with the APPG and found their inputs valuable. This funding will support staff and other costs of the APPG’s secretariat, enabling the group to work more effectively.",
+          "timestamp": "2020-01-05",
+          "stars": "1"
+        },
+        {
+            "title": "APPG on Future Generations impact report – Raising the profile of future generation in the UK Parliament",
+            "url": "https://forum.effectivealtruism.org/posts/AWKk9zjA3BXGmFdQG/appg-on-future-generations-impact-report-raising-the-profile-1",
+            "author": "Sam Hilton",
+            "summary": "The APPG for Future Generations has had significant traction at the early steps of the theory of change.",
+            "timestamp": "2020-08-12",
+            "stars": "3"
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "Conditional on its continued existence, will the APPG help pass legislation in the UK related to its mission by 2025?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6b379bd0-4659-45e4-b3d7-b769aed7c020",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+              {
+                "name": "Yes",
+                "probability": 0.6,
+                "type": "PROBABILITY"
+              },
+              {
+                "name": "No",
+                "probability": 0.4,
+                "type": "PROBABILITY"
+              }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+        },
+        {
+          "title": "By 2025, will the APPGFG help pass legislation in the UK related to its mission?",
+          "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/301c0ffe-7697-4b7a-9908-4bee72642236",
+          "platform": "Foretold",
+          "description": "",
+          "options": [
+            {
+              "name": "Yes",
+              "probability": 0.3,
+              "type": "PROBABILITY"
+            },
+            {
+              "name": "No",
+              "probability": 0.7,
+              "type": "PROBABILITY"
+            }
+          ],
+          "timestamp": "2021-07-03T13:07:25.076Z",
+          "qualityindicators": {
+            "numforecasts": 1,
+            "stars": 2
+          }
+        },
+        {
+          "title": "Will the APPFG continue to exist by 2025?",
+          "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b54917c1-f67c-4003-aff7-de188cc47879",
+          "platform": "Foretold",
+          "description": "",
+          "options": [
+            {
+              "name": "Yes",
+              "probability": 0.5,
+              "type": "PROBABILITY"
+            },
+            {
+              "name": "No",
+              "probability": 0.5,
+              "type": "PROBABILITY"
+            }
+          ],
+          "timestamp": "2021-07-03T13:07:25.076Z",
+          "qualityindicators": {
+            "numforecasts": 1,
+            "stars": 2
+          }
+        }
+    ],
+    "genericMarkdownContent": ""
+}

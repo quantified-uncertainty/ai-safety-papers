@@ -1,0 +1,473 @@
+{
+    "title": "Alliance to Feed the Earth in Disasters",
+    "shorthand": "ALLFED", 
+    "url": "https://allfed.info",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/allfed",
+    "teamPage": "https://allfed.info/team-members/",
+    "publicationsPage": "https://allfed.info/papers/",
+    "missionStatement": "Feeding everyone no matter what",
+    "yearlyBudget": "unknown",
+    "teamMembers": [
+        "David Denkenberger",
+        "Ray Taylor",
+        "Joshua Pearce",
+        "Sonia Cassidy",
+        "Al Hundley",
+        "Ariel Conn",
+        "Gareth Jones",
+        "Sahil Shah",
+        "Tim Fist",
+        "James Throup",
+        "Aron Mill",
+        "Juan García Martínez",
+        "Ross Tieman",
+        "Amanda Cassidy",
+        "Maciej Pilachowski",
+        "Kyle Alvarado",
+        "Megan Jamer",
+        "Daisy Newbold-Harrop",
+        "Finan Adamson"
+    ],
+    "keyQuestions": [
+        "What is the probability of a (non-AI) catastrophe which makes ALLFED's work relevant (i.e., which kills 10% or more of humanity, but not all of humanity) over the next 50 to 100 years?",
+        "How much does the value of the future diminish in a catastrophe which makes ALLFED's work relevant?",
+        "How does the cause area feeding the Earth in disasters compare to other cause areas?",
+        "Is ALLFED making progress in its \"feeding everyone no matter what\" agenda?",
+        "Is ALLFED's progress on the lobbying front, or on the research front?",
+        "Is ALLFED producing high-quality research? On a Likert scale of 1-5, how strong are their papers and public writing?",
+        "Given that ALLFED has a large team, is it a positive influence on its team members? How would we expect employees and volunteers to rate their experience with the organization?"
+    ],
+    "publications": [
+        {
+            "title":"Potential of microbial electrosynthesis for contributing to food production using CO2 during global agriculture-inhibiting disasters",
+            "authors": "J.B. García Martínez, M. M. Brown, X. Christodoulou, K.A. Alvarado, D.C. Denkenberger",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2666790821000999",
+            "location": "Cleaner Engineering and Technology, Vol 4, Article 100139, 2021"
+        },
+        {
+            "title":"Food in space from hydrogen oxidizing bacteria",
+            "authors": "K.A. Alvarado, J.B. García Martínez, S. Matassa, J. Egbejimba, D.C. Denkenberger",
+            "url": "https://allfed.info/wp-content/uploads/2020/12/Food_in_space_from_hydrogen_oxidizing_ba.pdf",
+            "location": "Acta Astronautica, Vol 180, pp. 260-265, 2021"
+        },
+        {
+            "title":"Potential of microbial protein from hydrogen for preventing mass starvation in catastrophic scenarios",
+            "authors": "J.B. García Martínez, J. Egbejimba, J. Throup, S. Matassa, J.M. Pearce, D.C. Denkenberger",
+            "url": "https://allfed.info/wp-content/uploads/2020/08/Potential-of-microbial-protein-from-hydrogen-for-preventing-mass-starvation-in-catastrophic-scenarios.pdf",
+            "location": "Sustainable Production and Consumption, Vol 25, 234-247, 2021"
+        },
+        {
+            "title":"Scaling of Greenhouse Crop Production in Low Sunlight Scenarios",
+            "authors": "K. Alvarado, A. Mill, J. Pearce, A. Vocaet, D. Denkenberger",
+            "url": "https://allfed.info/wp-content/uploads/2020/04/Scaling_of_Greenhouse_Crop_Production_in_Low_Sunlight_Scenarios.pdf",
+            "location": "Science of the Total Environment, Vol 707, 2020"
+        },
+        {
+            "title":"Preliminary Automated Determination of Edibility of Alternative Foods: Non-Targeted Screening for Toxins in Red Maple Leaf Concentrate",
+            "authors": "D. Denkenberger, J.M. Pearce and Maryam Khaksari",
+            "url": "https://allfed.info/wp-content/uploads/2019/05/plants-08-00110.pdf",
+            "location": "Plants, Vol 8, No 5, 110, 2019"
+        },
+        {
+            "title":"Cost-Effectiveness of Interventions for Alternate Food in the United States to Address Agricultural Catastrophes Catastrophes",
+            "authors": "D.Denkenberger and J.M. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2018/11/Cost-effectiveness-of-interventions-for-alternate-food-in-the-United-States-to-address-agricultural-catastrophes.pdf",
+            "location": "International Journal of Disaster Risk Reduction, Vol 27, 278–289, 2018"
+        },
+        {
+            "title":"Feeding Everyone if the Sun is Obscured and Industry is Disabled",
+            "authors": "D. Denkenberger, D. Cole, M. Abdelkhaliq, M. Griswold, A. Hundley, J. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2019/08/Feeding-everyone-if-the-sun-is-obscured-and-industry-is-disabled.pdf",
+            "location": "International Journal of Disaster Risk Reduction, Vol 21, 284-290, 2017"
+        },
+        {
+            "title":"Food without sun: price and life-saving potential",
+            "authors": "Denkenberger, D., Pearce, J., Taylor, A. R., Black, R",
+            "url": "https://allfed.info/wp-content/uploads/2018/11/Alternate-foods-price-and-life-saving-Foresight-preprint.pdf",
+            "location": "Foresight, 2018"
+        },
+        {
+            "title":"Cost-Effectiveness of Interventions for Alternate Food to Address Agricultural Catastrophes Globally",
+            "authors": "D. Denkenberger and J. Pearce",
+            "url": "https://link.springer.com/content/pdf/10.1007%2Fs13753-016-0097-2.pdf",
+            "location": "International Journal of Disaster Risk Science, vol. 7, no. 3, 205-215, 2016"
+        },
+        {
+            "title":"Alternative Foods as a Solution to Global Food Supply Catastrophes",
+            "authors": "S. Baum, D. Denkenberger, J. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2018/11/BaumEtal_AltFoodSolutions_2016-07-08.pdf",
+            "location": "Solutions, vol. 7, no. 4, 2016, pp. 31-35"
+        },
+        {
+            "title":"Resilience to Global Food Supply Catastrophes",
+            "authors": "S. Baum, D. Denkenberger, J. Pearce, A. Robock, R. Winkler",
+            "url": "https://sethbaum.com/ac/2015_Food.pdf",
+            "location": "Environment, Systems and Decisions, Vol 35, No 2, 301-313, 2015"
+        },
+        {
+            "title":"Feeding Everyone: Solving the Food Crisis in the Event of Global Catastrophes that Kill Crops or Obscure the Sun",
+            "authors": "D. Denkenberger and J. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2017/08/Feeding-Everyone-Futures-preprint.pdf",
+            "location": "Futures, Vol 72, 57-68, 2015"
+        },
+        {
+            "title":"Micronutrient Availability in Alternative Foods During Agricultural Catastrophes",
+            "authors": "D. Denkenberger and J. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2019/10/agriculture-353686-vitamins-update.pdf",
+            "location": "Agriculture Vol 8, No 11, 169, 2018"
+        },
+        {
+            "title":"Global Catastrophic and Existential Risks Communication Scale",
+            "authors": "A. Turchin, D. Denkenberger",
+            "url": "https://www.academia.edu/35656493/Global_Catastrophic_and_Existential_Risks_Communication_Scale",
+            "location": "Futures, Vol 102, 27–38, 2018"
+        },
+        {
+            "title":"A National Pragmatic Safety Limit for Nuclear Weapon Quantities",
+            "authors": "J. Pearce and D. Denkenberger",
+            "url": "https://allfed.info/wp-content/uploads/2018/11/A_National_Pragmatic_Safety_Limit_for_Nuclear_Weapns-Safety-2018.pdf",
+            "location": "Safety Vol 4, No 2, 25, 2018"
+        },
+        {
+            "title":"Isolated Refuges for Surviving Global Catastrophes",
+            "authors": "S. Baum, D. Denkenberger, J. Haqq-Misra",
+            "url": "https://sethbaum.com/ac/2015_Refuges.pdf",
+            "location": "Futures, 72, 45-56, 2015"
+        },
+        {
+            "title":"Classification of global catastrophic risks connected with artificial intelligence",
+            "authors": "A. Turchin, D. Denkenberger",
+            "url": "https://philpapers.org/archive/TURCOG.pdf",
+            "location": "AI & Society 2018"
+        },
+        {
+            "title":"Feeding Everyone No Matter What: Managing Food Security After Global Catastrophe",
+            "authors": "D.C. Denkenberger and J. M. Pearce",
+            "url": "https://www.amazon.com/Feeding-Everyone-Matter-What-Catastrophe/dp/0128021500/ref=sr_1_1?ie=UTF8&qid=1458029876&sr=8-1&keywords=feeding+everyone+no+matter+what",
+            "location": "Elsevier, New York, New York, 2014, D.C. ISBN: 978-0-12-804447-6"
+        },
+        {
+            "title":"Non Food Needs if Industry is Disabled",
+            "authors": "M. Abdelkhaliq, D. Denkenberger, D.D. Cole, M. Griswold, J. Pearce",
+            "url": "https://www.academia.edu/28508179/Providing_Non-food_Needs_if_Industry_is_Disabled",
+            "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
+        },
+        {
+            "title":"Feeding Everyone if Industry is Disabled",
+            "authors": "D.D. Cole, D. Denkenberger, M. Griswold, M. Abdelkhaliq, J. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2017/08/Feeding_Everyone_if_Industry_is_Disabled.pdf",
+            "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
+        },
+        {
+            "title":"Vitamins in Agricultural Catastrophes",
+            "authors": "M. Griswold, D. Denkenberger, D.D. Cole, M. Abdelkhaliq, J. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2018/11/Vitamins-in-Agricultural-Catastrophes-final.pdf",
+            "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
+        },
+        {
+            "title":"Integrative Risk Management for Catastrophe Destroying 10-20% of Global Food Supply",
+            "authors": "A.R. Taylor, D. Denkenberger, J. Pearce",
+            "url": "https://allfed.info/wp-content/uploads/2018/11/Davos-10-percent-submit.pdf",
+            "location": "Proceedings of the 6th International Disaster and Risk Conference, Davos, Switzerland, 2016"
+        }
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Alliance_to_Feed_the_Earth_in_Disasters",
+            "author": "Nuño Sempere",
+            "summary": "Although the case for ALLFED's cause are is relatively robust, the quality of ALLFED's work is uncertain",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+            "title": "ALLFED 2020 Highlights",
+            "url": "https://forum.effectivealtruism.org/posts/29mfRszEcpn6uLZAb/allfed-2020-highlights",
+            "author": "David Denkenberger",
+            "summary": "Summary of ALLFED's work in 2020",
+            "timestamp": "2020-11-19",
+            "stars": "2"
+
+        },
+        {
+            "title": "ALLFED 2019 Annual Report and Fundraising Appeal",
+            "url": "https://forum.effectivealtruism.org/posts/7LJM9RTWYddNJebfi/allfed-2019-annual-report-and-fundraising-appeal",
+            "author": "David Denkenberger",
+            "summary": "Summary of ALLFED's work in 2019",
+            "timestamp": "2019-11-23",
+            "stars": "2"
+
+        },
+        {
+            "title": "2017 Donor Lottery Report",
+            "url": "https://forum.effectivealtruism.org/posts/SYeJnv9vYzq9oQMbQ/2017-donor-lottery-report",
+            "author": "AdamGleave",
+            "summary": "Initial investigation of ALLFED warrants initial investment",
+            "timestamp": "2018-11-12",
+            "stars": "2"
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "$100M to alternate foods is more cost-effective than to AI risk mitigation",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/704c1052-8e0b-4582-8feb-604a8c452ac3",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+              {
+                "name": "Yes",
+                "probability": 0.15,
+                "type": "PROBABILITY"
+              },
+              {
+                "name": "No",
+                "probability": 0.85,
+                "type": "PROBABILITY"
+              }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "$100M to alternate foods is more cost-effective than to AI risk mitigation (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/62c003c4-2525-4830-84ed-93686dc8cae1",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+              {
+                "name": "Yes",
+                "probability": 0.6,
+                "type": "PROBABILITY"
+              },
+              {
+                "name": "No",
+                "probability": 0.4,
+                "type": "PROBABILITY"
+              }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b1a21ed8-7819-467c-8a63-98b0c85993ef",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+              {
+                "name": "Yes",
+                "probability": 0.5,
+                "type": "PROBABILITY"
+              },
+              {
+                "name": "No",
+                "probability": 0.5,
+                "type": "PROBABILITY"
+              }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Marginal money now on alternate foods is more cost effective than on AI risk mitigation (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/50d7c7a8-f46d-4427-af5f-12cbd898c40b",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+              {
+                "name": "Yes",
+                "probability": 0.95,
+                "type": "PROBABILITY"
+              },
+              {
+                "name": "No",
+                "probability": 0.050000000000000044,
+                "type": "PROBABILITY"
+              }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/451d4013-d302-43c5-b2c3-bacc7d82ed59",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall with planning and R&D as well (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f7616759-f00b-4fd1-a10e-0a281541efc6",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/1a16fcf9-e155-4157-b02b-f9d2d546368c",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated mitigation of far future impact of 10% agricultural shortfall from ALLFED so far (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/ff6231c6-3def-4663-82b7-d2d605bf37db",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6084ec83-df7b-4af7-8c58-612b491e6946",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated reduction in far future potential due to 10% agricultural shortfall (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/36fdd2c9-7829-4fae-9222-ab0d1795d5b5",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/c24a076b-d045-43d2-b3d4-b555227fae30",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated additional mitigation of far future impact of war due to planning and R&D (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/07b1924e-0581-410f-a34c-3e87cfcd278a",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated mitigation of far future impact of war due to ALLFED so far",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cd78ff36-da47-4411-ab67-d20eb0811333",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated mitigation of far future impact of war due to ALLFED so far (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/805f614e-e170-4a72-9bd2-daadd4d62789",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Cost of planning, R&DF for alternate foods",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/f9203a65-d4ff-4aaf-95dc-39a577e2318a",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Cost of planning, R&DF for alternate foods (ALLFED's estimate)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/106715d2-2484-47ac-ad1f-dcfb63ed55f8",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated probability of full scale nuclear war per year",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/cca72358-624a-40e5-a87a-5b14a50fdea6",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          },
+          {
+            "title": "Untruncated probability of full scale nuclear war per year (ALLFED's estimates)",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/e147be3b-3280-43aa-a27e-a1a561c66b18",
+            "platform": "Foretold",
+            "description": "",
+            "options": [],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+          }
+    ],
+    "genericMarkdownContent": ""
+}

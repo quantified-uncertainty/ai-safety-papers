@@ -1,0 +1,73 @@
+{
+    "title": "Future of Life Institute",
+    "shorthand": "FLI", 
+    "url": "https://futureoflife.org/team/",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/future-of-life-institute",
+    "teamPage": "https://futureoflife.org/team/",
+    "publicationsPage": "",
+    "missionStatement": "The Future of Life Institute works on reducing global catastrophic and existential risk from powerful technologies.",
+    "yearlyBudget": "unknown",
+    "teamMembers": [
+        "Jared Brown",
+        "Mark Brakel",
+        "Jessica Newman",
+        "Emilia Javorsky",
+        "Richard Mallah",
+        "David E. Nicholson",
+        "Lucas Perry",
+        "Anna Yelizarova",
+        "Georgiana Gilgalon",
+        "Risto UK"
+    ],
+    "keyQuestions": [
+      "What is a good breakdown of FLI's current and future activities?",
+      "How well can FLI ensure quality with part-time employees covering sensitive topics?",
+      "How net-positive has FLI's previous work been? Has anything been particularly negative, or have they incurred significant PR risks or similar?"
+    ],
+    "publications": [
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Future_of_Life_Institute__FLI_",
+            "author": "Nuño Sempere",
+            "summary": "I'm uncertain about how valuable policy work is, about how valuable the specific policy work which FLI has done is, and about whether FLI intends to continue doing policy work. Colleagues have mentioned that FLI isn't so much an organization as ''a hat which sometimes people wear,'' which seems plausible.",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+            "title": "Template 2015 Highlights",
+            "url": "https://forum.effectivealtruism.org/posts/abcdef/template-2015-highlights",
+            "author": "Fulano Fulanez",
+            "summary": "Summary of ATO's work in 2015",
+            "timestamp": "2016-01-15",
+            "stars": "2"
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "$100M to templates is more cost-effective than to AI risk mitigation",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/704c1052-8e0b-4582-8feb-604a8c452ac3",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+              {
+                "name": "Yes",
+                "probability": 0,
+                "type": "PROBABILITY"
+              },
+              {
+                "name": "No",
+                "probability": 1,
+                "type": "PROBABILITY"
+              }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 5
+            }
+          }
+    ],
+    "genericMarkdownContent": ""
+}

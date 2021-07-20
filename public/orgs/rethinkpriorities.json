@@ -1,0 +1,157 @@
+{
+    "title": "Rethink Priorities",
+    "shorthand": "RP", 
+    "url": "https://www.rethinkpriorities.org",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/rethink-priorities",
+    "teamPage": "https://www.rethinkpriorities.org/our-team",
+    "publicationsPage": "https://www.rethinkpriorities.org/publications",
+    "missionStatement": "Rethink Priorities is a think tank dedicated to figuring out the best ways to make the world a better place.",
+    "yearlyBudget": "unknown",
+    "teamMembers": [
+        "Marcus A. Davis",
+        "Peter Wildeford",
+        "David Moss",
+        "Kim Cuddington",
+        "David Reinstein",
+        "Jason Schukraft",
+        "Daniela R. Waldhorn",
+        "Neil Dullaghan - Senior Staff Researcher",
+        "Saulius Šimčikas",
+        "Michael Aird",
+        "Meghan Barrett",
+        "Holly Elmore",
+        "Linchuan Zhang",
+        "Abraham Rowe",
+        "Janique Behman",
+        "Dominika Krupocin"
+    ],
+    "keyQuestions": [
+        "How many FTEs are currently working using a longtermist perspective at Rethink Priorities?",
+        "Will Rethink Priorities be able to produce research in the long-termist space similar in quality to the research they have produced on invertebrate welfare?",
+        "Will Rethink Rethink Priorities be able to productively expand into the longtermist sphere? How will it do so?",
+        "How many FTEs producing high-quality longtermist research will RP employ by 2025?"
+    ],
+    "publications": [
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Rethink_Priorities__RP_",
+            "author": "Nuño Sempere",
+            "summary": "",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+            "title": "Rethink Priorities 2020 Impact and 2021 Strategy",
+            "url": "https://forum.effectivealtruism.org/posts/33AnPajNYmNrdXQbj/rethink-priorities-2020-impact-and-2021-strategy",
+            "author": "Markus A Davis",
+            "summary": "",
+            "timestamp": "2021-11-25",
+            "stars": 4
+        },
+        {
+            "title": "Rethink Priorities 2019 Impact and Strategy",
+            "url": "https://forum.effectivealtruism.org/posts/yq8M5aorCLSq8JjvC/rethink-priorities-2019-impact-and-strategy",
+            "author": "Peter Wildeford",
+            "summary": "",
+            "timestamp": "2019-12-02",
+            "stars": 4
+        }
+    ],
+    "forecasts": [
+        {
+            "title": "Will Rethink Priorities be able to produce research in the long-termist space similar in quality to the research they have produced on invertebrate welfare?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b0083e46-4dee-4281-a324-605657773834",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+                {
+                    "name": "Yes",
+                    "probability": 0.425,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.575,
+                    "type": "PROBABILITY"
+                  }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+        },
+        {
+            "title": "Will Rethink Priorities be able to produce research in the long-termist space similar in quality to the research they have produced on invertebrate welfare?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/b0083e46-4dee-4281-a324-605657773834",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+                {
+                    "name": "Yes",
+                    "probability": 0.425,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.575,
+                    "type": "PROBABILITY"
+                  }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+        },
+        {
+            "title": "Will Rethink Rethink Priorities be able to productively expand into the longtermist sphere?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/76d54743-3136-448d-adc6-de57d4eada9e",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+                {
+                    "name": "Yes",
+                    "probability": 0.8,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.2,
+                    "type": "PROBABILITY"
+                  }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+        },
+        {
+            "title": "Will RP employ 5 FTEs producing high-quality longtermist research by 2025?",
+            "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/6a8a92c1-2740-4e21-98a6-6c4311bc8461",
+            "platform": "Foretold",
+            "description": "",
+            "options": [
+                {
+                    "name": "Yes",
+                    "probability": 0.65,
+                    "type": "PROBABILITY"
+                  },
+                  {
+                    "name": "No",
+                    "probability": 0.35,
+                    "type": "PROBABILITY"
+                  }
+            ],
+            "timestamp": "2021-07-03T13:07:25.076Z",
+            "qualityindicators": {
+              "numforecasts": 1,
+              "stars": 2
+            }
+        }
+    ],
+    "genericMarkdownContent": ""
+}

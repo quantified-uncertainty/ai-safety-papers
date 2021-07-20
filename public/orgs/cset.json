@@ -1,0 +1,152 @@
+{
+    "title": "Center for Security and Emerging Technology",
+    "shorthand": "CSET", 
+    "url": "https://cset.georgetown.edu/",
+    "EAforumTag": "https://forum.effectivealtruism.org/tag/center-for-security-and-emerging-technology",
+    "teamPage": "https://cset.georgetown.edu/team/",
+    "publicationsPage": "https://cset.georgetown.edu/publications/",
+    "missionStatement": "Connecting policymakers to high-quality analysis of emerging technologies and their security implications",
+    "yearlyBudget": "unknown",
+    "teamMembers": [
+      "Adrienne Thompson",
+      "Alex Friedland",
+      "Ali Crawford",
+      "Andrew Imbrie",
+      "Andrew Lohn",
+      "Anna Puglisi",
+      "Ashwin Acharya",
+      "Autumn Toney",
+      "Avonelle Davis",
+      "Ben Chang",
+      "Ben Murphy",
+      "Catherine Aiken",
+      "Chris Rohlf",
+      "Claire Perkins",
+      "Dahlia Peterson",
+      "Dakota Cary",
+      "Daniel Chou",
+      "Daniel Hague",
+      "Dewey Murdick",
+      "Diana Gehlhaus",
+      "Emily Weinstein",
+      "Heeu Millie Kim",
+      "Helen Toner",
+      "Huey-Meei Chang",
+      "Husanjot Chahal",
+      "Igor Mikolic-Torreira",
+      "Ilya Rahkovsky",
+      "Jack Clark",
+      "Jack Corrigan",
+      "James Dunham",
+      "Jamie Baker",
+      "Jennifer Melot",
+      "John Bansemer",
+      "Katerina Sedova",
+      "Kayla Goode",
+      "Lorand Laskai",
+      "Luke Koslosky",
+      "Lynne Weil",
+      "Margarita Konaev",
+      "Matthew Daniels",
+      "Melissa Flagg",
+      "Micah Musser",
+      "Michael Page",
+      "Ngor Luong",
+      "Olivia Albrighton-Vanway",
+      "Rebecca Gelles",
+      "Reginald Brothers",
+      "Remco Zwetsloot",
+      "Roxanne Heston",
+      "Ryan Fedasiuk",
+      "Saif M. Khan",
+      "Sara Abdulla",
+      "Shelton Fitch",
+      "Tantum Collins",
+      "Tessa Baker",
+      "Thuy Nguyen",
+      "Tim G. J. Rudner",
+      "Tim Hwang",
+      "Will Hunt",
+      "William Hannas",
+      "Wyatt Hoffman",
+      "Zachary Arnold"
+    ],
+    "keyQuestions": [
+      "What is a good way to think about CSET's impact?",
+      "How net-positive can we expect CSET's work to be? How likely is CSET to do harm? In particular, how much will CSET's work draw attention to good aspects of AI Safety and fight arms races, as opposed to drawing attention in ways that might amplify arms races or dangerous AI development?",
+      "Is CSET acquiring influence within the US policy community and/or the current administration?",
+      "How does Jason Matheny leaving for the Biden administration affect CSET's impact? How much power and influence does Matheny have in the new Biden administration?",
+      "How much influence would CSET have in a future Republican administration? Might CSET become partisan?",
+      "Does CSET 's influence translate into actual policy?",
+      "Are CSET's researchers well-positioned to join a future US administration?",
+      "How valuable is CSET-foretell? I.e., are the predictions eventually used to make real-world decisions?",
+      "What is the influence of longtermism at CSET? Can we expect this to grow or shrink in the future?",
+      "To what extent should one defer to OpenPhilanthropy's evaluation of CSET? This might be more than normal, as there may be a fair amount of private knowledge, and as models around policy change (and the reasons for believing in those models) might be particularly hard to communicate."
+    ],
+    "publications": [
+    ],
+    "evaluations": [
+        {
+            "title": "Shallow evaluations of longtermist organizations",
+            "url": "https://forum.effectivealtruism.org/posts/xmmqDdGqNZq5RELer/shallow-evaluations-of-longtermist-organizations#Center_for_Security_and_Emerging_Technology__CSET_",
+            "author": "Nuño Sempere",
+            "summary": "CSET's work seems within what I would expect a competent think tank would produce. Given that OpenPhilanthropy is still funding them, I expect them to still be valuable. In particular, its think-tank model seems particularly scalable.",
+            "timestamp": "2021-07-24",
+            "stars": 2
+        },
+        {
+          "title": "Open Philanthropy — Georgetown University — Center for Security and Emerging Technology ",
+          "url": "https://www.openphilanthropy.org/giving/grants/georgetown-university-center-security-and-emerging-technology",
+          "author": "Luke Muehlhauser",
+          "summary": "Overall, we feel that ensuring high-quality and well-informed advice to policymakers over the long run is one of the most promising ways to increase the benefits and reduce the risks from advanced AI, and that the team put together by CSET is uniquely well-positioned to provide such advice",
+          "timestamp": "2021-07-24",
+          "stars": 4
+        },
+        {
+          "title": "Center for Security and Emerging Technology — General Support",
+          "url": "https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/center-security-and-emerging-technology-general-support",
+          "author": "Luke Muehlhauser",
+          "summary": "",
+          "timestamp": "2021-07-24",
+          "stars": 2
+        }
+    ],
+    "forecasts": [
+        {
+          "title": "Has CSET done more harm than good so far in its policy interventions?",
+          "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/623499ee-19dd-4d2a-b100-614a3a0b032a",
+          "platform": "Foretold",
+          "description": "",
+          "options": [
+            {
+              "name": "Yes",
+              "probability": 0.25,
+              "type": "PROBABILITY"
+            },
+            {
+              "name": "No",
+              "probability": 0.75,
+              "type": "PROBABILITY"
+            }
+          ],
+          "timestamp": "2021-07-03T13:07:25.076Z",
+          "qualityindicators": {
+            "numforecasts": 1,
+            "stars": 2
+          }
+        },
+        {
+          "title": "How much influence would CSET have in a 2024 Republican US administration, relative to its influence in a 2024 US Democratic administration?",
+          "url": "https://www.foretold.io/c/b2412a1d-0aa4-4e37-a12a-0aca9e440a96/m/fee03eb4-c956-4f61-81e6-76e2f76616c3",
+          "platform": "Foretold",
+          "description": "",
+          "options": [],
+          "timestamp": "2021-07-03T13:07:25.076Z",
+          "qualityindicators": {
+            "numforecasts": 1,
+            "stars": 2
+          }
+        }
+    ],
+    "genericMarkdownContent": ""
+}
