@@ -27,6 +27,8 @@ We use a simple search tool for string similarity. Distance refers to the differ
 
 ### Why is this valuable, when we already have [Google Scholar]?
 There are already several existing tools for search and statistics of Academic articles. These are much more general-purpose than AI Safety Papers. Google Scholar has many features that AI Safety Papers doesn't, but this site has a few advantages:
+- A selection of documents with relevance specifically to AI safety
+- Easy filtering for papers of particular AI Safety related organizations
 - Integration with select reviewer blurbs
 - Blog posts as well as academic works
 - Easy batch downloading (you can download the full CSV for analysis or other use)
@@ -38,7 +40,7 @@ export default function About() {
       <div className="prose p-10 bg-neutral-100 text-neutral-600 mt-1 mb-2 max-w-5xl text-gray-700">
         <div
           dangerouslySetInnerHTML={{
-            __html: markdownRenderer(aboutMarkdownText),
+            __html: markdownRenderer(aboutMarkdownText)
           }}
         />
       </div>
