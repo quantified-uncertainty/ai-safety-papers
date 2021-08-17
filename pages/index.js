@@ -3,6 +3,7 @@ import { useHotkeys } from "react-hotkeys-hook";
 import { debounce } from "lodash";
 
 import { getData } from "../lib/getProps/getData.js";
+import { searchWithAlgolia } from "../lib/getProps/algolia.js";
 
 import Layout from "./layout.js";
 import Fuse from "fuse.js";
@@ -43,7 +44,7 @@ const initialState = (items) => ({
   selectedId: false,
   selectedIndex: false,
   selectedResult: false,
-  fuse: new Fuse(items, opts),
+  // fuse: new Fuse(items, opts),
 });
 
 // Up and down arrow logic
@@ -119,12 +120,17 @@ function reducer(state, action) {
     }
     case "query":
       return { ...state, query: action.query, selectedIndex: false };
-    case "updateSearch":
+    /*
+      case "updateSearch":
       const results = state.fuse
         .search(state.query)
         .filter((r) => r.score < 0.6);
       return { ...state, results };
+    */
+    case "updateSearchResults":
+      return { ...state, results: action.results };
     default:
+      console.log(action)
       throw new Error();
   }
 }
@@ -132,6 +138,7 @@ function reducer(state, action) {
 // Main React component
 export default function Home({ items }) {
   const [state, dispatch] = useReducer(reducer, initialState(items));
+  const [searchTimeout, setSearchTimeout] = useState(null)
 
   useHotkeys("down", (e) => {
     e.preventDefault();
@@ -146,20 +153,19 @@ export default function Home({ items }) {
     const win = window.open(state.selectedResult.url, "_blank");
   });
 
-  let onChangeQuery = (query) => {
-    dispatch({ type: "query", query });
+  let updateSearch = async (query) => {
+    console.log("updateSearch:", query)
+    let results = await searchWithAlgolia({queryString: state.query, hitsPerPage: 100})
+    let resultsCompatibleWithFuse = results.map(result => ({item: result, score:0}))
+    dispatch({ type: "updateSearchResults", results: resultsCompatibleWithFuse });
+    setSearchTimeout(null)
   };
-
-  let onUpdateSearch = () => {
-    dispatch({ type: "updateSearch" });
-  };
-
-  const debouncedUpdateSearch = useRef(debounce(onUpdateSearch, 120)).current;
-  const debouncedUpdateSearchNow = useRef(debounce(onUpdateSearch, 1)).current;
 
   let onChangeQueryAndSearch = (query) => {
     dispatch({ type: "query", query });
-    debouncedUpdateSearchNow();
+    clearTimeout(searchTimeout)
+    let newTimeout = setTimeout(()=>{updateSearch(query)}, 250)
+    setSearchTimeout(newTimeout)
   };
 
   let emptyDescription = (
@@ -192,8 +198,7 @@ export default function Home({ items }) {
             <Form
               query={state.query}
               onChange={(query) => {
-                onChangeQuery(query);
-                debouncedUpdateSearch();
+                onChangeQueryAndSearch(query);
               }}
               onArrowDown={() => dispatch({ type: "selectFirstIndex" })}
             />
@@ -208,6 +213,7 @@ export default function Home({ items }) {
                 <tbody>
                   {state.results.slice(0, 100).map((i, index) => (
                     <ItemsListView
+                      id={i.item.id}
                       item={i.item}
                       score={i.score}
                       index={i.refIndex}
