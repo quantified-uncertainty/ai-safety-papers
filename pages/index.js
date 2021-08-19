@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useReducer, useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
-import { debounce } from "lodash";
+import { isEmpty } from "lodash";
 
 import { getData } from "../lib/getProps/getData.js";
 import { searchWithAlgolia } from "../lib/getProps/algolia.js";
 
 import Layout from "./layout.js";
-import Fuse from "fuse.js";
 import Form from "../lib/display/form.js";
 import SearchResultsTableHead from "../lib/display/searchResultsTableHead.js";
 import ItemsListView from "../lib/display/itemsListView.js";
@@ -154,10 +153,12 @@ export default function Home({ items }) {
     dispatch({
       type: "isLoading"
     });
-    let results = await searchWithAlgolia({
-      queryString: query,
-      hitsPerPage: 100
-    });
+    let results = isEmpty(query)
+      ? []
+      : await searchWithAlgolia({
+          queryString: query,
+          hitsPerPage: 100
+        });
     dispatch({
       type: "updateSearchResults",
       results: results.map((r) => ({
