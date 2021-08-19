@@ -160,7 +160,9 @@ export default function Home({ items }) {
     });
     dispatch({
       type: "updateSearchResults",
-      results
+      results: results.map((r) => ({
+        item: r
+      }))
     });
     setSearchTimeout(null);
   };
@@ -230,6 +232,7 @@ export default function Home({ items }) {
                 <tbody>
                   {state.results.slice(0, 100).map((i, index) => (
                     <ItemsListView
+                      key={i.item.id}
                       id={i.item.id}
                       item={i.item}
                       index={i.refIndex}
