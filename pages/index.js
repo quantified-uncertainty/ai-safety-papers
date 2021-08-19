@@ -17,13 +17,14 @@ export async function getStaticProps() {
   const items = await getData();
   return {
     props: {
-      items,
-    },
+      items
+    }
   };
 }
 
 // Search
-const searchMessage = "Search to view academic papers, blog posts, and book chapters."
+const searchMessage =
+  "Search to view academic papers, blog posts, and book chapters.";
 const opts = {
   includeScore: true,
   keys: [
@@ -34,8 +35,8 @@ const opts = {
     "abstractNote",
     "publicationTitle",
     "orgs",
-    "anBlurb",
-  ],
+    "anBlurb"
+  ]
 };
 
 const initialState = (items) => ({
@@ -43,7 +44,7 @@ const initialState = (items) => ({
   results: [],
   selectedId: false,
   selectedIndex: false,
-  selectedResult: false,
+  selectedResult: false
   // fuse: new Fuse(items, opts),
 });
 
@@ -81,7 +82,7 @@ function reducer(state, action) {
       return {
         ...state,
         selectedIndex,
-        selectedResult: state.results[selectedIndex].item,
+        selectedResult: state.results[selectedIndex].item
       };
     }
     case "setSelectedId":
@@ -93,14 +94,14 @@ function reducer(state, action) {
         }),
         selectedResult: state.results.find((e) => {
           return e.item.id == action.id;
-        }).item,
+        }).item
       };
     case "selectFirstIndex": {
       if (state.results.length > 0) {
         return {
           ...state,
           selectedIndex: 0,
-          selectedResult: state.results[0].item,
+          selectedResult: state.results[0].item
         };
       } else {
         return state;
@@ -115,7 +116,7 @@ function reducer(state, action) {
         ...state,
         selectedIndex,
         selectedResult:
-          state.results[selectedIndex] && state.results[selectedIndex].item,
+          state.results[selectedIndex] && state.results[selectedIndex].item
       };
     }
     case "query":
@@ -130,7 +131,7 @@ function reducer(state, action) {
     case "updateSearchResults":
       return { ...state, results: action.results };
     default:
-      console.log(action)
+      console.log(action);
       throw new Error();
   }
 }
@@ -138,7 +139,7 @@ function reducer(state, action) {
 // Main React component
 export default function Home({ items }) {
   const [state, dispatch] = useReducer(reducer, initialState(items));
-  const [searchTimeout, setSearchTimeout] = useState(null)
+  const [searchTimeout, setSearchTimeout] = useState(null);
 
   useHotkeys("down", (e) => {
     e.preventDefault();
@@ -154,18 +155,29 @@ export default function Home({ items }) {
   });
 
   let updateSearch = async (query) => {
-    console.log("updateSearch:", query)
-    let results = await searchWithAlgolia({queryString: state.query, hitsPerPage: 100})
-    let resultsCompatibleWithFuse = results.map(result => ({item: result, score:0}))
-    dispatch({ type: "updateSearchResults", results: resultsCompatibleWithFuse });
-    setSearchTimeout(null)
+    console.log("updateSearch:", query);
+    let results = await searchWithAlgolia({
+      queryString: state.query,
+      hitsPerPage: 100
+    });
+    let resultsCompatibleWithFuse = results.map((result) => ({
+      item: result,
+      score: 0
+    }));
+    dispatch({
+      type: "updateSearchResults",
+      results: resultsCompatibleWithFuse
+    });
+    setSearchTimeout(null);
   };
 
   let onChangeQueryAndSearch = (query) => {
     dispatch({ type: "query", query });
-    clearTimeout(searchTimeout)
-    let newTimeout = setTimeout(()=>{updateSearch(query)}, 250)
-    setSearchTimeout(newTimeout)
+    clearTimeout(searchTimeout);
+    let newTimeout = setTimeout(() => {
+      updateSearch(query);
+    }, 250);
+    setSearchTimeout(newTimeout);
   };
 
   let emptyDescription = (
@@ -209,7 +221,7 @@ export default function Home({ items }) {
                 {`${state.results.length} results`}
               </div>
               <table className="min-w-full divide-y divide-gray-200">
-                <SearchResultsTableHead/>
+                <SearchResultsTableHead />
                 <tbody>
                   {state.results.slice(0, 100).map((i, index) => (
                     <ItemsListView
@@ -233,7 +245,7 @@ export default function Home({ items }) {
           {state.selectedResult
             ? ItemPageView({
                 ...state.selectedResult,
-                onChangeQuery: onChangeQueryAndSearch,
+                onChangeQuery: onChangeQueryAndSearch
               })
             : emptyDescription}
         </div>
