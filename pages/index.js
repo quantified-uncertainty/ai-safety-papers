@@ -41,6 +41,7 @@ const opts = {
 
 const initialState = (items) => ({
   query: "",
+  isLoading: false,
   results: [],
   selectedId: false,
   selectedIndex: false,
@@ -128,8 +129,10 @@ function reducer(state, action) {
         .filter((r) => r.score < 0.6);
       return { ...state, results };
     */
+    case "isLoading":
+      return { ...state, isLoading: true };
     case "updateSearchResults":
-      return { ...state, results: action.results };
+      return { ...state, results: action.results, isLoading: false };
     default:
       console.log(action);
       throw new Error();
@@ -155,9 +158,11 @@ export default function Home({ items }) {
   });
 
   let updateSearch = async (query) => {
-    console.log("updateSearch:", query);
+    dispatch({
+      type: "isLoading"
+    });
     let results = await searchWithAlgolia({
-      queryString: state.query,
+      queryString: query,
       hitsPerPage: 100
     });
     let resultsCompatibleWithFuse = results.map((result) => ({
@@ -171,13 +176,20 @@ export default function Home({ items }) {
     setSearchTimeout(null);
   };
 
-  let onChangeQueryAndSearch = (query) => {
+  let onChangeQueryAndSearch = (isImmediate, query) => {
     dispatch({ type: "query", query });
+
     clearTimeout(searchTimeout);
-    let newTimeout = setTimeout(() => {
-      updateSearch(query);
-    }, 250);
-    setSearchTimeout(newTimeout);
+    if (isImmediate) {
+      setTimeout(() => {
+        updateSearch(query);
+      }, 1);
+    } else {
+      let newTimeout = setTimeout(() => {
+        updateSearch(query);
+      }, 180);
+      setSearchTimeout(newTimeout);
+    }
   };
 
   let emptyDescription = (
@@ -210,17 +222,21 @@ export default function Home({ items }) {
             <Form
               query={state.query}
               onChange={(query) => {
-                onChangeQueryAndSearch(query);
+                onChangeQueryAndSearch(false, query);
               }}
               onArrowDown={() => dispatch({ type: "selectFirstIndex" })}
             />
           </label>
           {state.results.length > 0 && (
-            <div className="search-left-section overflow-auto pt-2">
+            <div
+              className={`search-left-section overflow-auto pt-2 ${
+                state.isLoading ? "opacity-10" : ""
+              }`}
+            >
               <div className="text-sm text-gray-500 px-2 pt-1">
                 {`${state.results.length} results`}
               </div>
-              <table className="min-w-full divide-y divide-gray-200">
+              <table className={"min-w-full divide-y divide-gray-200"}>
                 <SearchResultsTableHead />
                 <tbody>
                   {state.results.slice(0, 100).map((i, index) => (
@@ -229,7 +245,7 @@ export default function Home({ items }) {
                       item={i.item}
                       score={i.score}
                       index={i.refIndex}
-                      onChangeQuery={onChangeQueryAndSearch}
+                      onChangeQuery={(r) => onChangeQueryAndSearch(true, r)}
                       setSelected={() =>
                         dispatch({ type: "setSelectedId", id: i.item.id })
                       }
@@ -241,11 +257,15 @@ export default function Home({ items }) {
             </div>
           )}
         </div>
-        <div className="col-span-2 search-right-section overflow-auto px-8 border-l-2 border-gray-200">
+        <div
+          className={
+            "col-span-2 search-right-section overflow-auto px-8 border-l-2 border-gray-200"
+          }
+        >
           {state.selectedResult
             ? ItemPageView({
                 ...state.selectedResult,
-                onChangeQuery: onChangeQueryAndSearch
+                onChangeQuery: (r) => onChangeQueryAndSearch(true, r)
               })
             : emptyDescription}
         </div>
