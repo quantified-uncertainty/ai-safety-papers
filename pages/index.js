@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useReducer, useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
-import { debounce } from "lodash";
+import { isEmpty } from "lodash";
 
 import { getData } from "../lib/getProps/getData.js";
+import { searchWithAlgolia } from "../lib/getProps/algolia.js";
 
 import Layout from "./layout.js";
-import Fuse from "fuse.js";
 import Form from "../lib/display/form.js";
 import SearchResultsTableHead from "../lib/display/searchResultsTableHead.js";
 import ItemsListView from "../lib/display/itemsListView.js";
@@ -16,13 +16,14 @@ export async function getStaticProps() {
   const items = await getData();
   return {
     props: {
-      items,
-    },
+      items
+    }
   };
 }
 
 // Search
-const searchMessage = "Search to view academic papers, blog posts, and book chapters."
+const searchMessage =
+  "Search to view academic papers, blog posts, and book chapters.";
 const opts = {
   includeScore: true,
   keys: [
@@ -33,17 +34,17 @@ const opts = {
     "abstractNote",
     "publicationTitle",
     "orgs",
-    "anBlurb",
-  ],
+    "anBlurb"
+  ]
 };
 
 const initialState = (items) => ({
   query: "",
+  isLoading: false,
   results: [],
   selectedId: false,
   selectedIndex: false,
-  selectedResult: false,
-  fuse: new Fuse(items, opts),
+  selectedResult: false
 });
 
 // Up and down arrow logic
@@ -80,7 +81,7 @@ function reducer(state, action) {
       return {
         ...state,
         selectedIndex,
-        selectedResult: state.results[selectedIndex].item,
+        selectedResult: state.results[selectedIndex].item
       };
     }
     case "setSelectedId":
@@ -92,14 +93,14 @@ function reducer(state, action) {
         }),
         selectedResult: state.results.find((e) => {
           return e.item.id == action.id;
-        }).item,
+        }).item
       };
     case "selectFirstIndex": {
       if (state.results.length > 0) {
         return {
           ...state,
           selectedIndex: 0,
-          selectedResult: state.results[0].item,
+          selectedResult: state.results[0].item
         };
       } else {
         return state;
@@ -114,17 +115,17 @@ function reducer(state, action) {
         ...state,
         selectedIndex,
         selectedResult:
-          state.results[selectedIndex] && state.results[selectedIndex].item,
+          state.results[selectedIndex] && state.results[selectedIndex].item
       };
     }
     case "query":
       return { ...state, query: action.query, selectedIndex: false };
-    case "updateSearch":
-      const results = state.fuse
-        .search(state.query)
-        .filter((r) => r.score < 0.6);
-      return { ...state, results };
+    case "isLoading":
+      return { ...state, isLoading: true };
+    case "updateSearchResults":
+      return { ...state, results: action.results, isLoading: false };
     default:
+      console.log(action);
       throw new Error();
   }
 }
@@ -132,6 +133,7 @@ function reducer(state, action) {
 // Main React component
 export default function Home({ items }) {
   const [state, dispatch] = useReducer(reducer, initialState(items));
+  const [searchTimeout, setSearchTimeout] = useState(null);
 
   useHotkeys("down", (e) => {
     e.preventDefault();
@@ -146,20 +148,39 @@ export default function Home({ items }) {
     const win = window.open(state.selectedResult.url, "_blank");
   });
 
-  let onChangeQuery = (query) => {
-    dispatch({ type: "query", query });
+  let updateSearch = async (query) => {
+    dispatch({
+      type: "isLoading"
+    });
+    let results = isEmpty(query)
+      ? []
+      : await searchWithAlgolia({
+          queryString: query,
+          hitsPerPage: 100
+        });
+    dispatch({
+      type: "updateSearchResults",
+      results: results.map((r) => ({
+        item: r
+      }))
+    });
+    setSearchTimeout(null);
   };
 
-  let onUpdateSearch = () => {
-    dispatch({ type: "updateSearch" });
-  };
-
-  const debouncedUpdateSearch = useRef(debounce(onUpdateSearch, 120)).current;
-  const debouncedUpdateSearchNow = useRef(debounce(onUpdateSearch, 1)).current;
-
-  let onChangeQueryAndSearch = (query) => {
+  let onChangeQueryAndSearch = (isImmediate, query) => {
     dispatch({ type: "query", query });
-    debouncedUpdateSearchNow();
+
+    clearTimeout(searchTimeout);
+    if (isImmediate) {
+      setTimeout(() => {
+        updateSearch(query);
+      }, 1);
+    } else {
+      let newTimeout = setTimeout(() => {
+        updateSearch(query);
+      }, 180);
+      setSearchTimeout(newTimeout);
+    }
   };
 
   let emptyDescription = (
@@ -192,26 +213,30 @@ export default function Home({ items }) {
             <Form
               query={state.query}
               onChange={(query) => {
-                onChangeQuery(query);
-                debouncedUpdateSearch();
+                onChangeQueryAndSearch(false, query);
               }}
               onArrowDown={() => dispatch({ type: "selectFirstIndex" })}
             />
           </label>
           {state.results.length > 0 && (
-            <div className="search-left-section overflow-auto pt-2">
+            <div
+              className={`search-left-section overflow-auto pt-2 ${
+                state.isLoading ? "opacity-10" : ""
+              }`}
+            >
               <div className="text-sm text-gray-500 px-2 pt-1">
                 {`${state.results.length} results`}
               </div>
-              <table className="min-w-full divide-y divide-gray-200">
-                <SearchResultsTableHead/>
+              <table className={"min-w-full divide-y divide-gray-200"}>
+                <SearchResultsTableHead />
                 <tbody>
                   {state.results.slice(0, 100).map((i, index) => (
                     <ItemsListView
+                      key={i.item.id}
+                      id={i.item.id}
                       item={i.item}
-                      score={i.score}
                       index={i.refIndex}
-                      onChangeQuery={onChangeQueryAndSearch}
+                      onChangeQuery={(r) => onChangeQueryAndSearch(true, r)}
                       setSelected={() =>
                         dispatch({ type: "setSelectedId", id: i.item.id })
                       }
@@ -223,11 +248,15 @@ export default function Home({ items }) {
             </div>
           )}
         </div>
-        <div className="col-span-2 search-right-section overflow-auto px-8 border-l-2 border-gray-200">
+        <div
+          className={
+            "col-span-2 search-right-section overflow-auto px-8 border-l-2 border-gray-200"
+          }
+        >
           {state.selectedResult
             ? ItemPageView({
                 ...state.selectedResult,
-                onChangeQuery: onChangeQueryAndSearch,
+                onChangeQuery: (r) => onChangeQueryAndSearch(true, r)
               })
             : emptyDescription}
         </div>
