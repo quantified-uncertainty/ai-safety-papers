@@ -45,7 +45,6 @@ const initialState = (items) => ({
   selectedId: false,
   selectedIndex: false,
   selectedResult: false
-  // fuse: new Fuse(items, opts),
 });
 
 // Up and down arrow logic
