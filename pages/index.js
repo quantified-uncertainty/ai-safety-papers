@@ -122,13 +122,6 @@ function reducer(state, action) {
     }
     case "query":
       return { ...state, query: action.query, selectedIndex: false };
-    /*
-      case "updateSearch":
-      const results = state.fuse
-        .search(state.query)
-        .filter((r) => r.score < 0.6);
-      return { ...state, results };
-    */
     case "isLoading":
       return { ...state, isLoading: true };
     case "updateSearchResults":
@@ -165,13 +158,9 @@ export default function Home({ items }) {
       queryString: query,
       hitsPerPage: 100
     });
-    let resultsCompatibleWithFuse = results.map((result) => ({
-      item: result,
-      score: 0
-    }));
     dispatch({
       type: "updateSearchResults",
-      results: resultsCompatibleWithFuse
+      results
     });
     setSearchTimeout(null);
   };
@@ -243,7 +232,6 @@ export default function Home({ items }) {
                     <ItemsListView
                       id={i.item.id}
                       item={i.item}
-                      score={i.score}
                       index={i.refIndex}
                       onChangeQuery={(r) => onChangeQueryAndSearch(true, r)}
                       setSelected={() =>
