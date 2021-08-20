@@ -2,10 +2,11 @@ import Link from "next/link";
 import Head from "next/head";
 import { GiPapers } from "react-icons/gi";
 
-const appName = "AI Safety Papers"
-const iconLocation = "/papers.png"
-const Icon = GiPapers
-const feedbackPage = "https://github.com/QURIresearch/ai-safety-papers/discussions"
+const appName = "AI Safety Papers";
+const iconLocation = "/papers.png";
+const Icon = GiPapers;
+const feedbackPage =
+  "https://github.com/QURIresearch/ai-safety-papers/discussions";
 
 export default function Layout(props) {
   const classNameSelected = (isSelected) =>
@@ -71,13 +72,23 @@ export default function Layout(props) {
                 <div className="md:block">
                   <div className="ml-2 flex items-baseline space-x-4">
                     <a
-                      href={"https://github.com/QURIresearch/ai-safety-papers/discussions"}
+                      href={
+                        "https://github.com/QURIresearch/ai-safety-papers/discussions"
+                      }
                       className={classNameSelected(false)}
                       target="_blank"
                     >
                       Feedback
                     </a>
                   </div>
+                </div>
+              </div>
+              <div className="md:block">
+                <div class="hidden sm:inline-flex items-center text-gray-100 mr-2">
+                  <svg class="ml-4 mr-0 mt-1" height="10" width="16">
+                    <circle cx="4" cy="4" r="4" fill="#6eb33e"></circle>
+                  </svg>
+                  <span>Last Updated 2021-12-19</span>
                 </div>
               </div>
             </div>
