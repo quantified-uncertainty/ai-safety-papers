@@ -88,7 +88,7 @@ export default function Layout(props) {
                   <svg class="ml-4 mr-0 mt-1" height="10" width="16">
                     <circle cx="4" cy="4" r="4" fill="#6eb33e"></circle>
                   </svg>
-                  <span>Last Updated 2021-12-19</span>
+                  <span>Last Updated 12-19-2020</span>
                 </div>
               </div>
             </div>
