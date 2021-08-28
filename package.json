@@ -16,6 +16,7 @@
     "algoliasearch": "^4.10.3",
     "autoprefixer": "^10.1.0",
     "critters": "^0.0.6",
+    "csvtojson": "^2.0.10",
     "graphql": "^15.5.1",
     "graphql-request": "^3.4.0",
     "lodash": "^4.17.20",
