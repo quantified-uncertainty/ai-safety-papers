@@ -8,6 +8,7 @@
     "start": "next start",
     "export": "next export"
   },
+  "type": "module",
   "dependencies": {
     "@babel/core": "^7.15.0",
     "@tailwindcss/forms": "^0.3.3",
@@ -16,7 +17,6 @@
     "algoliasearch": "^4.10.3",
     "autoprefixer": "^10.1.0",
     "critters": "^0.0.6",
-    "csvtojson": "^2.0.10",
     "graphql": "^15.5.1",
     "graphql-request": "^3.4.0",
     "lodash": "^4.17.20",
@@ -31,6 +31,7 @@
     "react-hook-form": "^7.12.2",
     "react-hotkeys-hook": "^3.4.0",
     "react-icons": "^4.2.0",
+    "tabletojson": "^2.0.7",
     "tailwindcss": "^2.2.7",
     "yarn": "^1.22.11"
   }
