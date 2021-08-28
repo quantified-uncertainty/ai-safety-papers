@@ -8,7 +8,6 @@
     "start": "next start",
     "export": "next export"
   },
-  "type": "module",
   "dependencies": {
     "@babel/core": "^7.15.0",
     "@tailwindcss/forms": "^0.3.3",
