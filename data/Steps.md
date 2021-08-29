@@ -13,3 +13,4 @@ node lib/getProps/getData.js > data/fullDatabase.json
 
 // None necessary any more; just download the database as an html from Rohin
 // https://docs.google.com/spreadsheets/d/1PwWbWZ6FPqAgZWOoOcXM8N_tUCuxpEyMbN1NYYC02aM/edit?usp=sharing
+// But note that changing to "type": "module" is necessary for getting the data now.
