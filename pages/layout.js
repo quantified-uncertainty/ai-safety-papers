@@ -10,8 +10,7 @@ const feedbackPage =
 
 export default function Layout(props) {
   const classNameSelected = (isSelected) =>
-    `text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-sm text-md font-medium cursor-pointer ${
-      isSelected ? "bg-gray-700 hover:bg-gray-900" : ""
+    `text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-sm text-md font-medium cursor-pointer ${isSelected ? "bg-gray-700 hover:bg-gray-900" : ""
     }`;
   return (
     <div>

@@ -2,8 +2,7 @@ import React, { useState, useEffect, useReducer, useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { isEmpty } from "lodash";
 
-// import { getData } from "../lib/getProps/getData.js";
-import { searchWithAlgolia } from "../lib/getProps/algolia.js";
+import { searchWithAlgolia } from "../lib/search/searchWithAlgolia.js";
 
 import Layout from "./layout.js";
 import Form from "../lib/display/form.js";
@@ -155,9 +154,9 @@ export default function Home({ items }) {
     let results = isEmpty(query)
       ? []
       : await searchWithAlgolia({
-          queryString: query,
-          hitsPerPage: 100
-        });
+        queryString: query,
+        hitsPerPage: 100
+      });
     dispatch({
       type: "updateSearchResults",
       results: results.map((r) => ({
@@ -220,9 +219,8 @@ export default function Home({ items }) {
           </label>
           {state.results.length > 0 && (
             <div
-              className={`search-left-section overflow-auto pt-2 ${
-                state.isLoading ? "opacity-10" : ""
-              }`}
+              className={`search-left-section overflow-auto pt-2 ${state.isLoading ? "opacity-10" : ""
+                }`}
             >
               <div className="text-sm text-gray-500 px-2 pt-1">
                 {`${state.results.length} results`}
@@ -255,9 +253,9 @@ export default function Home({ items }) {
         >
           {state.selectedResult
             ? ItemPageView({
-                ...state.selectedResult,
-                onChangeQuery: (r) => onChangeQueryAndSearch(true, r)
-              })
+              ...state.selectedResult,
+              onChangeQuery: (r) => onChangeQueryAndSearch(true, r)
+            })
             : emptyDescription}
         </div>
       </div>
