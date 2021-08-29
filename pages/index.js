@@ -2,7 +2,7 @@ import React, { useState, useEffect, useReducer, useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { isEmpty } from "lodash";
 
-import { getData } from "../lib/getProps/getData.js";
+// import { getData } from "../lib/getProps/getData.js";
 import { searchWithAlgolia } from "../lib/getProps/algolia.js";
 
 import Layout from "./layout.js";
@@ -13,7 +13,7 @@ import ItemPageView from "../lib/display/itemPageView.js";
 
 // Get Props
 export async function getStaticProps() {
-  const items = await getData();
+  const items = [] // await getData();
   return {
     props: {
       items

@@ -84,8 +84,8 @@ export default function Layout(props) {
                 </div>
               </div>
               <div className="md:block">
-                <div class="hidden sm:inline-flex items-center text-gray-100 mr-2">
-                  <svg class="ml-4 mr-0 mt-1" height="10" width="16">
+                <div className="hidden sm:inline-flex items-center text-gray-100 mr-2">
+                  <svg className="ml-4 mr-0 mt-1" height="10" width="16">
                     <circle cx="4" cy="4" r="4" fill="#6eb33e"></circle>
                   </svg>
                   <span>Last Updated 12-19-2020</span>
